@@ -1,0 +1,216 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+<#
+    var argTypes = new []{
+        "Formula",
+        "double"
+    };
+
+    var funcs = new []{
+        ("Mod", 2, false),
+        ("Pow", 2, false),
+        ("Exp", 1, true),
+        ("Sqrt", 1, true),
+        ("Log", 1, true),
+        ("Log10", 1, true),
+        ("Sin", 1, true),
+        ("Cos", 1, true),
+        ("Tan", 1, true),
+        ("Sinh", 1, true),
+        ("Cosh", 1, true),
+        ("Tanh", 1, true),
+        ("Asin", 1, true),
+        ("Acos", 1, true),
+        ("Atan", 1, true),
+        ("Asinh", 1, true),
+        ("Acosh", 1, true),
+        ("Atanh", 1, true),
+        ("Abs", 1, true),
+        ("If", 3, false),
+        ("Min", 2, true),
+        ("Max", 2, true),
+        ("Ceiling", 1, true),
+        ("Floor", 1, true),
+        ("MinMagnitude", 2, true),
+        ("MaxMagnitude", 2, true),
+    };
+#>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MathTools.Algebra.Functions;
+
+namespace MathTools.Algebra
+{
+    public partial class Formula
+    {
+<#// generate static methods ---------------------------------------------------------------------------------#>
+<#foreach(var func in funcs){
+    var name = func.Item1;
+    var count = func.Item2;
+    var counter = new int[count];
+    var loopFlag = true;
+
+    while(loopFlag){
+#>
+        public static Formula <#=name#>(<#=string.Join(", ", counter.Select((c, i) => $"{argTypes[c]} v{i+1}"))#>) => new <#=name#>(<#=string.Join(", ", counter.Select((c, i) => $"v{i+1}"))#>);
+<#
+        for(var i=0;i<counter.Length;i++){
+            counter[i]++;
+            if(counter[i] < argTypes.Length){
+                break;
+            }else{
+                counter[i] = 0;
+                if(i == counter.Length-1){
+                    loopFlag = false;
+                }
+            }
+        }
+    }
+}#>
+<#// generate CreateFunction() method ---------------------------------------------------------------------------------#>
+
+        internal static Formula CreateFunction(ReadOnlySpan<char> funcName, List<Formula> subFuncs)
+        {
+            var lowerName = new Span<char>(funcName.ToArray());
+            funcName.ToLower(lowerName, null);
+            lowerName = lowerName.Trim();
+
+            return lowerName switch
+            {
+<#
+foreach(var func in funcs){
+    var name = func.Item1;
+    var count = func.Item2;
+#>
+                "<#=name.ToLower()#>" => new <#=name#>(<#=string.Join(", ", Enumerable.Range(0, count).Select(i => $"subFuncs[{i}]"))#>),
+<#
+}
+#>
+                _ => throw new NotSupportedException($"The function `{funcName}` is not Supported.")
+            };
+        }
+
+<#// generate BasicSimplify() method ---------------------------------------------------------------------------------#>
+        internal Formula BasicSimplify()
+        {
+            if (!this.HasVariable())
+            {
+                return new Constant(this.Eval());
+            }
+
+            var optSubs = this.SubFormulae.Select(f => f.Simplify()).ToList();
+            Formula opt = this switch {
+                Sum sum => new Sum(optSubs, sum.Signs),
+                Product product => new Product(optSubs, product.Signs),
+                Parenthesis => optSubs[0],
+<#
+foreach(var func in funcs){
+    var name = func.Item1;
+    var count = func.Item2;
+#>
+                <#=name#> _ => new <#=name#>(<#=string.Join(", ", Enumerable.Range(0, count).Select(i => $"optSubs[{i}]"))#>),
+<#
+}
+#>
+                _ => throw new NotSupportedException($"The function is not Supported.")
+            };
+
+            if (opt.HasVariable())
+            {
+                return opt;
+            }
+            return new Constant(opt.Eval());
+        }
+    }
+
+    namespace Functions
+    {
+<#// generate function classes ---------------------------------------------------------------------------------#>
+<#foreach(var func in funcs){
+    if(!func.Item3) continue;
+
+    var name = func.Item1;
+    var count = func.Item2;
+    var counter = new int[count];
+    var loopFlag = true;
+#>
+
+        public partial class <#=name#>
+        {
+<#
+
+    while(loopFlag){
+        if(counter.Sum() == 0){
+#>
+            public <#=name#>(<#=string.Join(", ", counter.Select((c, i) => $"{argTypes[c]} v{i+1}"))#>)
+            {
+                this.SubFormulae = new List<Formula> { <#=string.Join(", ", Enumerable.Range(0, count).Select(i => $"v{i+1}"))#> };
+            }
+<#
+        }else{
+#>
+
+            public <#=name#>(<#=string.Join(", ", counter.Select((c, i) => $"{argTypes[c]} v{i+1}"))#>) : this(<#=string.Join(", ", counter.Select((c, i)=> c==0 ? $"v{i+1}": $"new Constant(v{i+1})"))#>) { }
+<#
+        }
+        for(var i=0;i<counter.Length;i++){
+            counter[i]++;
+            if(counter[i] < argTypes.Length){
+                break;
+            }else{
+                counter[i] = 0;
+                if(i == counter.Length-1){
+                    loopFlag = false;
+                }
+            }
+        }
+    }
+#>
+
+            public override double Eval(Dictionary<string, double> variables)
+                => Math.<#=name#>(<#=string.Join(", ", Enumerable.Range(0, count).Select(i=>$"this.SubFormulae[{i}].Eval(variables)") )#>);
+
+            internal override void BuildString(StringBuilder builder, string? format, IFormatProvider? formatProvider)
+            {
+                switch(format){
+                case "C#" :
+                    builder.Append("Math.<#=name#>(");
+                    this.SubFormulae[0].BuildString(builder, format, formatProvider);
+<#
+    for(var i=1; i<count; i++){
+#>
+                    builder.Append(',');
+                    this.SubFormulae[<#=i#>].BuildString(builder, format, formatProvider);
+<#
+    }
+#>
+                    builder.Append(')');
+                    break;
+
+                default :
+                    builder.Append("<#=name#>(");
+                    this.SubFormulae[0].BuildString(builder, format, formatProvider);
+<#
+    for(var i=1; i<count; i++){
+#>
+                    builder.Append(',');
+                    this.SubFormulae[<#=i#>].BuildString(builder, format, formatProvider);
+<#
+    }
+#>
+                    builder.Append(')');
+                    break;
+                }
+            }
+        }
+<#
+}#>
+    }
+}
