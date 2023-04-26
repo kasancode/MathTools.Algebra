@@ -1,83 +1,152 @@
-﻿using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
+﻿using MathTools.Algebra.Functions;
 using System.Reflection;
+using System.Reflection.Emit;
 
 namespace MathTools.Algebra
 {
-    public static class FormulaCompiler
+    public static partial class FormulaCompiler
     {
-        public static Func<double, double> Compile(this Formula formula) => throw new NotImplementedException();
-
         private const string NamespaceName = "MathTools.Algebra";
         private const string ClassName = "FormulaEmitter";
         private const string MethodName = "Eval";
 
-        private const string CodeHeader = $$"""
-            namespace {{NamespaceName}}
-            {
-                using System;
-                public class {{ClassName}}
-                {
-                    public double {{MethodName}}
-            """;
-
-        private const string CodeFooter = """
-                }
-            }
-            """;
-
-        internal static Type CreateClass(Formula formula)
+        internal static void Emit(ILGenerator generator, Formula formula, List<string> variables)
         {
-            var variables = formula.GetVariables();
-
-            var code = CodeHeader + $"({string.Join(", ", variables.Select(v => $"double {v}"))}) => {formula.ToString("C#", null)};" + CodeFooter;
-            var syntaxTree = CSharpSyntaxTree.ParseText(code);
-            var assemblyName = Path.GetRandomFileName();
-            var references = AppDomain.CurrentDomain
-              .GetAssemblies()
-              .Where(a => !a.IsDynamic)
-              .Select(a => a.Location)
-              .Where(s => !string.IsNullOrEmpty(s))
-              .Select(s => MetadataReference.CreateFromFile(s));
-
-            var compilation = CSharpCompilation.Create(
-                assemblyName,
-                syntaxTrees: new[] { syntaxTree },
-                references: references,
-                options: new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));
-
-            using var stream = new MemoryStream();
-            var result = compilation.Emit(stream);
-
-            if (!result.Success)
+            switch (formula)
             {
-                var failures = result.Diagnostics.Where(diagnostic =>
-                    diagnostic.IsWarningAsError ||
-                    diagnostic.Severity == DiagnosticSeverity.Error);
+                case Constant c:
+                    generator.Emit(OpCodes.Ldc_R8, c.Value);
+                    break;
 
-                throw new FormulaException("Compilation Error\n" + string.Join("\n", failures.Select(f => f.GetMessage())));
+                case Variable v:
+                    var index = variables.IndexOf(v.Name);
+                    if (index < 0)
+                        throw new FormulaException("Compilation Error. Could not find variable.");
+
+                    generator.Emit(OpCodes.Ldarg, index);
+                    break;
+
+                case Sum sum:
+                    if (sum.SubFormulae.Count < 0)
+                        break;
+
+                    Emit(generator, sum.SubFormulae[0], variables);
+                    if (!sum.Signs[0])
+                    {
+                        generator.Emit(OpCodes.Neg);
+                    }
+
+                    for (var i = 1; i < sum.SubFormulae.Count; i++)
+                    {
+                        var sub = sum.SubFormulae[i];
+                        var sign = sum.Signs[i];
+                        Emit(generator, sub, variables);
+                        generator.Emit(sign ? OpCodes.Add : OpCodes.Sub);
+                    }
+
+                    break;
+
+                case Product product:
+                    if (product.SubFormulae.Count < 0)
+                        break;
+
+                    if (!product.Signs[0])
+                    {
+                        generator.Emit(OpCodes.Ldc_R8, 1.0);
+                        Emit(generator, product.SubFormulae[0], variables);
+                        generator.Emit(OpCodes.Div);
+                    }
+                    else
+                    {
+                        Emit(generator, product.SubFormulae[0], variables);
+                    }
+
+                    for (var i = 1; i < product.SubFormulae.Count; i++)
+                    {
+                        var sub = product.SubFormulae[i];
+                        var sign = product.Signs[i];
+                        Emit(generator, sub, variables);
+                        generator.Emit(sign ? OpCodes.Mul : OpCodes.Div);
+                    }
+
+                    break;
+
+                case Pow:
+                    Emit(generator, formula.SubFormulae[0], variables);
+                    Emit(generator, formula.SubFormulae[1], variables);
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Pow", new Type[] { typeof(double), typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Pow()"));
+                    break;
+
+                case Mod:
+                    Emit(generator, formula.SubFormulae[0], variables);
+                    Emit(generator, formula.SubFormulae[1], variables);
+                    generator.Emit(OpCodes.Rem);
+                    break;
+
+                case If:
+                    var toTrue = generator.DefineLabel();
+                    var toEnd = generator.DefineLabel();
+                    Emit(generator, formula.SubFormulae[0], variables);
+                    generator.Emit(OpCodes.Ldc_R8, 0.0);
+                    generator.Emit(OpCodes.Bge_S, toTrue);
+
+                    Emit(generator, formula.SubFormulae[2], variables);
+                    generator.Emit(OpCodes.Br_S, toEnd);
+
+                    generator.MarkLabel(toTrue);
+                    Emit(generator, formula.SubFormulae[1], variables);
+
+                    generator.MarkLabel(toEnd);
+                    break;
+
+                case Parenthesis:
+                    Emit(generator, formula.SubFormulae[0], variables);
+                    break;
+
+                default:
+                    EmitFunctions(generator, formula, variables);
+                    break;
             }
-
-            stream.Seek(0, SeekOrigin.Begin);
-            var assembly = Assembly.Load(stream.ToArray());
-
-            return assembly.GetType($"{NamespaceName}.{ClassName}") ?? throw new FormulaException("Could not get type from assembly.");
         }
 
-        public static Func<double[], double> ToFunc(this Formula formula)
+        internal static MethodInfo CreateMethod(Formula formula)
         {
-            var type = CreateClass(formula);
-            var obj = Activator.CreateInstance(type);
+            var variables = formula.GetVariables();
+            var assemblyName = Path.GetRandomFileName();
+            var assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(
+                new AssemblyName(assemblyName),
+                AssemblyBuilderAccess.Run);
 
-            return (double[] vars) =>
+            var moduleBuilder = assemblyBuilder.DefineDynamicModule(assemblyName);
+
+            var typeBuilder = moduleBuilder.DefineType(
+                $"{NamespaceName}.{ClassName}",
+                TypeAttributes.Public | TypeAttributes.AutoLayout | TypeAttributes.Class | TypeAttributes.Sealed | TypeAttributes.Abstract);
+
+            var method = typeBuilder.DefineMethod(MethodName, MethodAttributes.Public | MethodAttributes.Static,
+                typeof(double),
+                variables.Select(_ => typeof(double)).ToArray());
+            var generator = method.GetILGenerator();
+            Emit(generator, formula, variables);
+            generator.Emit(OpCodes.Ret);
+
+            var type = typeBuilder.CreateType();
+
+            return type.GetMethod(MethodName) ?? throw new FormulaException("Compilation Error. Could not get method.");
+        }
+
+        public delegate double EvalFunc(params double[] args);
+
+        public static EvalFunc ToFunc(this Formula formula)
+        {
+            var method = CreateMethod(formula);
+
+            if (method is null)
+                throw new FormulaException("Compilation Error. Could not get method.");
+
+            return delegate (double[] vars)
             {
-                var result = type.InvokeMember(
-                    MethodName,
-                    BindingFlags.Default | BindingFlags.InvokeMethod,
-                    null,
-                    obj,
-                    vars.Select(v => (object)v).ToArray());
-
+                var result = method.Invoke(null, vars.Select(v => (object)v).ToArray());
                 return result is null ? throw new FormulaException("Eval result is null.") : (double)result;
             };
         }

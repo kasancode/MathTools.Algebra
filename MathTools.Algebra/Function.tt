@@ -45,6 +45,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MathTools.Algebra.Functions;
+using System.Reflection.Emit;
 
 namespace MathTools.Algebra
 {
@@ -127,6 +128,37 @@ foreach(var func in funcs){
                 return opt;
             }
             return new Constant(opt.Eval());
+        }
+    }
+
+    public static partial class FormulaCompiler{
+<#// generate FormulaCompiler() method ---------------------------------------------------------------------------------#>
+
+        internal static void EmitFunctions(ILGenerator generator, Formula formula, List<string> variables)
+        {
+            switch(formula)
+            {
+               
+<#
+foreach(var (name, count, generate) in funcs){
+    if(!generate) continue;
+#>
+                case <#=name#>:
+<#
+    for(var i=0;i<count;i++){#>
+                    Emit(generator, formula.SubFormulae[<#=i#>], variables);
+<#
+    }
+#>
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("<#=name#>", new Type[] { <#=string.Join(", ", Enumerable.Range(0,count).Select(_ => "typeof(double)"))#> }) ?? throw new Exception("Compilation Error. Could not get Math.<#=name#>()"));
+                    break;
+
+<#
+}
+#>
+                default:
+                    throw new NotSupportedException();
+            }
         }
     }
 

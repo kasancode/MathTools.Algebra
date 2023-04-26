@@ -1,12 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MathTools.Algebra;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
-using Newtonsoft.Json.Linq;
 
 namespace MathTools.Algebra.Tests
 {
@@ -23,30 +16,57 @@ namespace MathTools.Algebra.Tests
                     { "x1", 3.0 },
                     { "x2", 5.0 }
                 };
-                Console.WriteLine($"{formula}={formula.Eval(vars)}");
-                Assert.AreEqual(3.0 - Math.Pow(Math.Sin(2.0 + 3.0), 5.0), formula.Eval(vars));
-                Assert.AreEqual(3.0 - Math.Pow(Math.Sin(2.0 + 3.0), 5.0), func(new[] { 3.0, 5.0 }));
+                Assert.AreEqual(formula.Eval(vars), func(3.0, 5.0));
+            }
+
+            {
+                var formula = Formula.Parse("if(x1, -Sin(2+x1)^x2, x2^Sin(x1))*x2");
+                var func = formula.ToFunc();
+
+                var check = (double x1, double x2) =>
+                {
+                    var vars = new Dictionary<string, double> { { "x1", x1 }, { "x2", x2 } };
+                    Assert.AreEqual(formula.Eval(vars), func(x1, x2));
+                };
+
+                check(0.3, 5.0);
+                check(-0.3, 5.0);
+                check(0.0, -5.0);
+                check(-0.5, 3.0);
             }
         }
 
         [TestMethod()]
         public void PerformanceTest()
         {
-            void doFunc(int loop)
+            var text = "Log(x1)/Exp(2+x1)^x2";
+
+            void doNomal(int loop)
             {
                 var random = new Random();
-                var formula = Formula.Parse("Log(x1)/Exp(2+x1)^x2").Derive("x1").Simplify();
+                var func = (double x1, double x2) => Math.Log(x1) / Math.Pow(Math.Exp(2 + x1), x2);
+                for (var i = 0; i < loop; i++)
+                {
+                    var value = func(random.NextDouble(), random.NextDouble());
+                }
+            }
+
+            void doIl(int loop)
+            {
+                var random = new Random();
+                var formula = Formula.Parse(text).Derive("x1").Simplify();
                 var func = formula.ToFunc();
                 for (var i = 0; i < loop; i++)
                 {
-                    var value = func(new[] { random.NextDouble(), random.NextDouble() });
+                    var value = func(random.NextDouble(), random.NextDouble());
                 }
             }
 
             void doNoname(int loop)
             {
                 var random = new Random();
-                var formula = Formula.Parse("Log(x1)/Exp(2+x1)^x2").Derive("x1").Simplify();
+                var formula = Formula.Parse(text).Derive("x1").Simplify();
+
                 for (var i = 0; i < loop; i++)
                 {
                     var value = formula.Eval(new { x1 = random.NextDouble(), x2 = random.NextDouble() });
@@ -56,17 +76,15 @@ namespace MathTools.Algebra.Tests
             void doDict(int loop)
             {
                 var random = new Random();
-                var formula = Formula.Parse("Log(x1)/Exp(2+x1)^x2").Derive("x1").Simplify();
-                var dict = new Dictionary<string, double>
-                {
-                    {"x1", 0.0 },
-                    {"x2", 0.0 },
-                };
+                var formula = Formula.Parse(text).Derive("x1").Simplify();
 
                 for (var i = 0; i < loop; i++)
                 {
-                    dict["x1"] = random.NextDouble();
-                    dict["x2"] = random.NextDouble();
+                    var dict = new Dictionary<string, double>
+                    {
+                        {"x1", random.NextDouble() },
+                        {"x2", random.NextDouble() },
+                    };
                     var value = formula.Eval(dict);
                 }
             }
@@ -74,7 +92,7 @@ namespace MathTools.Algebra.Tests
             void doParams(int loop)
             {
                 var random = new Random();
-                var formula = Formula.Parse("Log(x1)/Exp(2+x1)^x2").Derive("x1").Simplify();
+                var formula = Formula.Parse(text).Derive("x1").Simplify();
 
                 for (var i = 0; i < loop; i++)
                 {
@@ -86,8 +104,11 @@ namespace MathTools.Algebra.Tests
             {
                 switch (method)
                 {
-                    case "func":
-                        doFunc(loop);
+                    case "normal":
+                        doNomal(loop);
+                        break;
+                    case "il":
+                        doIl(loop);
                         break;
                     case "params":
                         doParams(loop);
@@ -102,16 +123,26 @@ namespace MathTools.Algebra.Tests
             }
 
             var watch = new Stopwatch();
-            var loops = new[] { 1, 10, 100, 1000, 10000, 100000, /*1000000*/ };
-            var methods = new[] { "noname", "dict", "params", "func" };
+#if DEBUG
+            var loops = new[] { 1, 10, 100, 1000, 10000, 100000 };
+#else
+            var loops = new[] { 1, 10, 100, 1000, 10000, 100000, 1000000 };
+#endif
+            var methods = new[] {"normal", "noname", "dict", "params", "il" };
 
             var results = new Dictionary<(string, int), double>();
 
             foreach (var method in methods)
             {
                 // first time is slow
-                // dummy
+                watch.Restart();
                 doMethod(method, 1);
+                watch.Stop();
+                results.Add((method, 0), watch.ElapsedMilliseconds);
+            }
+
+            foreach (var method in methods)
+            {
                 foreach (var loop in loops)
                 {
                     watch.Restart();
@@ -122,7 +153,7 @@ namespace MathTools.Algebra.Tests
             }
 
             Console.WriteLine($"method,loop,msec");
-            foreach (var (key,value) in results)
+            foreach (var (key, value) in results)
             {
                 Console.WriteLine($"{key.Item1},{key.Item2},{value}");
             }

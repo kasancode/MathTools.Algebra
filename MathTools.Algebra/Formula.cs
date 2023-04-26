@@ -263,6 +263,12 @@ namespace MathTools.Algebra
                 }
             }
 
+            if (parent > 0)
+                throw new FormulaException("Syntax error. Missing ')'.");
+
+            if (parent < 0)
+                throw new FormulaException("Syntax error. Too many ')'.");
+
             if (opPosition < 0)
             {
                 // not operator
@@ -760,8 +766,11 @@ namespace MathTools.Algebra
 
         static bool INumberBase<Formula>.TryConvertToTruncating<TOther>(Formula value, [MaybeNullWhen(false)] out TOther result) => TryConvertTo(value, out result);
 
+        /// <inheritdoc cref="IAdditionOperators{TSelf, TOther, TResult}.op_Addition(TSelf, TOther)" />
         public static Formula operator +(Formula left, Formula right) => new Sum(new List<Formula> { left, right }, new List<bool> { true, true });
+        /// <inheritdoc cref="IAdditionOperators{TSelf, TOther, TResult}.op_Addition(TSelf, TOther)" />
         public static Formula operator +(double left, Formula right) => new Sum(new List<Formula> { new Constant(left), right }, new List<bool> { true, true });
+        /// <inheritdoc cref="IAdditionOperators{TSelf, TOther, TResult}.op_Addition(TSelf, TOther)" />
         public static Formula operator +(Formula left, double right) => new Sum(new List<Formula> { left, new Constant(right) }, new List<bool> { true, true });
 
         public static Formula operator -(Formula left, Formula right) => new Sum(new List<Formula> { left, right }, new List<bool> { true, false });
