@@ -4,11 +4,404 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Constant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Constant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Formula.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Formula.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.FormulaCompiler.EvalFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.FormulaCompiler.EvalFunc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.FormulaCompiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.FormulaCompiler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.FormulaException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.FormulaException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Abs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Abs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Acos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Acos.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Acosh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Acosh.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Asin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Asin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Asinh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Asinh.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Atan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Atan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Atanh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Atanh.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Ceiling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Ceiling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Cos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Cos.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Cosh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Cosh.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Exp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Exp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Floor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Floor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.If.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.If.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Log.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Log.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Log10.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Log10.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Max.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Max.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.MaxMagnitude.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.MaxMagnitude.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Min.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Min.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.MinMagnitude.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.MinMagnitude.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Mod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Mod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Parenthesis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Parenthesis.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Pow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Pow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Product.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Product.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Sin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Sin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Sinh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Sinh.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Sqrt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Sqrt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Sum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Sum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Tan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Tan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Tanh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Tanh.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.UnresolvedResultException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.UnresolvedResultException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Variable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Variable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
