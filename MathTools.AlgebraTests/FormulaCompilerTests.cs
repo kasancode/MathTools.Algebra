@@ -62,7 +62,7 @@ namespace MathTools.Algebra.Tests
                 }
             }
 
-            void doNoname(int loop)
+            void doAnony(int loop)
             {
                 var random = new Random();
                 var formula = Formula.Parse(text).Derive("x1").Simplify();
@@ -113,8 +113,8 @@ namespace MathTools.Algebra.Tests
                     case "params":
                         doParams(loop);
                         break;
-                    case "noname":
-                        doNoname(loop);
+                    case "anony":
+                        doAnony(loop);
                         break;
                     case "dict":
                         doDict(loop);
@@ -128,7 +128,7 @@ namespace MathTools.Algebra.Tests
 #else
             var loops = new[] { 1, 10, 100, 1000, 10000, 100000, 1000000 };
 #endif
-            var methods = new[] {"normal", "noname", "dict", "params", "il" };
+            var methods = new[] {"normal", "anony", "dict", "params", "il" };
 
             var results = new Dictionary<(string, int), double>();
 

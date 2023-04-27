@@ -1,6 +1,7 @@
 # MathTools.Algebra
 [![.NET](https://github.com/kasancode/MathTools.Algebra/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kasancode/MathTools.Algebra/actions/workflows/dotnet.yml)
 
+[Documents](https://kasancode.github.io/MathTools.Algebra/)
 
 Example : 
 
