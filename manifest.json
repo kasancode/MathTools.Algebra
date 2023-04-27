@@ -417,6 +417,19 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/performance.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/performance.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
@@ -425,6 +438,16 @@
         },
         ".json": {
           "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/performance.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/performance.png"
         }
       },
       "version": ""

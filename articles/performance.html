@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Introductions </title>
+      <title>Eval() performance </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Introductions ">
+      <meta name="title" content="Eval() performance ">
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.min.css">
@@ -13,7 +13,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       
-      <meta name="docfx:docurl" content="https://github.com/kasancode/MathTools.Algebra/blob/release/v1.0/docfx/articles/intro.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/kasancode/MathTools.Algebra/blob/release/v1.0/docfx/articles/performance.md/#L1">
 
       <script>
         MathJax = {
@@ -69,12 +69,32 @@
         </div>
 
         <article data-uid="">
-<h1 id="introductions">Introductions</h1>
+<h1 id="eval-performance">Eval() performance</h1>
 
+<pre><code class="lang-c#">var formula = Formula.Parse(&quot;Log(x1)/Exp(2+x1)^x2&quot;);
+
+// Dictionary : Use Dictionary&lt;string, double&gt; for argumetns.
+var dictValue = formula.Eval(new Dictionary&lt;string, double&gt;
+{
+    {&quot;x1&quot;, 0.1 },
+    {&quot;x2&quot;, 0.2 },
+});
+
+// Anonymous class : Use anonymous class for arguments.
+var anonyValue = formula.Eval(new { x1 = 0.1, x2 = 0.2 })
+
+// params: Arguments order is depend on Formula.GetVariables();
+var pramsValue = formula.Eval(0.1, 0.2);
+
+// ToFunc() : Emit IL code for calculation.
+var func = formula.ToFunc();
+var toFuncValue = func(0.1, 0.2);
+</code></pre>
+<p><img src="..%5Cimages%5Cperformance.png" alt="performance"></p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/kasancode/MathTools.Algebra/blob/release/v1.0/docfx/articles/intro.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/kasancode/MathTools.Algebra/blob/release/v1.0/docfx/articles/performance.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
