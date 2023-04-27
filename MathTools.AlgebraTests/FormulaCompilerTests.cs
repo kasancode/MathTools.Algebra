@@ -132,18 +132,9 @@ namespace MathTools.Algebra.Tests
 
             var results = new Dictionary<(string, int), double>();
 
-            foreach (var method in methods)
+            foreach (var loop in loops)
             {
-                // first time is slow
-                watch.Restart();
-                doMethod(method, 1);
-                watch.Stop();
-                results.Add((method, 0), watch.ElapsedMilliseconds);
-            }
-
-            foreach (var method in methods)
-            {
-                foreach (var loop in loops)
+                foreach (var method in methods)
                 {
                     watch.Restart();
                     doMethod(method, loop);

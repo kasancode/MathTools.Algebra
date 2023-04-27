@@ -19,9 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Function.tt">
+    <None Update="FunctionMap.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Function.cs</LastGenOutput>
+      <LastGenOutput>FunctionMap.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
@@ -30,10 +30,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Function.cs">
+    <Compile Update="FunctionMap.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Function.tt</DependentUpon>
+      <DependentUpon>FunctionMap.tt</DependentUpon>
     </Compile>
   </ItemGroup>
 
