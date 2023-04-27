@@ -25,4 +25,16 @@ var toFuncValue = func(0.1, 0.2);
 
 
 
-![performance](..\images\performance.png)
+Number of loops and execution time (msec) are :
+
+| Loop    | Dictionary | Anonymous Class | Params | ToFunc | C# code |
+| ------- | ---------- | --------------- | ------ | ------ | :-----: |
+| 1       | 0          | 0               | 2      | 5      |    0    |
+| 10      | 0          | 0               | 0      | 1      |    0    |
+| 100     | 0          | 0               | 0      | 0      |    0    |
+| 1000    | 0          | 1               | 10     | 0      |    0    |
+| 10000   | 10         | 18              | 76     | 2      |    0    |
+| 100000  | 85         | 150             | 451    | 17     |    6    |
+| 1000000 | 463        | 665             | 2830   | 148    |   63    |
+
+![performance](../images/performance.png)
