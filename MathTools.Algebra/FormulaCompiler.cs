@@ -22,8 +22,9 @@ namespace MathTools.Algebra
                     var index = variables.IndexOf(v.Name);
                     if (index < 0)
                         throw new FormulaException("Compilation Error. Could not find variable.");
-
-                    generator.Emit(OpCodes.Ldarg, index);
+                    generator.Emit(OpCodes.Ldarg_0);
+                    generator.Emit(OpCodes.Ldc_I4, index);
+                    generator.Emit(OpCodes.Ldelem_R8);
                     break;
 
                 case Sum sum:
@@ -125,7 +126,7 @@ namespace MathTools.Algebra
 
             var method = typeBuilder.DefineMethod(MethodName, MethodAttributes.Public | MethodAttributes.Static,
                 typeof(double),
-                variables.Select(_ => typeof(double)).ToArray());
+                new[] { typeof(double[]) });
             var generator = method.GetILGenerator();
             Emit(generator, formula, variables);
             generator.Emit(OpCodes.Ret);
@@ -144,11 +145,7 @@ namespace MathTools.Algebra
             if (method is null)
                 throw new FormulaException("Compilation Error. Could not get method.");
 
-            return delegate (double[] vars)
-            {
-                var result = method.Invoke(null, vars.Select(v => (object)v).ToArray());
-                return result is null ? throw new FormulaException("Eval result is null.") : (double)result;
-            };
+            return (EvalFunc)Delegate.CreateDelegate(typeof(EvalFunc), method);
         }
     }
 }
