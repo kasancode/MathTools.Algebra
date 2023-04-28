@@ -29,10 +29,10 @@ namespace MathTools.Algebra.Functions.Tests
             var error = 1e-10;
 
             var formula = Formula.Parse("SIN(3.4)/3.8");
-            Assert.AreEqual(0, formula.EvalDerivative(null), error);
+            Assert.AreEqual(0, formula.EvalDerivative(""), error);
 
             formula = Formula.Parse("3.4/SIN(3.8+1.9)");
-            Assert.AreEqual(0, formula.EvalDerivative(null), error);
+            Assert.AreEqual(0, formula.EvalDerivative(""), error);
 
             formula = Formula.Parse("x^4*sin(x)");
 

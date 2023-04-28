@@ -29,10 +29,10 @@ namespace MathTools.Algebra.Functions.Tests
             var error = 1e-6;
 
             var formula = Formula.Parse("log10(0.4)/3.8");
-            Assert.AreEqual(0, formula.EvalDerivative(null), error);
+            Assert.AreEqual(0, formula.EvalDerivative(""), error);
 
             formula = Formula.Parse("3.4/log10(0.8)");
-            Assert.AreEqual(0, formula.EvalDerivative(null), error);
+            Assert.AreEqual(0, formula.EvalDerivative(""), error);
 
             formula = Formula.Parse("x^4*log10(x)");
 

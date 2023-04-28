@@ -20,8 +20,6 @@ namespace MathTools.Algebra.Functions.Tests
         [TestMethod()]
         public void ToStringTest()
         {
-            var error = 1e-10;
-
             {
                 var formula = Formula.Parse("x^-2");
                 Assert.AreEqual("x^-2", formula.ToString());

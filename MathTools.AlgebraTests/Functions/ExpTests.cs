@@ -30,10 +30,10 @@ namespace MathTools.Algebra.Functions.Tests
             var vars = new Dictionary<string, double> { { "x", 0.2 } };
 
             var formula = Formula.Parse("exp(0.4)/3.8");
-            Assert.AreEqual(0, formula.EvalDerivative(null), error);
+            Assert.AreEqual(0, formula.EvalDerivative(""), error);
 
             formula = Formula.Parse("3.4/exp(0.8)");
-            Assert.AreEqual(0, formula.EvalDerivative(null), error);
+            Assert.AreEqual(0, formula.EvalDerivative(""), error);
 
             formula = Formula.Parse("x^4*exp(x)");
 

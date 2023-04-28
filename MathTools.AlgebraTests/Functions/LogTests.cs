@@ -42,11 +42,11 @@ namespace MathTools.Algebra.Functions.Tests
 
             {
                 var formula = Formula.Parse("log(0.4)/3.8");
-                Assert.AreEqual(0, formula.EvalDerivative(null), error);
+                Assert.AreEqual(0, formula.EvalDerivative(""), error);
             }
             {
                 var formula = Formula.Log(0.4) / 3.8;
-                Assert.AreEqual(0, formula.EvalDerivative(null), error);
+                Assert.AreEqual(0, formula.EvalDerivative(""), error);
             }
             {
                 var formula = Formula.Parse("x^4*log(x)");
@@ -54,7 +54,7 @@ namespace MathTools.Algebra.Functions.Tests
             }
             {
                 var formula = 3.4 / Formula.Log(0.8);
-                Assert.AreEqual(0, formula.EvalDerivative(null), error);
+                Assert.AreEqual(0, formula.EvalDerivative(""), error);
             }
 
         }
