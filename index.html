@@ -13,7 +13,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       
-      <meta name="docfx:docurl" content="https://github.com/kasancode/MathTools.Algebra/blob/release/v1.0/docfx/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/kasancode/MathTools.Algebra/blob/main/docfx/index.md/#L1">
 
       <script>
         MathJax = {
@@ -79,6 +79,13 @@ var derivative = formula.Derive(&quot;x&quot;).Simplify();
 var text = derivative.ToString(); // 4*x^3*Exp(x)+x^4*Exp(x)
 var derivedValue = derivative.Eval(new { x = 0.2 });
 </code></pre>
+<pre><code class="lang-c#">var formula = Formula.Pow(&quot;x&quot;, 4) * Formula.Exp(&quot;x&quot;);
+var value = formula.Eval(new { x = 0.2 });
+
+var derivative = formula.Derive(&quot;x&quot;).Simplify();
+var text = derivative.ToString(); // 4*x^3*Exp(x)+x^4*Exp(x)
+var derivedValue = derivative.Eval(new { x = 0.2 });
+</code></pre>
 <pre><code class="lang-c#">var x = new Variable(&quot;x&quot;);
 var formula = Formula.Pow(x, 4) * Formula.Exp(x);
 var value = formula.Eval(new { x = 0.2 });
@@ -90,7 +97,7 @@ var derivedValue = derivative.Eval(new { x = 0.2 });
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/kasancode/MathTools.Algebra/blob/release/v1.0/docfx/index.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/kasancode/MathTools.Algebra/blob/main/docfx/index.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

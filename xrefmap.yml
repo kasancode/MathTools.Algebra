@@ -178,6 +178,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Abs(Double)
   nameWithType: Formula.Abs(double)
   nameWithType.vb: Formula.Abs(Double)
+- uid: MathTools.Algebra.Formula.Abs(System.String)
+  name: Abs(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Abs_System_String_
+  commentId: M:MathTools.Algebra.Formula.Abs(System.String)
+  name.vb: Abs(String)
+  fullName: MathTools.Algebra.Formula.Abs(string)
+  fullName.vb: MathTools.Algebra.Formula.Abs(String)
+  nameWithType: Formula.Abs(string)
+  nameWithType.vb: Formula.Abs(String)
 - uid: MathTools.Algebra.Formula.Abs*
   name: Abs
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Abs_
@@ -199,6 +208,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Acos(Double)
   nameWithType: Formula.Acos(double)
   nameWithType.vb: Formula.Acos(Double)
+- uid: MathTools.Algebra.Formula.Acos(System.String)
+  name: Acos(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Acos_System_String_
+  commentId: M:MathTools.Algebra.Formula.Acos(System.String)
+  name.vb: Acos(String)
+  fullName: MathTools.Algebra.Formula.Acos(string)
+  fullName.vb: MathTools.Algebra.Formula.Acos(String)
+  nameWithType: Formula.Acos(string)
+  nameWithType.vb: Formula.Acos(String)
 - uid: MathTools.Algebra.Formula.Acos*
   name: Acos
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Acos_
@@ -220,6 +238,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Acosh(Double)
   nameWithType: Formula.Acosh(double)
   nameWithType.vb: Formula.Acosh(Double)
+- uid: MathTools.Algebra.Formula.Acosh(System.String)
+  name: Acosh(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Acosh_System_String_
+  commentId: M:MathTools.Algebra.Formula.Acosh(System.String)
+  name.vb: Acosh(String)
+  fullName: MathTools.Algebra.Formula.Acosh(string)
+  fullName.vb: MathTools.Algebra.Formula.Acosh(String)
+  nameWithType: Formula.Acosh(string)
+  nameWithType.vb: Formula.Acosh(String)
 - uid: MathTools.Algebra.Formula.Acosh*
   name: Acosh
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Acosh_
@@ -241,6 +268,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Asin(Double)
   nameWithType: Formula.Asin(double)
   nameWithType.vb: Formula.Asin(Double)
+- uid: MathTools.Algebra.Formula.Asin(System.String)
+  name: Asin(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Asin_System_String_
+  commentId: M:MathTools.Algebra.Formula.Asin(System.String)
+  name.vb: Asin(String)
+  fullName: MathTools.Algebra.Formula.Asin(string)
+  fullName.vb: MathTools.Algebra.Formula.Asin(String)
+  nameWithType: Formula.Asin(string)
+  nameWithType.vb: Formula.Asin(String)
 - uid: MathTools.Algebra.Formula.Asin*
   name: Asin
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Asin_
@@ -262,6 +298,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Asinh(Double)
   nameWithType: Formula.Asinh(double)
   nameWithType.vb: Formula.Asinh(Double)
+- uid: MathTools.Algebra.Formula.Asinh(System.String)
+  name: Asinh(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Asinh_System_String_
+  commentId: M:MathTools.Algebra.Formula.Asinh(System.String)
+  name.vb: Asinh(String)
+  fullName: MathTools.Algebra.Formula.Asinh(string)
+  fullName.vb: MathTools.Algebra.Formula.Asinh(String)
+  nameWithType: Formula.Asinh(string)
+  nameWithType.vb: Formula.Asinh(String)
 - uid: MathTools.Algebra.Formula.Asinh*
   name: Asinh
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Asinh_
@@ -283,6 +328,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Atan(Double)
   nameWithType: Formula.Atan(double)
   nameWithType.vb: Formula.Atan(Double)
+- uid: MathTools.Algebra.Formula.Atan(System.String)
+  name: Atan(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Atan_System_String_
+  commentId: M:MathTools.Algebra.Formula.Atan(System.String)
+  name.vb: Atan(String)
+  fullName: MathTools.Algebra.Formula.Atan(string)
+  fullName.vb: MathTools.Algebra.Formula.Atan(String)
+  nameWithType: Formula.Atan(string)
+  nameWithType.vb: Formula.Atan(String)
 - uid: MathTools.Algebra.Formula.Atan*
   name: Atan
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Atan_
@@ -304,6 +358,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Atanh(Double)
   nameWithType: Formula.Atanh(double)
   nameWithType.vb: Formula.Atanh(Double)
+- uid: MathTools.Algebra.Formula.Atanh(System.String)
+  name: Atanh(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Atanh_System_String_
+  commentId: M:MathTools.Algebra.Formula.Atanh(System.String)
+  name.vb: Atanh(String)
+  fullName: MathTools.Algebra.Formula.Atanh(string)
+  fullName.vb: MathTools.Algebra.Formula.Atanh(String)
+  nameWithType: Formula.Atanh(string)
+  nameWithType.vb: Formula.Atanh(String)
 - uid: MathTools.Algebra.Formula.Atanh*
   name: Atanh
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Atanh_
@@ -325,6 +388,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Ceiling(Double)
   nameWithType: Formula.Ceiling(double)
   nameWithType.vb: Formula.Ceiling(Double)
+- uid: MathTools.Algebra.Formula.Ceiling(System.String)
+  name: Ceiling(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Ceiling_System_String_
+  commentId: M:MathTools.Algebra.Formula.Ceiling(System.String)
+  name.vb: Ceiling(String)
+  fullName: MathTools.Algebra.Formula.Ceiling(string)
+  fullName.vb: MathTools.Algebra.Formula.Ceiling(String)
+  nameWithType: Formula.Ceiling(string)
+  nameWithType.vb: Formula.Ceiling(String)
 - uid: MathTools.Algebra.Formula.Ceiling*
   name: Ceiling
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Ceiling_
@@ -370,6 +442,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Cos(Double)
   nameWithType: Formula.Cos(double)
   nameWithType.vb: Formula.Cos(Double)
+- uid: MathTools.Algebra.Formula.Cos(System.String)
+  name: Cos(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Cos_System_String_
+  commentId: M:MathTools.Algebra.Formula.Cos(System.String)
+  name.vb: Cos(String)
+  fullName: MathTools.Algebra.Formula.Cos(string)
+  fullName.vb: MathTools.Algebra.Formula.Cos(String)
+  nameWithType: Formula.Cos(string)
+  nameWithType.vb: Formula.Cos(String)
 - uid: MathTools.Algebra.Formula.Cos*
   name: Cos
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Cos_
@@ -391,6 +472,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Cosh(Double)
   nameWithType: Formula.Cosh(double)
   nameWithType.vb: Formula.Cosh(Double)
+- uid: MathTools.Algebra.Formula.Cosh(System.String)
+  name: Cosh(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Cosh_System_String_
+  commentId: M:MathTools.Algebra.Formula.Cosh(System.String)
+  name.vb: Cosh(String)
+  fullName: MathTools.Algebra.Formula.Cosh(string)
+  fullName.vb: MathTools.Algebra.Formula.Cosh(String)
+  nameWithType: Formula.Cosh(string)
+  nameWithType.vb: Formula.Cosh(String)
 - uid: MathTools.Algebra.Formula.Cosh*
   name: Cosh
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Cosh_
@@ -535,6 +625,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Exp(Double)
   nameWithType: Formula.Exp(double)
   nameWithType.vb: Formula.Exp(Double)
+- uid: MathTools.Algebra.Formula.Exp(System.String)
+  name: Exp(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Exp_System_String_
+  commentId: M:MathTools.Algebra.Formula.Exp(System.String)
+  name.vb: Exp(String)
+  fullName: MathTools.Algebra.Formula.Exp(string)
+  fullName.vb: MathTools.Algebra.Formula.Exp(String)
+  nameWithType: Formula.Exp(string)
+  nameWithType.vb: Formula.Exp(String)
 - uid: MathTools.Algebra.Formula.Exp*
   name: Exp
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Exp_
@@ -556,6 +655,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Floor(Double)
   nameWithType: Formula.Floor(double)
   nameWithType.vb: Formula.Floor(Double)
+- uid: MathTools.Algebra.Formula.Floor(System.String)
+  name: Floor(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Floor_System_String_
+  commentId: M:MathTools.Algebra.Formula.Floor(System.String)
+  name.vb: Floor(String)
+  fullName: MathTools.Algebra.Formula.Floor(string)
+  fullName.vb: MathTools.Algebra.Formula.Floor(String)
+  nameWithType: Formula.Floor(string)
+  nameWithType.vb: Formula.Floor(String)
 - uid: MathTools.Algebra.Formula.Floor*
   name: Floor
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Floor_
@@ -613,6 +721,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, MathTools.Algebra.Formula, Double)
   nameWithType: Formula.If(Formula, Formula, double)
   nameWithType.vb: Formula.If(Formula, Formula, Double)
+- uid: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula,MathTools.Algebra.Formula,System.String)
+  name: If(Formula, Formula, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_MathTools_Algebra_Formula_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Formula.If(MathTools.Algebra.Formula,MathTools.Algebra.Formula,System.String)
+  name.vb: If(Formula, Formula, String)
+  fullName: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, MathTools.Algebra.Formula, String)
+  nameWithType: Formula.If(Formula, Formula, string)
+  nameWithType.vb: Formula.If(Formula, Formula, String)
 - uid: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula,System.Double,MathTools.Algebra.Formula)
   name: If(Formula, double, Formula)
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_MathTools_Algebra_Formula_System_Double_MathTools_Algebra_Formula_
@@ -631,6 +748,42 @@ references:
   fullName.vb: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, Double, Double)
   nameWithType: Formula.If(Formula, double, double)
   nameWithType.vb: Formula.If(Formula, Double, Double)
+- uid: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula,System.Double,System.String)
+  name: If(Formula, double, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_MathTools_Algebra_Formula_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Formula.If(MathTools.Algebra.Formula,System.Double,System.String)
+  name.vb: If(Formula, Double, String)
+  fullName: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, double, string)
+  fullName.vb: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, Double, String)
+  nameWithType: Formula.If(Formula, double, string)
+  nameWithType.vb: Formula.If(Formula, Double, String)
+- uid: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula,System.String,MathTools.Algebra.Formula)
+  name: If(Formula, string, Formula)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_MathTools_Algebra_Formula_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Formula.If(MathTools.Algebra.Formula,System.String,MathTools.Algebra.Formula)
+  name.vb: If(Formula, String, Formula)
+  fullName: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, String, MathTools.Algebra.Formula)
+  nameWithType: Formula.If(Formula, string, Formula)
+  nameWithType.vb: Formula.If(Formula, String, Formula)
+- uid: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula,System.String,System.Double)
+  name: If(Formula, string, double)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_MathTools_Algebra_Formula_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Formula.If(MathTools.Algebra.Formula,System.String,System.Double)
+  name.vb: If(Formula, String, Double)
+  fullName: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, string, double)
+  fullName.vb: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, String, Double)
+  nameWithType: Formula.If(Formula, string, double)
+  nameWithType.vb: Formula.If(Formula, String, Double)
+- uid: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula,System.String,System.String)
+  name: If(Formula, string, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_MathTools_Algebra_Formula_System_String_System_String_
+  commentId: M:MathTools.Algebra.Formula.If(MathTools.Algebra.Formula,System.String,System.String)
+  name.vb: If(Formula, String, String)
+  fullName: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, string, string)
+  fullName.vb: MathTools.Algebra.Formula.If(MathTools.Algebra.Formula, String, String)
+  nameWithType: Formula.If(Formula, string, string)
+  nameWithType.vb: Formula.If(Formula, String, String)
 - uid: MathTools.Algebra.Formula.If(System.Double,MathTools.Algebra.Formula,MathTools.Algebra.Formula)
   name: If(double, Formula, Formula)
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_Double_MathTools_Algebra_Formula_MathTools_Algebra_Formula_
@@ -649,6 +802,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.If(Double, MathTools.Algebra.Formula, Double)
   nameWithType: Formula.If(double, Formula, double)
   nameWithType.vb: Formula.If(Double, Formula, Double)
+- uid: MathTools.Algebra.Formula.If(System.Double,MathTools.Algebra.Formula,System.String)
+  name: If(double, Formula, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_Double_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Formula.If(System.Double,MathTools.Algebra.Formula,System.String)
+  name.vb: If(Double, Formula, String)
+  fullName: MathTools.Algebra.Formula.If(double, MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Formula.If(Double, MathTools.Algebra.Formula, String)
+  nameWithType: Formula.If(double, Formula, string)
+  nameWithType.vb: Formula.If(Double, Formula, String)
 - uid: MathTools.Algebra.Formula.If(System.Double,System.Double,MathTools.Algebra.Formula)
   name: If(double, double, Formula)
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_Double_System_Double_MathTools_Algebra_Formula_
@@ -667,6 +829,123 @@ references:
   fullName.vb: MathTools.Algebra.Formula.If(Double, Double, Double)
   nameWithType: Formula.If(double, double, double)
   nameWithType.vb: Formula.If(Double, Double, Double)
+- uid: MathTools.Algebra.Formula.If(System.Double,System.Double,System.String)
+  name: If(double, double, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_Double_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Formula.If(System.Double,System.Double,System.String)
+  name.vb: If(Double, Double, String)
+  fullName: MathTools.Algebra.Formula.If(double, double, string)
+  fullName.vb: MathTools.Algebra.Formula.If(Double, Double, String)
+  nameWithType: Formula.If(double, double, string)
+  nameWithType.vb: Formula.If(Double, Double, String)
+- uid: MathTools.Algebra.Formula.If(System.Double,System.String,MathTools.Algebra.Formula)
+  name: If(double, string, Formula)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_Double_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Formula.If(System.Double,System.String,MathTools.Algebra.Formula)
+  name.vb: If(Double, String, Formula)
+  fullName: MathTools.Algebra.Formula.If(double, string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Formula.If(Double, String, MathTools.Algebra.Formula)
+  nameWithType: Formula.If(double, string, Formula)
+  nameWithType.vb: Formula.If(Double, String, Formula)
+- uid: MathTools.Algebra.Formula.If(System.Double,System.String,System.Double)
+  name: If(double, string, double)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_Double_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Formula.If(System.Double,System.String,System.Double)
+  name.vb: If(Double, String, Double)
+  fullName: MathTools.Algebra.Formula.If(double, string, double)
+  fullName.vb: MathTools.Algebra.Formula.If(Double, String, Double)
+  nameWithType: Formula.If(double, string, double)
+  nameWithType.vb: Formula.If(Double, String, Double)
+- uid: MathTools.Algebra.Formula.If(System.Double,System.String,System.String)
+  name: If(double, string, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_Double_System_String_System_String_
+  commentId: M:MathTools.Algebra.Formula.If(System.Double,System.String,System.String)
+  name.vb: If(Double, String, String)
+  fullName: MathTools.Algebra.Formula.If(double, string, string)
+  fullName.vb: MathTools.Algebra.Formula.If(Double, String, String)
+  nameWithType: Formula.If(double, string, string)
+  nameWithType.vb: Formula.If(Double, String, String)
+- uid: MathTools.Algebra.Formula.If(System.String,MathTools.Algebra.Formula,MathTools.Algebra.Formula)
+  name: If(string, Formula, Formula)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_String_MathTools_Algebra_Formula_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Formula.If(System.String,MathTools.Algebra.Formula,MathTools.Algebra.Formula)
+  name.vb: If(String, Formula, Formula)
+  fullName: MathTools.Algebra.Formula.If(string, MathTools.Algebra.Formula, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Formula.If(String, MathTools.Algebra.Formula, MathTools.Algebra.Formula)
+  nameWithType: Formula.If(string, Formula, Formula)
+  nameWithType.vb: Formula.If(String, Formula, Formula)
+- uid: MathTools.Algebra.Formula.If(System.String,MathTools.Algebra.Formula,System.Double)
+  name: If(string, Formula, double)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_String_MathTools_Algebra_Formula_System_Double_
+  commentId: M:MathTools.Algebra.Formula.If(System.String,MathTools.Algebra.Formula,System.Double)
+  name.vb: If(String, Formula, Double)
+  fullName: MathTools.Algebra.Formula.If(string, MathTools.Algebra.Formula, double)
+  fullName.vb: MathTools.Algebra.Formula.If(String, MathTools.Algebra.Formula, Double)
+  nameWithType: Formula.If(string, Formula, double)
+  nameWithType.vb: Formula.If(String, Formula, Double)
+- uid: MathTools.Algebra.Formula.If(System.String,MathTools.Algebra.Formula,System.String)
+  name: If(string, Formula, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_String_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Formula.If(System.String,MathTools.Algebra.Formula,System.String)
+  name.vb: If(String, Formula, String)
+  fullName: MathTools.Algebra.Formula.If(string, MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Formula.If(String, MathTools.Algebra.Formula, String)
+  nameWithType: Formula.If(string, Formula, string)
+  nameWithType.vb: Formula.If(String, Formula, String)
+- uid: MathTools.Algebra.Formula.If(System.String,System.Double,MathTools.Algebra.Formula)
+  name: If(string, double, Formula)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_String_System_Double_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Formula.If(System.String,System.Double,MathTools.Algebra.Formula)
+  name.vb: If(String, Double, Formula)
+  fullName: MathTools.Algebra.Formula.If(string, double, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Formula.If(String, Double, MathTools.Algebra.Formula)
+  nameWithType: Formula.If(string, double, Formula)
+  nameWithType.vb: Formula.If(String, Double, Formula)
+- uid: MathTools.Algebra.Formula.If(System.String,System.Double,System.Double)
+  name: If(string, double, double)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_String_System_Double_System_Double_
+  commentId: M:MathTools.Algebra.Formula.If(System.String,System.Double,System.Double)
+  name.vb: If(String, Double, Double)
+  fullName: MathTools.Algebra.Formula.If(string, double, double)
+  fullName.vb: MathTools.Algebra.Formula.If(String, Double, Double)
+  nameWithType: Formula.If(string, double, double)
+  nameWithType.vb: Formula.If(String, Double, Double)
+- uid: MathTools.Algebra.Formula.If(System.String,System.Double,System.String)
+  name: If(string, double, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_String_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Formula.If(System.String,System.Double,System.String)
+  name.vb: If(String, Double, String)
+  fullName: MathTools.Algebra.Formula.If(string, double, string)
+  fullName.vb: MathTools.Algebra.Formula.If(String, Double, String)
+  nameWithType: Formula.If(string, double, string)
+  nameWithType.vb: Formula.If(String, Double, String)
+- uid: MathTools.Algebra.Formula.If(System.String,System.String,MathTools.Algebra.Formula)
+  name: If(string, string, Formula)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_String_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Formula.If(System.String,System.String,MathTools.Algebra.Formula)
+  name.vb: If(String, String, Formula)
+  fullName: MathTools.Algebra.Formula.If(string, string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Formula.If(String, String, MathTools.Algebra.Formula)
+  nameWithType: Formula.If(string, string, Formula)
+  nameWithType.vb: Formula.If(String, String, Formula)
+- uid: MathTools.Algebra.Formula.If(System.String,System.String,System.Double)
+  name: If(string, string, double)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_String_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Formula.If(System.String,System.String,System.Double)
+  name.vb: If(String, String, Double)
+  fullName: MathTools.Algebra.Formula.If(string, string, double)
+  fullName.vb: MathTools.Algebra.Formula.If(String, String, Double)
+  nameWithType: Formula.If(string, string, double)
+  nameWithType.vb: Formula.If(String, String, Double)
+- uid: MathTools.Algebra.Formula.If(System.String,System.String,System.String)
+  name: If(string, string, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_System_String_System_String_System_String_
+  commentId: M:MathTools.Algebra.Formula.If(System.String,System.String,System.String)
+  name.vb: If(String, String, String)
+  fullName: MathTools.Algebra.Formula.If(string, string, string)
+  fullName.vb: MathTools.Algebra.Formula.If(String, String, String)
+  nameWithType: Formula.If(string, string, string)
+  nameWithType.vb: Formula.If(String, String, String)
 - uid: MathTools.Algebra.Formula.If*
   name: If
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_If_
@@ -832,6 +1111,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Log(Double)
   nameWithType: Formula.Log(double)
   nameWithType.vb: Formula.Log(Double)
+- uid: MathTools.Algebra.Formula.Log(System.String)
+  name: Log(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Log_System_String_
+  commentId: M:MathTools.Algebra.Formula.Log(System.String)
+  name.vb: Log(String)
+  fullName: MathTools.Algebra.Formula.Log(string)
+  fullName.vb: MathTools.Algebra.Formula.Log(String)
+  nameWithType: Formula.Log(string)
+  nameWithType.vb: Formula.Log(String)
 - uid: MathTools.Algebra.Formula.Log*
   name: Log
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Log_
@@ -853,6 +1141,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Log10(Double)
   nameWithType: Formula.Log10(double)
   nameWithType.vb: Formula.Log10(Double)
+- uid: MathTools.Algebra.Formula.Log10(System.String)
+  name: Log10(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Log10_System_String_
+  commentId: M:MathTools.Algebra.Formula.Log10(System.String)
+  name.vb: Log10(String)
+  fullName: MathTools.Algebra.Formula.Log10(string)
+  fullName.vb: MathTools.Algebra.Formula.Log10(String)
+  nameWithType: Formula.Log10(string)
+  nameWithType.vb: Formula.Log10(String)
 - uid: MathTools.Algebra.Formula.Log10*
   name: Log10
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Log10_
@@ -874,6 +1171,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Max(MathTools.Algebra.Formula, Double)
   nameWithType: Formula.Max(Formula, double)
   nameWithType.vb: Formula.Max(Formula, Double)
+- uid: MathTools.Algebra.Formula.Max(MathTools.Algebra.Formula,System.String)
+  name: Max(Formula, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Max_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Formula.Max(MathTools.Algebra.Formula,System.String)
+  name.vb: Max(Formula, String)
+  fullName: MathTools.Algebra.Formula.Max(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Formula.Max(MathTools.Algebra.Formula, String)
+  nameWithType: Formula.Max(Formula, string)
+  nameWithType.vb: Formula.Max(Formula, String)
 - uid: MathTools.Algebra.Formula.Max(System.Double,MathTools.Algebra.Formula)
   name: Max(double, Formula)
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Max_System_Double_MathTools_Algebra_Formula_
@@ -892,6 +1198,42 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Max(Double, Double)
   nameWithType: Formula.Max(double, double)
   nameWithType.vb: Formula.Max(Double, Double)
+- uid: MathTools.Algebra.Formula.Max(System.Double,System.String)
+  name: Max(double, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Max_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Formula.Max(System.Double,System.String)
+  name.vb: Max(Double, String)
+  fullName: MathTools.Algebra.Formula.Max(double, string)
+  fullName.vb: MathTools.Algebra.Formula.Max(Double, String)
+  nameWithType: Formula.Max(double, string)
+  nameWithType.vb: Formula.Max(Double, String)
+- uid: MathTools.Algebra.Formula.Max(System.String,MathTools.Algebra.Formula)
+  name: Max(string, Formula)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Max_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Formula.Max(System.String,MathTools.Algebra.Formula)
+  name.vb: Max(String, Formula)
+  fullName: MathTools.Algebra.Formula.Max(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Formula.Max(String, MathTools.Algebra.Formula)
+  nameWithType: Formula.Max(string, Formula)
+  nameWithType.vb: Formula.Max(String, Formula)
+- uid: MathTools.Algebra.Formula.Max(System.String,System.Double)
+  name: Max(string, double)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Max_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Formula.Max(System.String,System.Double)
+  name.vb: Max(String, Double)
+  fullName: MathTools.Algebra.Formula.Max(string, double)
+  fullName.vb: MathTools.Algebra.Formula.Max(String, Double)
+  nameWithType: Formula.Max(string, double)
+  nameWithType.vb: Formula.Max(String, Double)
+- uid: MathTools.Algebra.Formula.Max(System.String,System.String)
+  name: Max(string, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Max_System_String_System_String_
+  commentId: M:MathTools.Algebra.Formula.Max(System.String,System.String)
+  name.vb: Max(String, String)
+  fullName: MathTools.Algebra.Formula.Max(string, string)
+  fullName.vb: MathTools.Algebra.Formula.Max(String, String)
+  nameWithType: Formula.Max(string, string)
+  nameWithType.vb: Formula.Max(String, String)
 - uid: MathTools.Algebra.Formula.Max*
   name: Max
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Max_
@@ -913,6 +1255,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.MaxMagnitude(MathTools.Algebra.Formula, Double)
   nameWithType: Formula.MaxMagnitude(Formula, double)
   nameWithType.vb: Formula.MaxMagnitude(Formula, Double)
+- uid: MathTools.Algebra.Formula.MaxMagnitude(MathTools.Algebra.Formula,System.String)
+  name: MaxMagnitude(Formula, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MaxMagnitude_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Formula.MaxMagnitude(MathTools.Algebra.Formula,System.String)
+  name.vb: MaxMagnitude(Formula, String)
+  fullName: MathTools.Algebra.Formula.MaxMagnitude(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Formula.MaxMagnitude(MathTools.Algebra.Formula, String)
+  nameWithType: Formula.MaxMagnitude(Formula, string)
+  nameWithType.vb: Formula.MaxMagnitude(Formula, String)
 - uid: MathTools.Algebra.Formula.MaxMagnitude(System.Double,MathTools.Algebra.Formula)
   name: MaxMagnitude(double, Formula)
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MaxMagnitude_System_Double_MathTools_Algebra_Formula_
@@ -931,6 +1282,42 @@ references:
   fullName.vb: MathTools.Algebra.Formula.MaxMagnitude(Double, Double)
   nameWithType: Formula.MaxMagnitude(double, double)
   nameWithType.vb: Formula.MaxMagnitude(Double, Double)
+- uid: MathTools.Algebra.Formula.MaxMagnitude(System.Double,System.String)
+  name: MaxMagnitude(double, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MaxMagnitude_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Formula.MaxMagnitude(System.Double,System.String)
+  name.vb: MaxMagnitude(Double, String)
+  fullName: MathTools.Algebra.Formula.MaxMagnitude(double, string)
+  fullName.vb: MathTools.Algebra.Formula.MaxMagnitude(Double, String)
+  nameWithType: Formula.MaxMagnitude(double, string)
+  nameWithType.vb: Formula.MaxMagnitude(Double, String)
+- uid: MathTools.Algebra.Formula.MaxMagnitude(System.String,MathTools.Algebra.Formula)
+  name: MaxMagnitude(string, Formula)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MaxMagnitude_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Formula.MaxMagnitude(System.String,MathTools.Algebra.Formula)
+  name.vb: MaxMagnitude(String, Formula)
+  fullName: MathTools.Algebra.Formula.MaxMagnitude(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Formula.MaxMagnitude(String, MathTools.Algebra.Formula)
+  nameWithType: Formula.MaxMagnitude(string, Formula)
+  nameWithType.vb: Formula.MaxMagnitude(String, Formula)
+- uid: MathTools.Algebra.Formula.MaxMagnitude(System.String,System.Double)
+  name: MaxMagnitude(string, double)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MaxMagnitude_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Formula.MaxMagnitude(System.String,System.Double)
+  name.vb: MaxMagnitude(String, Double)
+  fullName: MathTools.Algebra.Formula.MaxMagnitude(string, double)
+  fullName.vb: MathTools.Algebra.Formula.MaxMagnitude(String, Double)
+  nameWithType: Formula.MaxMagnitude(string, double)
+  nameWithType.vb: Formula.MaxMagnitude(String, Double)
+- uid: MathTools.Algebra.Formula.MaxMagnitude(System.String,System.String)
+  name: MaxMagnitude(string, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MaxMagnitude_System_String_System_String_
+  commentId: M:MathTools.Algebra.Formula.MaxMagnitude(System.String,System.String)
+  name.vb: MaxMagnitude(String, String)
+  fullName: MathTools.Algebra.Formula.MaxMagnitude(string, string)
+  fullName.vb: MathTools.Algebra.Formula.MaxMagnitude(String, String)
+  nameWithType: Formula.MaxMagnitude(string, string)
+  nameWithType.vb: Formula.MaxMagnitude(String, String)
 - uid: MathTools.Algebra.Formula.MaxMagnitude*
   name: MaxMagnitude
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MaxMagnitude_
@@ -976,6 +1363,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Min(MathTools.Algebra.Formula, Double)
   nameWithType: Formula.Min(Formula, double)
   nameWithType.vb: Formula.Min(Formula, Double)
+- uid: MathTools.Algebra.Formula.Min(MathTools.Algebra.Formula,System.String)
+  name: Min(Formula, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Min_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Formula.Min(MathTools.Algebra.Formula,System.String)
+  name.vb: Min(Formula, String)
+  fullName: MathTools.Algebra.Formula.Min(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Formula.Min(MathTools.Algebra.Formula, String)
+  nameWithType: Formula.Min(Formula, string)
+  nameWithType.vb: Formula.Min(Formula, String)
 - uid: MathTools.Algebra.Formula.Min(System.Double,MathTools.Algebra.Formula)
   name: Min(double, Formula)
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Min_System_Double_MathTools_Algebra_Formula_
@@ -994,6 +1390,42 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Min(Double, Double)
   nameWithType: Formula.Min(double, double)
   nameWithType.vb: Formula.Min(Double, Double)
+- uid: MathTools.Algebra.Formula.Min(System.Double,System.String)
+  name: Min(double, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Min_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Formula.Min(System.Double,System.String)
+  name.vb: Min(Double, String)
+  fullName: MathTools.Algebra.Formula.Min(double, string)
+  fullName.vb: MathTools.Algebra.Formula.Min(Double, String)
+  nameWithType: Formula.Min(double, string)
+  nameWithType.vb: Formula.Min(Double, String)
+- uid: MathTools.Algebra.Formula.Min(System.String,MathTools.Algebra.Formula)
+  name: Min(string, Formula)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Min_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Formula.Min(System.String,MathTools.Algebra.Formula)
+  name.vb: Min(String, Formula)
+  fullName: MathTools.Algebra.Formula.Min(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Formula.Min(String, MathTools.Algebra.Formula)
+  nameWithType: Formula.Min(string, Formula)
+  nameWithType.vb: Formula.Min(String, Formula)
+- uid: MathTools.Algebra.Formula.Min(System.String,System.Double)
+  name: Min(string, double)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Min_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Formula.Min(System.String,System.Double)
+  name.vb: Min(String, Double)
+  fullName: MathTools.Algebra.Formula.Min(string, double)
+  fullName.vb: MathTools.Algebra.Formula.Min(String, Double)
+  nameWithType: Formula.Min(string, double)
+  nameWithType.vb: Formula.Min(String, Double)
+- uid: MathTools.Algebra.Formula.Min(System.String,System.String)
+  name: Min(string, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Min_System_String_System_String_
+  commentId: M:MathTools.Algebra.Formula.Min(System.String,System.String)
+  name.vb: Min(String, String)
+  fullName: MathTools.Algebra.Formula.Min(string, string)
+  fullName.vb: MathTools.Algebra.Formula.Min(String, String)
+  nameWithType: Formula.Min(string, string)
+  nameWithType.vb: Formula.Min(String, String)
 - uid: MathTools.Algebra.Formula.Min*
   name: Min
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Min_
@@ -1015,6 +1447,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.MinMagnitude(MathTools.Algebra.Formula, Double)
   nameWithType: Formula.MinMagnitude(Formula, double)
   nameWithType.vb: Formula.MinMagnitude(Formula, Double)
+- uid: MathTools.Algebra.Formula.MinMagnitude(MathTools.Algebra.Formula,System.String)
+  name: MinMagnitude(Formula, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MinMagnitude_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Formula.MinMagnitude(MathTools.Algebra.Formula,System.String)
+  name.vb: MinMagnitude(Formula, String)
+  fullName: MathTools.Algebra.Formula.MinMagnitude(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Formula.MinMagnitude(MathTools.Algebra.Formula, String)
+  nameWithType: Formula.MinMagnitude(Formula, string)
+  nameWithType.vb: Formula.MinMagnitude(Formula, String)
 - uid: MathTools.Algebra.Formula.MinMagnitude(System.Double,MathTools.Algebra.Formula)
   name: MinMagnitude(double, Formula)
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MinMagnitude_System_Double_MathTools_Algebra_Formula_
@@ -1033,6 +1474,42 @@ references:
   fullName.vb: MathTools.Algebra.Formula.MinMagnitude(Double, Double)
   nameWithType: Formula.MinMagnitude(double, double)
   nameWithType.vb: Formula.MinMagnitude(Double, Double)
+- uid: MathTools.Algebra.Formula.MinMagnitude(System.Double,System.String)
+  name: MinMagnitude(double, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MinMagnitude_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Formula.MinMagnitude(System.Double,System.String)
+  name.vb: MinMagnitude(Double, String)
+  fullName: MathTools.Algebra.Formula.MinMagnitude(double, string)
+  fullName.vb: MathTools.Algebra.Formula.MinMagnitude(Double, String)
+  nameWithType: Formula.MinMagnitude(double, string)
+  nameWithType.vb: Formula.MinMagnitude(Double, String)
+- uid: MathTools.Algebra.Formula.MinMagnitude(System.String,MathTools.Algebra.Formula)
+  name: MinMagnitude(string, Formula)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MinMagnitude_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Formula.MinMagnitude(System.String,MathTools.Algebra.Formula)
+  name.vb: MinMagnitude(String, Formula)
+  fullName: MathTools.Algebra.Formula.MinMagnitude(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Formula.MinMagnitude(String, MathTools.Algebra.Formula)
+  nameWithType: Formula.MinMagnitude(string, Formula)
+  nameWithType.vb: Formula.MinMagnitude(String, Formula)
+- uid: MathTools.Algebra.Formula.MinMagnitude(System.String,System.Double)
+  name: MinMagnitude(string, double)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MinMagnitude_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Formula.MinMagnitude(System.String,System.Double)
+  name.vb: MinMagnitude(String, Double)
+  fullName: MathTools.Algebra.Formula.MinMagnitude(string, double)
+  fullName.vb: MathTools.Algebra.Formula.MinMagnitude(String, Double)
+  nameWithType: Formula.MinMagnitude(string, double)
+  nameWithType.vb: Formula.MinMagnitude(String, Double)
+- uid: MathTools.Algebra.Formula.MinMagnitude(System.String,System.String)
+  name: MinMagnitude(string, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MinMagnitude_System_String_System_String_
+  commentId: M:MathTools.Algebra.Formula.MinMagnitude(System.String,System.String)
+  name.vb: MinMagnitude(String, String)
+  fullName: MathTools.Algebra.Formula.MinMagnitude(string, string)
+  fullName.vb: MathTools.Algebra.Formula.MinMagnitude(String, String)
+  nameWithType: Formula.MinMagnitude(string, string)
+  nameWithType.vb: Formula.MinMagnitude(String, String)
 - uid: MathTools.Algebra.Formula.MinMagnitude*
   name: MinMagnitude
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_MinMagnitude_
@@ -1078,6 +1555,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Mod(MathTools.Algebra.Formula, Double)
   nameWithType: Formula.Mod(Formula, double)
   nameWithType.vb: Formula.Mod(Formula, Double)
+- uid: MathTools.Algebra.Formula.Mod(MathTools.Algebra.Formula,System.String)
+  name: Mod(Formula, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Mod_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Formula.Mod(MathTools.Algebra.Formula,System.String)
+  name.vb: Mod(Formula, String)
+  fullName: MathTools.Algebra.Formula.Mod(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Formula.Mod(MathTools.Algebra.Formula, String)
+  nameWithType: Formula.Mod(Formula, string)
+  nameWithType.vb: Formula.Mod(Formula, String)
 - uid: MathTools.Algebra.Formula.Mod(System.Double,MathTools.Algebra.Formula)
   name: Mod(double, Formula)
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Mod_System_Double_MathTools_Algebra_Formula_
@@ -1096,6 +1582,42 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Mod(Double, Double)
   nameWithType: Formula.Mod(double, double)
   nameWithType.vb: Formula.Mod(Double, Double)
+- uid: MathTools.Algebra.Formula.Mod(System.Double,System.String)
+  name: Mod(double, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Mod_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Formula.Mod(System.Double,System.String)
+  name.vb: Mod(Double, String)
+  fullName: MathTools.Algebra.Formula.Mod(double, string)
+  fullName.vb: MathTools.Algebra.Formula.Mod(Double, String)
+  nameWithType: Formula.Mod(double, string)
+  nameWithType.vb: Formula.Mod(Double, String)
+- uid: MathTools.Algebra.Formula.Mod(System.String,MathTools.Algebra.Formula)
+  name: Mod(string, Formula)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Mod_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Formula.Mod(System.String,MathTools.Algebra.Formula)
+  name.vb: Mod(String, Formula)
+  fullName: MathTools.Algebra.Formula.Mod(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Formula.Mod(String, MathTools.Algebra.Formula)
+  nameWithType: Formula.Mod(string, Formula)
+  nameWithType.vb: Formula.Mod(String, Formula)
+- uid: MathTools.Algebra.Formula.Mod(System.String,System.Double)
+  name: Mod(string, double)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Mod_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Formula.Mod(System.String,System.Double)
+  name.vb: Mod(String, Double)
+  fullName: MathTools.Algebra.Formula.Mod(string, double)
+  fullName.vb: MathTools.Algebra.Formula.Mod(String, Double)
+  nameWithType: Formula.Mod(string, double)
+  nameWithType.vb: Formula.Mod(String, Double)
+- uid: MathTools.Algebra.Formula.Mod(System.String,System.String)
+  name: Mod(string, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Mod_System_String_System_String_
+  commentId: M:MathTools.Algebra.Formula.Mod(System.String,System.String)
+  name.vb: Mod(String, String)
+  fullName: MathTools.Algebra.Formula.Mod(string, string)
+  fullName.vb: MathTools.Algebra.Formula.Mod(String, String)
+  nameWithType: Formula.Mod(string, string)
+  nameWithType.vb: Formula.Mod(String, String)
 - uid: MathTools.Algebra.Formula.Mod*
   name: Mod
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Mod_
@@ -1528,6 +2050,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Pow(MathTools.Algebra.Formula, Double)
   nameWithType: Formula.Pow(Formula, double)
   nameWithType.vb: Formula.Pow(Formula, Double)
+- uid: MathTools.Algebra.Formula.Pow(MathTools.Algebra.Formula,System.String)
+  name: Pow(Formula, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Pow_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Formula.Pow(MathTools.Algebra.Formula,System.String)
+  name.vb: Pow(Formula, String)
+  fullName: MathTools.Algebra.Formula.Pow(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Formula.Pow(MathTools.Algebra.Formula, String)
+  nameWithType: Formula.Pow(Formula, string)
+  nameWithType.vb: Formula.Pow(Formula, String)
 - uid: MathTools.Algebra.Formula.Pow(System.Double,MathTools.Algebra.Formula)
   name: Pow(double, Formula)
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Pow_System_Double_MathTools_Algebra_Formula_
@@ -1546,6 +2077,42 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Pow(Double, Double)
   nameWithType: Formula.Pow(double, double)
   nameWithType.vb: Formula.Pow(Double, Double)
+- uid: MathTools.Algebra.Formula.Pow(System.Double,System.String)
+  name: Pow(double, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Pow_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Formula.Pow(System.Double,System.String)
+  name.vb: Pow(Double, String)
+  fullName: MathTools.Algebra.Formula.Pow(double, string)
+  fullName.vb: MathTools.Algebra.Formula.Pow(Double, String)
+  nameWithType: Formula.Pow(double, string)
+  nameWithType.vb: Formula.Pow(Double, String)
+- uid: MathTools.Algebra.Formula.Pow(System.String,MathTools.Algebra.Formula)
+  name: Pow(string, Formula)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Pow_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Formula.Pow(System.String,MathTools.Algebra.Formula)
+  name.vb: Pow(String, Formula)
+  fullName: MathTools.Algebra.Formula.Pow(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Formula.Pow(String, MathTools.Algebra.Formula)
+  nameWithType: Formula.Pow(string, Formula)
+  nameWithType.vb: Formula.Pow(String, Formula)
+- uid: MathTools.Algebra.Formula.Pow(System.String,System.Double)
+  name: Pow(string, double)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Pow_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Formula.Pow(System.String,System.Double)
+  name.vb: Pow(String, Double)
+  fullName: MathTools.Algebra.Formula.Pow(string, double)
+  fullName.vb: MathTools.Algebra.Formula.Pow(String, Double)
+  nameWithType: Formula.Pow(string, double)
+  nameWithType.vb: Formula.Pow(String, Double)
+- uid: MathTools.Algebra.Formula.Pow(System.String,System.String)
+  name: Pow(string, string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Pow_System_String_System_String_
+  commentId: M:MathTools.Algebra.Formula.Pow(System.String,System.String)
+  name.vb: Pow(String, String)
+  fullName: MathTools.Algebra.Formula.Pow(string, string)
+  fullName.vb: MathTools.Algebra.Formula.Pow(String, String)
+  nameWithType: Formula.Pow(string, string)
+  nameWithType.vb: Formula.Pow(String, String)
 - uid: MathTools.Algebra.Formula.Pow*
   name: Pow
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Pow_
@@ -1579,6 +2146,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Sin(Double)
   nameWithType: Formula.Sin(double)
   nameWithType.vb: Formula.Sin(Double)
+- uid: MathTools.Algebra.Formula.Sin(System.String)
+  name: Sin(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Sin_System_String_
+  commentId: M:MathTools.Algebra.Formula.Sin(System.String)
+  name.vb: Sin(String)
+  fullName: MathTools.Algebra.Formula.Sin(string)
+  fullName.vb: MathTools.Algebra.Formula.Sin(String)
+  nameWithType: Formula.Sin(string)
+  nameWithType.vb: Formula.Sin(String)
 - uid: MathTools.Algebra.Formula.Sin*
   name: Sin
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Sin_
@@ -1600,6 +2176,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Sinh(Double)
   nameWithType: Formula.Sinh(double)
   nameWithType.vb: Formula.Sinh(Double)
+- uid: MathTools.Algebra.Formula.Sinh(System.String)
+  name: Sinh(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Sinh_System_String_
+  commentId: M:MathTools.Algebra.Formula.Sinh(System.String)
+  name.vb: Sinh(String)
+  fullName: MathTools.Algebra.Formula.Sinh(string)
+  fullName.vb: MathTools.Algebra.Formula.Sinh(String)
+  nameWithType: Formula.Sinh(string)
+  nameWithType.vb: Formula.Sinh(String)
 - uid: MathTools.Algebra.Formula.Sinh*
   name: Sinh
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Sinh_
@@ -1621,6 +2206,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Sqrt(Double)
   nameWithType: Formula.Sqrt(double)
   nameWithType.vb: Formula.Sqrt(Double)
+- uid: MathTools.Algebra.Formula.Sqrt(System.String)
+  name: Sqrt(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Sqrt_System_String_
+  commentId: M:MathTools.Algebra.Formula.Sqrt(System.String)
+  name.vb: Sqrt(String)
+  fullName: MathTools.Algebra.Formula.Sqrt(string)
+  fullName.vb: MathTools.Algebra.Formula.Sqrt(String)
+  nameWithType: Formula.Sqrt(string)
+  nameWithType.vb: Formula.Sqrt(String)
 - uid: MathTools.Algebra.Formula.Sqrt*
   name: Sqrt
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Sqrt_
@@ -1642,6 +2236,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Tan(Double)
   nameWithType: Formula.Tan(double)
   nameWithType.vb: Formula.Tan(Double)
+- uid: MathTools.Algebra.Formula.Tan(System.String)
+  name: Tan(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Tan_System_String_
+  commentId: M:MathTools.Algebra.Formula.Tan(System.String)
+  name.vb: Tan(String)
+  fullName: MathTools.Algebra.Formula.Tan(string)
+  fullName.vb: MathTools.Algebra.Formula.Tan(String)
+  nameWithType: Formula.Tan(string)
+  nameWithType.vb: Formula.Tan(String)
 - uid: MathTools.Algebra.Formula.Tan*
   name: Tan
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Tan_
@@ -1663,6 +2266,15 @@ references:
   fullName.vb: MathTools.Algebra.Formula.Tanh(Double)
   nameWithType: Formula.Tanh(double)
   nameWithType.vb: Formula.Tanh(Double)
+- uid: MathTools.Algebra.Formula.Tanh(System.String)
+  name: Tanh(string)
+  href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Tanh_System_String_
+  commentId: M:MathTools.Algebra.Formula.Tanh(System.String)
+  name.vb: Tanh(String)
+  fullName: MathTools.Algebra.Formula.Tanh(string)
+  fullName.vb: MathTools.Algebra.Formula.Tanh(String)
+  nameWithType: Formula.Tanh(string)
+  nameWithType.vb: Formula.Tanh(String)
 - uid: MathTools.Algebra.Formula.Tanh*
   name: Tanh
   href: api/MathTools.Algebra.Formula.html#MathTools_Algebra_Formula_Tanh_
@@ -1927,6 +2539,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Abs.New(Double)
   nameWithType: Abs.Abs(double)
   nameWithType.vb: Abs.New(Double)
+- uid: MathTools.Algebra.Functions.Abs.#ctor(System.String)
+  name: Abs(string)
+  href: api/MathTools.Algebra.Functions.Abs.html#MathTools_Algebra_Functions_Abs__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Abs.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Abs.Abs(string)
+  fullName.vb: MathTools.Algebra.Functions.Abs.New(String)
+  nameWithType: Abs.Abs(string)
+  nameWithType.vb: Abs.New(String)
 - uid: MathTools.Algebra.Functions.Abs.#ctor*
   name: Abs
   href: api/MathTools.Algebra.Functions.Abs.html#MathTools_Algebra_Functions_Abs__ctor_
@@ -1990,6 +2611,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Acos.New(Double)
   nameWithType: Acos.Acos(double)
   nameWithType.vb: Acos.New(Double)
+- uid: MathTools.Algebra.Functions.Acos.#ctor(System.String)
+  name: Acos(string)
+  href: api/MathTools.Algebra.Functions.Acos.html#MathTools_Algebra_Functions_Acos__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Acos.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Acos.Acos(string)
+  fullName.vb: MathTools.Algebra.Functions.Acos.New(String)
+  nameWithType: Acos.Acos(string)
+  nameWithType.vb: Acos.New(String)
 - uid: MathTools.Algebra.Functions.Acos.#ctor*
   name: Acos
   href: api/MathTools.Algebra.Functions.Acos.html#MathTools_Algebra_Functions_Acos__ctor_
@@ -2053,6 +2683,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Acosh.New(Double)
   nameWithType: Acosh.Acosh(double)
   nameWithType.vb: Acosh.New(Double)
+- uid: MathTools.Algebra.Functions.Acosh.#ctor(System.String)
+  name: Acosh(string)
+  href: api/MathTools.Algebra.Functions.Acosh.html#MathTools_Algebra_Functions_Acosh__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Acosh.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Acosh.Acosh(string)
+  fullName.vb: MathTools.Algebra.Functions.Acosh.New(String)
+  nameWithType: Acosh.Acosh(string)
+  nameWithType.vb: Acosh.New(String)
 - uid: MathTools.Algebra.Functions.Acosh.#ctor*
   name: Acosh
   href: api/MathTools.Algebra.Functions.Acosh.html#MathTools_Algebra_Functions_Acosh__ctor_
@@ -2116,6 +2755,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Asin.New(Double)
   nameWithType: Asin.Asin(double)
   nameWithType.vb: Asin.New(Double)
+- uid: MathTools.Algebra.Functions.Asin.#ctor(System.String)
+  name: Asin(string)
+  href: api/MathTools.Algebra.Functions.Asin.html#MathTools_Algebra_Functions_Asin__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Asin.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Asin.Asin(string)
+  fullName.vb: MathTools.Algebra.Functions.Asin.New(String)
+  nameWithType: Asin.Asin(string)
+  nameWithType.vb: Asin.New(String)
 - uid: MathTools.Algebra.Functions.Asin.#ctor*
   name: Asin
   href: api/MathTools.Algebra.Functions.Asin.html#MathTools_Algebra_Functions_Asin__ctor_
@@ -2179,6 +2827,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Asinh.New(Double)
   nameWithType: Asinh.Asinh(double)
   nameWithType.vb: Asinh.New(Double)
+- uid: MathTools.Algebra.Functions.Asinh.#ctor(System.String)
+  name: Asinh(string)
+  href: api/MathTools.Algebra.Functions.Asinh.html#MathTools_Algebra_Functions_Asinh__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Asinh.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Asinh.Asinh(string)
+  fullName.vb: MathTools.Algebra.Functions.Asinh.New(String)
+  nameWithType: Asinh.Asinh(string)
+  nameWithType.vb: Asinh.New(String)
 - uid: MathTools.Algebra.Functions.Asinh.#ctor*
   name: Asinh
   href: api/MathTools.Algebra.Functions.Asinh.html#MathTools_Algebra_Functions_Asinh__ctor_
@@ -2242,6 +2899,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Atan.New(Double)
   nameWithType: Atan.Atan(double)
   nameWithType.vb: Atan.New(Double)
+- uid: MathTools.Algebra.Functions.Atan.#ctor(System.String)
+  name: Atan(string)
+  href: api/MathTools.Algebra.Functions.Atan.html#MathTools_Algebra_Functions_Atan__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Atan.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Atan.Atan(string)
+  fullName.vb: MathTools.Algebra.Functions.Atan.New(String)
+  nameWithType: Atan.Atan(string)
+  nameWithType.vb: Atan.New(String)
 - uid: MathTools.Algebra.Functions.Atan.#ctor*
   name: Atan
   href: api/MathTools.Algebra.Functions.Atan.html#MathTools_Algebra_Functions_Atan__ctor_
@@ -2305,6 +2971,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Atanh.New(Double)
   nameWithType: Atanh.Atanh(double)
   nameWithType.vb: Atanh.New(Double)
+- uid: MathTools.Algebra.Functions.Atanh.#ctor(System.String)
+  name: Atanh(string)
+  href: api/MathTools.Algebra.Functions.Atanh.html#MathTools_Algebra_Functions_Atanh__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Atanh.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Atanh.Atanh(string)
+  fullName.vb: MathTools.Algebra.Functions.Atanh.New(String)
+  nameWithType: Atanh.Atanh(string)
+  nameWithType.vb: Atanh.New(String)
 - uid: MathTools.Algebra.Functions.Atanh.#ctor*
   name: Atanh
   href: api/MathTools.Algebra.Functions.Atanh.html#MathTools_Algebra_Functions_Atanh__ctor_
@@ -2368,6 +3043,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Ceiling.New(Double)
   nameWithType: Ceiling.Ceiling(double)
   nameWithType.vb: Ceiling.New(Double)
+- uid: MathTools.Algebra.Functions.Ceiling.#ctor(System.String)
+  name: Ceiling(string)
+  href: api/MathTools.Algebra.Functions.Ceiling.html#MathTools_Algebra_Functions_Ceiling__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Ceiling.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Ceiling.Ceiling(string)
+  fullName.vb: MathTools.Algebra.Functions.Ceiling.New(String)
+  nameWithType: Ceiling.Ceiling(string)
+  nameWithType.vb: Ceiling.New(String)
 - uid: MathTools.Algebra.Functions.Ceiling.#ctor*
   name: Ceiling
   href: api/MathTools.Algebra.Functions.Ceiling.html#MathTools_Algebra_Functions_Ceiling__ctor_
@@ -2431,6 +3115,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Cos.New(Double)
   nameWithType: Cos.Cos(double)
   nameWithType.vb: Cos.New(Double)
+- uid: MathTools.Algebra.Functions.Cos.#ctor(System.String)
+  name: Cos(string)
+  href: api/MathTools.Algebra.Functions.Cos.html#MathTools_Algebra_Functions_Cos__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Cos.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Cos.Cos(string)
+  fullName.vb: MathTools.Algebra.Functions.Cos.New(String)
+  nameWithType: Cos.Cos(string)
+  nameWithType.vb: Cos.New(String)
 - uid: MathTools.Algebra.Functions.Cos.#ctor*
   name: Cos
   href: api/MathTools.Algebra.Functions.Cos.html#MathTools_Algebra_Functions_Cos__ctor_
@@ -2494,6 +3187,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Cosh.New(Double)
   nameWithType: Cosh.Cosh(double)
   nameWithType.vb: Cosh.New(Double)
+- uid: MathTools.Algebra.Functions.Cosh.#ctor(System.String)
+  name: Cosh(string)
+  href: api/MathTools.Algebra.Functions.Cosh.html#MathTools_Algebra_Functions_Cosh__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Cosh.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Cosh.Cosh(string)
+  fullName.vb: MathTools.Algebra.Functions.Cosh.New(String)
+  nameWithType: Cosh.Cosh(string)
+  nameWithType.vb: Cosh.New(String)
 - uid: MathTools.Algebra.Functions.Cosh.#ctor*
   name: Cosh
   href: api/MathTools.Algebra.Functions.Cosh.html#MathTools_Algebra_Functions_Cosh__ctor_
@@ -2557,6 +3259,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Exp.New(Double)
   nameWithType: Exp.Exp(double)
   nameWithType.vb: Exp.New(Double)
+- uid: MathTools.Algebra.Functions.Exp.#ctor(System.String)
+  name: Exp(string)
+  href: api/MathTools.Algebra.Functions.Exp.html#MathTools_Algebra_Functions_Exp__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Exp.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Exp.Exp(string)
+  fullName.vb: MathTools.Algebra.Functions.Exp.New(String)
+  nameWithType: Exp.Exp(string)
+  nameWithType.vb: Exp.New(String)
 - uid: MathTools.Algebra.Functions.Exp.#ctor*
   name: Exp
   href: api/MathTools.Algebra.Functions.Exp.html#MathTools_Algebra_Functions_Exp__ctor_
@@ -2620,6 +3331,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Floor.New(Double)
   nameWithType: Floor.Floor(double)
   nameWithType.vb: Floor.New(Double)
+- uid: MathTools.Algebra.Functions.Floor.#ctor(System.String)
+  name: Floor(string)
+  href: api/MathTools.Algebra.Functions.Floor.html#MathTools_Algebra_Functions_Floor__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Floor.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Floor.Floor(string)
+  fullName.vb: MathTools.Algebra.Functions.Floor.New(String)
+  nameWithType: Floor.Floor(string)
+  nameWithType.vb: Floor.New(String)
 - uid: MathTools.Algebra.Functions.Floor.#ctor*
   name: Floor
   href: api/MathTools.Algebra.Functions.Floor.html#MathTools_Algebra_Functions_Floor__ctor_
@@ -2683,6 +3403,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.If.New(MathTools.Algebra.Formula, MathTools.Algebra.Formula, Double)
   nameWithType: If.If(Formula, Formula, double)
   nameWithType.vb: If.New(Formula, Formula, Double)
+- uid: MathTools.Algebra.Functions.If.#ctor(MathTools.Algebra.Formula,MathTools.Algebra.Formula,System.String)
+  name: If(Formula, Formula, string)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_MathTools_Algebra_Formula_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(MathTools.Algebra.Formula,MathTools.Algebra.Formula,System.String)
+  name.vb: New(Formula, Formula, String)
+  fullName: MathTools.Algebra.Functions.If.If(MathTools.Algebra.Formula, MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Functions.If.New(MathTools.Algebra.Formula, MathTools.Algebra.Formula, String)
+  nameWithType: If.If(Formula, Formula, string)
+  nameWithType.vb: If.New(Formula, Formula, String)
 - uid: MathTools.Algebra.Functions.If.#ctor(MathTools.Algebra.Formula,System.Double,MathTools.Algebra.Formula)
   name: If(Formula, double, Formula)
   href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_MathTools_Algebra_Formula_System_Double_MathTools_Algebra_Formula_
@@ -2701,6 +3430,42 @@ references:
   fullName.vb: MathTools.Algebra.Functions.If.New(MathTools.Algebra.Formula, Double, Double)
   nameWithType: If.If(Formula, double, double)
   nameWithType.vb: If.New(Formula, Double, Double)
+- uid: MathTools.Algebra.Functions.If.#ctor(MathTools.Algebra.Formula,System.Double,System.String)
+  name: If(Formula, double, string)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_MathTools_Algebra_Formula_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(MathTools.Algebra.Formula,System.Double,System.String)
+  name.vb: New(Formula, Double, String)
+  fullName: MathTools.Algebra.Functions.If.If(MathTools.Algebra.Formula, double, string)
+  fullName.vb: MathTools.Algebra.Functions.If.New(MathTools.Algebra.Formula, Double, String)
+  nameWithType: If.If(Formula, double, string)
+  nameWithType.vb: If.New(Formula, Double, String)
+- uid: MathTools.Algebra.Functions.If.#ctor(MathTools.Algebra.Formula,System.String,MathTools.Algebra.Formula)
+  name: If(Formula, string, Formula)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_MathTools_Algebra_Formula_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(MathTools.Algebra.Formula,System.String,MathTools.Algebra.Formula)
+  name.vb: New(Formula, String, Formula)
+  fullName: MathTools.Algebra.Functions.If.If(MathTools.Algebra.Formula, string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Functions.If.New(MathTools.Algebra.Formula, String, MathTools.Algebra.Formula)
+  nameWithType: If.If(Formula, string, Formula)
+  nameWithType.vb: If.New(Formula, String, Formula)
+- uid: MathTools.Algebra.Functions.If.#ctor(MathTools.Algebra.Formula,System.String,System.Double)
+  name: If(Formula, string, double)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_MathTools_Algebra_Formula_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(MathTools.Algebra.Formula,System.String,System.Double)
+  name.vb: New(Formula, String, Double)
+  fullName: MathTools.Algebra.Functions.If.If(MathTools.Algebra.Formula, string, double)
+  fullName.vb: MathTools.Algebra.Functions.If.New(MathTools.Algebra.Formula, String, Double)
+  nameWithType: If.If(Formula, string, double)
+  nameWithType.vb: If.New(Formula, String, Double)
+- uid: MathTools.Algebra.Functions.If.#ctor(MathTools.Algebra.Formula,System.String,System.String)
+  name: If(Formula, string, string)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_MathTools_Algebra_Formula_System_String_System_String_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(MathTools.Algebra.Formula,System.String,System.String)
+  name.vb: New(Formula, String, String)
+  fullName: MathTools.Algebra.Functions.If.If(MathTools.Algebra.Formula, string, string)
+  fullName.vb: MathTools.Algebra.Functions.If.New(MathTools.Algebra.Formula, String, String)
+  nameWithType: If.If(Formula, string, string)
+  nameWithType.vb: If.New(Formula, String, String)
 - uid: MathTools.Algebra.Functions.If.#ctor(System.Double,MathTools.Algebra.Formula,MathTools.Algebra.Formula)
   name: If(double, Formula, Formula)
   href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_Double_MathTools_Algebra_Formula_MathTools_Algebra_Formula_
@@ -2719,6 +3484,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.If.New(Double, MathTools.Algebra.Formula, Double)
   nameWithType: If.If(double, Formula, double)
   nameWithType.vb: If.New(Double, Formula, Double)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.Double,MathTools.Algebra.Formula,System.String)
+  name: If(double, Formula, string)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_Double_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.Double,MathTools.Algebra.Formula,System.String)
+  name.vb: New(Double, Formula, String)
+  fullName: MathTools.Algebra.Functions.If.If(double, MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Functions.If.New(Double, MathTools.Algebra.Formula, String)
+  nameWithType: If.If(double, Formula, string)
+  nameWithType.vb: If.New(Double, Formula, String)
 - uid: MathTools.Algebra.Functions.If.#ctor(System.Double,System.Double,MathTools.Algebra.Formula)
   name: If(double, double, Formula)
   href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_Double_System_Double_MathTools_Algebra_Formula_
@@ -2737,6 +3511,123 @@ references:
   fullName.vb: MathTools.Algebra.Functions.If.New(Double, Double, Double)
   nameWithType: If.If(double, double, double)
   nameWithType.vb: If.New(Double, Double, Double)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.Double,System.Double,System.String)
+  name: If(double, double, string)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_Double_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.Double,System.Double,System.String)
+  name.vb: New(Double, Double, String)
+  fullName: MathTools.Algebra.Functions.If.If(double, double, string)
+  fullName.vb: MathTools.Algebra.Functions.If.New(Double, Double, String)
+  nameWithType: If.If(double, double, string)
+  nameWithType.vb: If.New(Double, Double, String)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.Double,System.String,MathTools.Algebra.Formula)
+  name: If(double, string, Formula)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_Double_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.Double,System.String,MathTools.Algebra.Formula)
+  name.vb: New(Double, String, Formula)
+  fullName: MathTools.Algebra.Functions.If.If(double, string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Functions.If.New(Double, String, MathTools.Algebra.Formula)
+  nameWithType: If.If(double, string, Formula)
+  nameWithType.vb: If.New(Double, String, Formula)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.Double,System.String,System.Double)
+  name: If(double, string, double)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_Double_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.Double,System.String,System.Double)
+  name.vb: New(Double, String, Double)
+  fullName: MathTools.Algebra.Functions.If.If(double, string, double)
+  fullName.vb: MathTools.Algebra.Functions.If.New(Double, String, Double)
+  nameWithType: If.If(double, string, double)
+  nameWithType.vb: If.New(Double, String, Double)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.Double,System.String,System.String)
+  name: If(double, string, string)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_Double_System_String_System_String_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.Double,System.String,System.String)
+  name.vb: New(Double, String, String)
+  fullName: MathTools.Algebra.Functions.If.If(double, string, string)
+  fullName.vb: MathTools.Algebra.Functions.If.New(Double, String, String)
+  nameWithType: If.If(double, string, string)
+  nameWithType.vb: If.New(Double, String, String)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.String,MathTools.Algebra.Formula,MathTools.Algebra.Formula)
+  name: If(string, Formula, Formula)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_String_MathTools_Algebra_Formula_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.String,MathTools.Algebra.Formula,MathTools.Algebra.Formula)
+  name.vb: New(String, Formula, Formula)
+  fullName: MathTools.Algebra.Functions.If.If(string, MathTools.Algebra.Formula, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Functions.If.New(String, MathTools.Algebra.Formula, MathTools.Algebra.Formula)
+  nameWithType: If.If(string, Formula, Formula)
+  nameWithType.vb: If.New(String, Formula, Formula)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.String,MathTools.Algebra.Formula,System.Double)
+  name: If(string, Formula, double)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_String_MathTools_Algebra_Formula_System_Double_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.String,MathTools.Algebra.Formula,System.Double)
+  name.vb: New(String, Formula, Double)
+  fullName: MathTools.Algebra.Functions.If.If(string, MathTools.Algebra.Formula, double)
+  fullName.vb: MathTools.Algebra.Functions.If.New(String, MathTools.Algebra.Formula, Double)
+  nameWithType: If.If(string, Formula, double)
+  nameWithType.vb: If.New(String, Formula, Double)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.String,MathTools.Algebra.Formula,System.String)
+  name: If(string, Formula, string)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_String_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.String,MathTools.Algebra.Formula,System.String)
+  name.vb: New(String, Formula, String)
+  fullName: MathTools.Algebra.Functions.If.If(string, MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Functions.If.New(String, MathTools.Algebra.Formula, String)
+  nameWithType: If.If(string, Formula, string)
+  nameWithType.vb: If.New(String, Formula, String)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.String,System.Double,MathTools.Algebra.Formula)
+  name: If(string, double, Formula)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_String_System_Double_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.String,System.Double,MathTools.Algebra.Formula)
+  name.vb: New(String, Double, Formula)
+  fullName: MathTools.Algebra.Functions.If.If(string, double, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Functions.If.New(String, Double, MathTools.Algebra.Formula)
+  nameWithType: If.If(string, double, Formula)
+  nameWithType.vb: If.New(String, Double, Formula)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.String,System.Double,System.Double)
+  name: If(string, double, double)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_String_System_Double_System_Double_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.String,System.Double,System.Double)
+  name.vb: New(String, Double, Double)
+  fullName: MathTools.Algebra.Functions.If.If(string, double, double)
+  fullName.vb: MathTools.Algebra.Functions.If.New(String, Double, Double)
+  nameWithType: If.If(string, double, double)
+  nameWithType.vb: If.New(String, Double, Double)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.String,System.Double,System.String)
+  name: If(string, double, string)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_String_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.String,System.Double,System.String)
+  name.vb: New(String, Double, String)
+  fullName: MathTools.Algebra.Functions.If.If(string, double, string)
+  fullName.vb: MathTools.Algebra.Functions.If.New(String, Double, String)
+  nameWithType: If.If(string, double, string)
+  nameWithType.vb: If.New(String, Double, String)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.String,System.String,MathTools.Algebra.Formula)
+  name: If(string, string, Formula)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_String_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.String,System.String,MathTools.Algebra.Formula)
+  name.vb: New(String, String, Formula)
+  fullName: MathTools.Algebra.Functions.If.If(string, string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Functions.If.New(String, String, MathTools.Algebra.Formula)
+  nameWithType: If.If(string, string, Formula)
+  nameWithType.vb: If.New(String, String, Formula)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.String,System.String,System.Double)
+  name: If(string, string, double)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_String_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.String,System.String,System.Double)
+  name.vb: New(String, String, Double)
+  fullName: MathTools.Algebra.Functions.If.If(string, string, double)
+  fullName.vb: MathTools.Algebra.Functions.If.New(String, String, Double)
+  nameWithType: If.If(string, string, double)
+  nameWithType.vb: If.New(String, String, Double)
+- uid: MathTools.Algebra.Functions.If.#ctor(System.String,System.String,System.String)
+  name: If(string, string, string)
+  href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_System_String_System_String_System_String_
+  commentId: M:MathTools.Algebra.Functions.If.#ctor(System.String,System.String,System.String)
+  name.vb: New(String, String, String)
+  fullName: MathTools.Algebra.Functions.If.If(string, string, string)
+  fullName.vb: MathTools.Algebra.Functions.If.New(String, String, String)
+  nameWithType: If.If(string, string, string)
+  nameWithType.vb: If.New(String, String, String)
 - uid: MathTools.Algebra.Functions.If.#ctor*
   name: If
   href: api/MathTools.Algebra.Functions.If.html#MathTools_Algebra_Functions_If__ctor_
@@ -2800,6 +3691,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Log.New(Double)
   nameWithType: Log.Log(double)
   nameWithType.vb: Log.New(Double)
+- uid: MathTools.Algebra.Functions.Log.#ctor(System.String)
+  name: Log(string)
+  href: api/MathTools.Algebra.Functions.Log.html#MathTools_Algebra_Functions_Log__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Log.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Log.Log(string)
+  fullName.vb: MathTools.Algebra.Functions.Log.New(String)
+  nameWithType: Log.Log(string)
+  nameWithType.vb: Log.New(String)
 - uid: MathTools.Algebra.Functions.Log.#ctor*
   name: Log
   href: api/MathTools.Algebra.Functions.Log.html#MathTools_Algebra_Functions_Log__ctor_
@@ -2863,6 +3763,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Log10.New(Double)
   nameWithType: Log10.Log10(double)
   nameWithType.vb: Log10.New(Double)
+- uid: MathTools.Algebra.Functions.Log10.#ctor(System.String)
+  name: Log10(string)
+  href: api/MathTools.Algebra.Functions.Log10.html#MathTools_Algebra_Functions_Log10__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Log10.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Log10.Log10(string)
+  fullName.vb: MathTools.Algebra.Functions.Log10.New(String)
+  nameWithType: Log10.Log10(string)
+  nameWithType.vb: Log10.New(String)
 - uid: MathTools.Algebra.Functions.Log10.#ctor*
   name: Log10
   href: api/MathTools.Algebra.Functions.Log10.html#MathTools_Algebra_Functions_Log10__ctor_
@@ -2926,6 +3835,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Max.New(MathTools.Algebra.Formula, Double)
   nameWithType: Max.Max(Formula, double)
   nameWithType.vb: Max.New(Formula, Double)
+- uid: MathTools.Algebra.Functions.Max.#ctor(MathTools.Algebra.Formula,System.String)
+  name: Max(Formula, string)
+  href: api/MathTools.Algebra.Functions.Max.html#MathTools_Algebra_Functions_Max__ctor_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Functions.Max.#ctor(MathTools.Algebra.Formula,System.String)
+  name.vb: New(Formula, String)
+  fullName: MathTools.Algebra.Functions.Max.Max(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Functions.Max.New(MathTools.Algebra.Formula, String)
+  nameWithType: Max.Max(Formula, string)
+  nameWithType.vb: Max.New(Formula, String)
 - uid: MathTools.Algebra.Functions.Max.#ctor(System.Double,MathTools.Algebra.Formula)
   name: Max(double, Formula)
   href: api/MathTools.Algebra.Functions.Max.html#MathTools_Algebra_Functions_Max__ctor_System_Double_MathTools_Algebra_Formula_
@@ -2944,6 +3862,42 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Max.New(Double, Double)
   nameWithType: Max.Max(double, double)
   nameWithType.vb: Max.New(Double, Double)
+- uid: MathTools.Algebra.Functions.Max.#ctor(System.Double,System.String)
+  name: Max(double, string)
+  href: api/MathTools.Algebra.Functions.Max.html#MathTools_Algebra_Functions_Max__ctor_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Functions.Max.#ctor(System.Double,System.String)
+  name.vb: New(Double, String)
+  fullName: MathTools.Algebra.Functions.Max.Max(double, string)
+  fullName.vb: MathTools.Algebra.Functions.Max.New(Double, String)
+  nameWithType: Max.Max(double, string)
+  nameWithType.vb: Max.New(Double, String)
+- uid: MathTools.Algebra.Functions.Max.#ctor(System.String,MathTools.Algebra.Formula)
+  name: Max(string, Formula)
+  href: api/MathTools.Algebra.Functions.Max.html#MathTools_Algebra_Functions_Max__ctor_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Functions.Max.#ctor(System.String,MathTools.Algebra.Formula)
+  name.vb: New(String, Formula)
+  fullName: MathTools.Algebra.Functions.Max.Max(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Functions.Max.New(String, MathTools.Algebra.Formula)
+  nameWithType: Max.Max(string, Formula)
+  nameWithType.vb: Max.New(String, Formula)
+- uid: MathTools.Algebra.Functions.Max.#ctor(System.String,System.Double)
+  name: Max(string, double)
+  href: api/MathTools.Algebra.Functions.Max.html#MathTools_Algebra_Functions_Max__ctor_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Functions.Max.#ctor(System.String,System.Double)
+  name.vb: New(String, Double)
+  fullName: MathTools.Algebra.Functions.Max.Max(string, double)
+  fullName.vb: MathTools.Algebra.Functions.Max.New(String, Double)
+  nameWithType: Max.Max(string, double)
+  nameWithType.vb: Max.New(String, Double)
+- uid: MathTools.Algebra.Functions.Max.#ctor(System.String,System.String)
+  name: Max(string, string)
+  href: api/MathTools.Algebra.Functions.Max.html#MathTools_Algebra_Functions_Max__ctor_System_String_System_String_
+  commentId: M:MathTools.Algebra.Functions.Max.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: MathTools.Algebra.Functions.Max.Max(string, string)
+  fullName.vb: MathTools.Algebra.Functions.Max.New(String, String)
+  nameWithType: Max.Max(string, string)
+  nameWithType.vb: Max.New(String, String)
 - uid: MathTools.Algebra.Functions.Max.#ctor*
   name: Max
   href: api/MathTools.Algebra.Functions.Max.html#MathTools_Algebra_Functions_Max__ctor_
@@ -3007,6 +3961,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.MaxMagnitude.New(MathTools.Algebra.Formula, Double)
   nameWithType: MaxMagnitude.MaxMagnitude(Formula, double)
   nameWithType.vb: MaxMagnitude.New(Formula, Double)
+- uid: MathTools.Algebra.Functions.MaxMagnitude.#ctor(MathTools.Algebra.Formula,System.String)
+  name: MaxMagnitude(Formula, string)
+  href: api/MathTools.Algebra.Functions.MaxMagnitude.html#MathTools_Algebra_Functions_MaxMagnitude__ctor_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Functions.MaxMagnitude.#ctor(MathTools.Algebra.Formula,System.String)
+  name.vb: New(Formula, String)
+  fullName: MathTools.Algebra.Functions.MaxMagnitude.MaxMagnitude(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Functions.MaxMagnitude.New(MathTools.Algebra.Formula, String)
+  nameWithType: MaxMagnitude.MaxMagnitude(Formula, string)
+  nameWithType.vb: MaxMagnitude.New(Formula, String)
 - uid: MathTools.Algebra.Functions.MaxMagnitude.#ctor(System.Double,MathTools.Algebra.Formula)
   name: MaxMagnitude(double, Formula)
   href: api/MathTools.Algebra.Functions.MaxMagnitude.html#MathTools_Algebra_Functions_MaxMagnitude__ctor_System_Double_MathTools_Algebra_Formula_
@@ -3025,6 +3988,42 @@ references:
   fullName.vb: MathTools.Algebra.Functions.MaxMagnitude.New(Double, Double)
   nameWithType: MaxMagnitude.MaxMagnitude(double, double)
   nameWithType.vb: MaxMagnitude.New(Double, Double)
+- uid: MathTools.Algebra.Functions.MaxMagnitude.#ctor(System.Double,System.String)
+  name: MaxMagnitude(double, string)
+  href: api/MathTools.Algebra.Functions.MaxMagnitude.html#MathTools_Algebra_Functions_MaxMagnitude__ctor_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Functions.MaxMagnitude.#ctor(System.Double,System.String)
+  name.vb: New(Double, String)
+  fullName: MathTools.Algebra.Functions.MaxMagnitude.MaxMagnitude(double, string)
+  fullName.vb: MathTools.Algebra.Functions.MaxMagnitude.New(Double, String)
+  nameWithType: MaxMagnitude.MaxMagnitude(double, string)
+  nameWithType.vb: MaxMagnitude.New(Double, String)
+- uid: MathTools.Algebra.Functions.MaxMagnitude.#ctor(System.String,MathTools.Algebra.Formula)
+  name: MaxMagnitude(string, Formula)
+  href: api/MathTools.Algebra.Functions.MaxMagnitude.html#MathTools_Algebra_Functions_MaxMagnitude__ctor_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Functions.MaxMagnitude.#ctor(System.String,MathTools.Algebra.Formula)
+  name.vb: New(String, Formula)
+  fullName: MathTools.Algebra.Functions.MaxMagnitude.MaxMagnitude(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Functions.MaxMagnitude.New(String, MathTools.Algebra.Formula)
+  nameWithType: MaxMagnitude.MaxMagnitude(string, Formula)
+  nameWithType.vb: MaxMagnitude.New(String, Formula)
+- uid: MathTools.Algebra.Functions.MaxMagnitude.#ctor(System.String,System.Double)
+  name: MaxMagnitude(string, double)
+  href: api/MathTools.Algebra.Functions.MaxMagnitude.html#MathTools_Algebra_Functions_MaxMagnitude__ctor_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Functions.MaxMagnitude.#ctor(System.String,System.Double)
+  name.vb: New(String, Double)
+  fullName: MathTools.Algebra.Functions.MaxMagnitude.MaxMagnitude(string, double)
+  fullName.vb: MathTools.Algebra.Functions.MaxMagnitude.New(String, Double)
+  nameWithType: MaxMagnitude.MaxMagnitude(string, double)
+  nameWithType.vb: MaxMagnitude.New(String, Double)
+- uid: MathTools.Algebra.Functions.MaxMagnitude.#ctor(System.String,System.String)
+  name: MaxMagnitude(string, string)
+  href: api/MathTools.Algebra.Functions.MaxMagnitude.html#MathTools_Algebra_Functions_MaxMagnitude__ctor_System_String_System_String_
+  commentId: M:MathTools.Algebra.Functions.MaxMagnitude.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: MathTools.Algebra.Functions.MaxMagnitude.MaxMagnitude(string, string)
+  fullName.vb: MathTools.Algebra.Functions.MaxMagnitude.New(String, String)
+  nameWithType: MaxMagnitude.MaxMagnitude(string, string)
+  nameWithType.vb: MaxMagnitude.New(String, String)
 - uid: MathTools.Algebra.Functions.MaxMagnitude.#ctor*
   name: MaxMagnitude
   href: api/MathTools.Algebra.Functions.MaxMagnitude.html#MathTools_Algebra_Functions_MaxMagnitude__ctor_
@@ -3088,6 +4087,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Min.New(MathTools.Algebra.Formula, Double)
   nameWithType: Min.Min(Formula, double)
   nameWithType.vb: Min.New(Formula, Double)
+- uid: MathTools.Algebra.Functions.Min.#ctor(MathTools.Algebra.Formula,System.String)
+  name: Min(Formula, string)
+  href: api/MathTools.Algebra.Functions.Min.html#MathTools_Algebra_Functions_Min__ctor_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Functions.Min.#ctor(MathTools.Algebra.Formula,System.String)
+  name.vb: New(Formula, String)
+  fullName: MathTools.Algebra.Functions.Min.Min(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Functions.Min.New(MathTools.Algebra.Formula, String)
+  nameWithType: Min.Min(Formula, string)
+  nameWithType.vb: Min.New(Formula, String)
 - uid: MathTools.Algebra.Functions.Min.#ctor(System.Double,MathTools.Algebra.Formula)
   name: Min(double, Formula)
   href: api/MathTools.Algebra.Functions.Min.html#MathTools_Algebra_Functions_Min__ctor_System_Double_MathTools_Algebra_Formula_
@@ -3106,6 +4114,42 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Min.New(Double, Double)
   nameWithType: Min.Min(double, double)
   nameWithType.vb: Min.New(Double, Double)
+- uid: MathTools.Algebra.Functions.Min.#ctor(System.Double,System.String)
+  name: Min(double, string)
+  href: api/MathTools.Algebra.Functions.Min.html#MathTools_Algebra_Functions_Min__ctor_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Functions.Min.#ctor(System.Double,System.String)
+  name.vb: New(Double, String)
+  fullName: MathTools.Algebra.Functions.Min.Min(double, string)
+  fullName.vb: MathTools.Algebra.Functions.Min.New(Double, String)
+  nameWithType: Min.Min(double, string)
+  nameWithType.vb: Min.New(Double, String)
+- uid: MathTools.Algebra.Functions.Min.#ctor(System.String,MathTools.Algebra.Formula)
+  name: Min(string, Formula)
+  href: api/MathTools.Algebra.Functions.Min.html#MathTools_Algebra_Functions_Min__ctor_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Functions.Min.#ctor(System.String,MathTools.Algebra.Formula)
+  name.vb: New(String, Formula)
+  fullName: MathTools.Algebra.Functions.Min.Min(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Functions.Min.New(String, MathTools.Algebra.Formula)
+  nameWithType: Min.Min(string, Formula)
+  nameWithType.vb: Min.New(String, Formula)
+- uid: MathTools.Algebra.Functions.Min.#ctor(System.String,System.Double)
+  name: Min(string, double)
+  href: api/MathTools.Algebra.Functions.Min.html#MathTools_Algebra_Functions_Min__ctor_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Functions.Min.#ctor(System.String,System.Double)
+  name.vb: New(String, Double)
+  fullName: MathTools.Algebra.Functions.Min.Min(string, double)
+  fullName.vb: MathTools.Algebra.Functions.Min.New(String, Double)
+  nameWithType: Min.Min(string, double)
+  nameWithType.vb: Min.New(String, Double)
+- uid: MathTools.Algebra.Functions.Min.#ctor(System.String,System.String)
+  name: Min(string, string)
+  href: api/MathTools.Algebra.Functions.Min.html#MathTools_Algebra_Functions_Min__ctor_System_String_System_String_
+  commentId: M:MathTools.Algebra.Functions.Min.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: MathTools.Algebra.Functions.Min.Min(string, string)
+  fullName.vb: MathTools.Algebra.Functions.Min.New(String, String)
+  nameWithType: Min.Min(string, string)
+  nameWithType.vb: Min.New(String, String)
 - uid: MathTools.Algebra.Functions.Min.#ctor*
   name: Min
   href: api/MathTools.Algebra.Functions.Min.html#MathTools_Algebra_Functions_Min__ctor_
@@ -3169,6 +4213,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.MinMagnitude.New(MathTools.Algebra.Formula, Double)
   nameWithType: MinMagnitude.MinMagnitude(Formula, double)
   nameWithType.vb: MinMagnitude.New(Formula, Double)
+- uid: MathTools.Algebra.Functions.MinMagnitude.#ctor(MathTools.Algebra.Formula,System.String)
+  name: MinMagnitude(Formula, string)
+  href: api/MathTools.Algebra.Functions.MinMagnitude.html#MathTools_Algebra_Functions_MinMagnitude__ctor_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Functions.MinMagnitude.#ctor(MathTools.Algebra.Formula,System.String)
+  name.vb: New(Formula, String)
+  fullName: MathTools.Algebra.Functions.MinMagnitude.MinMagnitude(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Functions.MinMagnitude.New(MathTools.Algebra.Formula, String)
+  nameWithType: MinMagnitude.MinMagnitude(Formula, string)
+  nameWithType.vb: MinMagnitude.New(Formula, String)
 - uid: MathTools.Algebra.Functions.MinMagnitude.#ctor(System.Double,MathTools.Algebra.Formula)
   name: MinMagnitude(double, Formula)
   href: api/MathTools.Algebra.Functions.MinMagnitude.html#MathTools_Algebra_Functions_MinMagnitude__ctor_System_Double_MathTools_Algebra_Formula_
@@ -3187,6 +4240,42 @@ references:
   fullName.vb: MathTools.Algebra.Functions.MinMagnitude.New(Double, Double)
   nameWithType: MinMagnitude.MinMagnitude(double, double)
   nameWithType.vb: MinMagnitude.New(Double, Double)
+- uid: MathTools.Algebra.Functions.MinMagnitude.#ctor(System.Double,System.String)
+  name: MinMagnitude(double, string)
+  href: api/MathTools.Algebra.Functions.MinMagnitude.html#MathTools_Algebra_Functions_MinMagnitude__ctor_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Functions.MinMagnitude.#ctor(System.Double,System.String)
+  name.vb: New(Double, String)
+  fullName: MathTools.Algebra.Functions.MinMagnitude.MinMagnitude(double, string)
+  fullName.vb: MathTools.Algebra.Functions.MinMagnitude.New(Double, String)
+  nameWithType: MinMagnitude.MinMagnitude(double, string)
+  nameWithType.vb: MinMagnitude.New(Double, String)
+- uid: MathTools.Algebra.Functions.MinMagnitude.#ctor(System.String,MathTools.Algebra.Formula)
+  name: MinMagnitude(string, Formula)
+  href: api/MathTools.Algebra.Functions.MinMagnitude.html#MathTools_Algebra_Functions_MinMagnitude__ctor_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Functions.MinMagnitude.#ctor(System.String,MathTools.Algebra.Formula)
+  name.vb: New(String, Formula)
+  fullName: MathTools.Algebra.Functions.MinMagnitude.MinMagnitude(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Functions.MinMagnitude.New(String, MathTools.Algebra.Formula)
+  nameWithType: MinMagnitude.MinMagnitude(string, Formula)
+  nameWithType.vb: MinMagnitude.New(String, Formula)
+- uid: MathTools.Algebra.Functions.MinMagnitude.#ctor(System.String,System.Double)
+  name: MinMagnitude(string, double)
+  href: api/MathTools.Algebra.Functions.MinMagnitude.html#MathTools_Algebra_Functions_MinMagnitude__ctor_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Functions.MinMagnitude.#ctor(System.String,System.Double)
+  name.vb: New(String, Double)
+  fullName: MathTools.Algebra.Functions.MinMagnitude.MinMagnitude(string, double)
+  fullName.vb: MathTools.Algebra.Functions.MinMagnitude.New(String, Double)
+  nameWithType: MinMagnitude.MinMagnitude(string, double)
+  nameWithType.vb: MinMagnitude.New(String, Double)
+- uid: MathTools.Algebra.Functions.MinMagnitude.#ctor(System.String,System.String)
+  name: MinMagnitude(string, string)
+  href: api/MathTools.Algebra.Functions.MinMagnitude.html#MathTools_Algebra_Functions_MinMagnitude__ctor_System_String_System_String_
+  commentId: M:MathTools.Algebra.Functions.MinMagnitude.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: MathTools.Algebra.Functions.MinMagnitude.MinMagnitude(string, string)
+  fullName.vb: MathTools.Algebra.Functions.MinMagnitude.New(String, String)
+  nameWithType: MinMagnitude.MinMagnitude(string, string)
+  nameWithType.vb: MinMagnitude.New(String, String)
 - uid: MathTools.Algebra.Functions.MinMagnitude.#ctor*
   name: MinMagnitude
   href: api/MathTools.Algebra.Functions.MinMagnitude.html#MathTools_Algebra_Functions_MinMagnitude__ctor_
@@ -3250,6 +4339,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Mod.New(MathTools.Algebra.Formula, Double)
   nameWithType: Mod.Mod(Formula, double)
   nameWithType.vb: Mod.New(Formula, Double)
+- uid: MathTools.Algebra.Functions.Mod.#ctor(MathTools.Algebra.Formula,System.String)
+  name: Mod(Formula, string)
+  href: api/MathTools.Algebra.Functions.Mod.html#MathTools_Algebra_Functions_Mod__ctor_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Functions.Mod.#ctor(MathTools.Algebra.Formula,System.String)
+  name.vb: New(Formula, String)
+  fullName: MathTools.Algebra.Functions.Mod.Mod(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Functions.Mod.New(MathTools.Algebra.Formula, String)
+  nameWithType: Mod.Mod(Formula, string)
+  nameWithType.vb: Mod.New(Formula, String)
 - uid: MathTools.Algebra.Functions.Mod.#ctor(System.Double,MathTools.Algebra.Formula)
   name: Mod(double, Formula)
   href: api/MathTools.Algebra.Functions.Mod.html#MathTools_Algebra_Functions_Mod__ctor_System_Double_MathTools_Algebra_Formula_
@@ -3268,6 +4366,42 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Mod.New(Double, Double)
   nameWithType: Mod.Mod(double, double)
   nameWithType.vb: Mod.New(Double, Double)
+- uid: MathTools.Algebra.Functions.Mod.#ctor(System.Double,System.String)
+  name: Mod(double, string)
+  href: api/MathTools.Algebra.Functions.Mod.html#MathTools_Algebra_Functions_Mod__ctor_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Functions.Mod.#ctor(System.Double,System.String)
+  name.vb: New(Double, String)
+  fullName: MathTools.Algebra.Functions.Mod.Mod(double, string)
+  fullName.vb: MathTools.Algebra.Functions.Mod.New(Double, String)
+  nameWithType: Mod.Mod(double, string)
+  nameWithType.vb: Mod.New(Double, String)
+- uid: MathTools.Algebra.Functions.Mod.#ctor(System.String,MathTools.Algebra.Formula)
+  name: Mod(string, Formula)
+  href: api/MathTools.Algebra.Functions.Mod.html#MathTools_Algebra_Functions_Mod__ctor_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Functions.Mod.#ctor(System.String,MathTools.Algebra.Formula)
+  name.vb: New(String, Formula)
+  fullName: MathTools.Algebra.Functions.Mod.Mod(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Functions.Mod.New(String, MathTools.Algebra.Formula)
+  nameWithType: Mod.Mod(string, Formula)
+  nameWithType.vb: Mod.New(String, Formula)
+- uid: MathTools.Algebra.Functions.Mod.#ctor(System.String,System.Double)
+  name: Mod(string, double)
+  href: api/MathTools.Algebra.Functions.Mod.html#MathTools_Algebra_Functions_Mod__ctor_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Functions.Mod.#ctor(System.String,System.Double)
+  name.vb: New(String, Double)
+  fullName: MathTools.Algebra.Functions.Mod.Mod(string, double)
+  fullName.vb: MathTools.Algebra.Functions.Mod.New(String, Double)
+  nameWithType: Mod.Mod(string, double)
+  nameWithType.vb: Mod.New(String, Double)
+- uid: MathTools.Algebra.Functions.Mod.#ctor(System.String,System.String)
+  name: Mod(string, string)
+  href: api/MathTools.Algebra.Functions.Mod.html#MathTools_Algebra_Functions_Mod__ctor_System_String_System_String_
+  commentId: M:MathTools.Algebra.Functions.Mod.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: MathTools.Algebra.Functions.Mod.Mod(string, string)
+  fullName.vb: MathTools.Algebra.Functions.Mod.New(String, String)
+  nameWithType: Mod.Mod(string, string)
+  nameWithType.vb: Mod.New(String, String)
 - uid: MathTools.Algebra.Functions.Mod.#ctor*
   name: Mod
   href: api/MathTools.Algebra.Functions.Mod.html#MathTools_Algebra_Functions_Mod__ctor_
@@ -3394,6 +4528,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Pow.New(MathTools.Algebra.Formula, Double)
   nameWithType: Pow.Pow(Formula, double)
   nameWithType.vb: Pow.New(Formula, Double)
+- uid: MathTools.Algebra.Functions.Pow.#ctor(MathTools.Algebra.Formula,System.String)
+  name: Pow(Formula, string)
+  href: api/MathTools.Algebra.Functions.Pow.html#MathTools_Algebra_Functions_Pow__ctor_MathTools_Algebra_Formula_System_String_
+  commentId: M:MathTools.Algebra.Functions.Pow.#ctor(MathTools.Algebra.Formula,System.String)
+  name.vb: New(Formula, String)
+  fullName: MathTools.Algebra.Functions.Pow.Pow(MathTools.Algebra.Formula, string)
+  fullName.vb: MathTools.Algebra.Functions.Pow.New(MathTools.Algebra.Formula, String)
+  nameWithType: Pow.Pow(Formula, string)
+  nameWithType.vb: Pow.New(Formula, String)
 - uid: MathTools.Algebra.Functions.Pow.#ctor(System.Double,MathTools.Algebra.Formula)
   name: Pow(double, Formula)
   href: api/MathTools.Algebra.Functions.Pow.html#MathTools_Algebra_Functions_Pow__ctor_System_Double_MathTools_Algebra_Formula_
@@ -3412,6 +4555,42 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Pow.New(Double, Double)
   nameWithType: Pow.Pow(double, double)
   nameWithType.vb: Pow.New(Double, Double)
+- uid: MathTools.Algebra.Functions.Pow.#ctor(System.Double,System.String)
+  name: Pow(double, string)
+  href: api/MathTools.Algebra.Functions.Pow.html#MathTools_Algebra_Functions_Pow__ctor_System_Double_System_String_
+  commentId: M:MathTools.Algebra.Functions.Pow.#ctor(System.Double,System.String)
+  name.vb: New(Double, String)
+  fullName: MathTools.Algebra.Functions.Pow.Pow(double, string)
+  fullName.vb: MathTools.Algebra.Functions.Pow.New(Double, String)
+  nameWithType: Pow.Pow(double, string)
+  nameWithType.vb: Pow.New(Double, String)
+- uid: MathTools.Algebra.Functions.Pow.#ctor(System.String,MathTools.Algebra.Formula)
+  name: Pow(string, Formula)
+  href: api/MathTools.Algebra.Functions.Pow.html#MathTools_Algebra_Functions_Pow__ctor_System_String_MathTools_Algebra_Formula_
+  commentId: M:MathTools.Algebra.Functions.Pow.#ctor(System.String,MathTools.Algebra.Formula)
+  name.vb: New(String, Formula)
+  fullName: MathTools.Algebra.Functions.Pow.Pow(string, MathTools.Algebra.Formula)
+  fullName.vb: MathTools.Algebra.Functions.Pow.New(String, MathTools.Algebra.Formula)
+  nameWithType: Pow.Pow(string, Formula)
+  nameWithType.vb: Pow.New(String, Formula)
+- uid: MathTools.Algebra.Functions.Pow.#ctor(System.String,System.Double)
+  name: Pow(string, double)
+  href: api/MathTools.Algebra.Functions.Pow.html#MathTools_Algebra_Functions_Pow__ctor_System_String_System_Double_
+  commentId: M:MathTools.Algebra.Functions.Pow.#ctor(System.String,System.Double)
+  name.vb: New(String, Double)
+  fullName: MathTools.Algebra.Functions.Pow.Pow(string, double)
+  fullName.vb: MathTools.Algebra.Functions.Pow.New(String, Double)
+  nameWithType: Pow.Pow(string, double)
+  nameWithType.vb: Pow.New(String, Double)
+- uid: MathTools.Algebra.Functions.Pow.#ctor(System.String,System.String)
+  name: Pow(string, string)
+  href: api/MathTools.Algebra.Functions.Pow.html#MathTools_Algebra_Functions_Pow__ctor_System_String_System_String_
+  commentId: M:MathTools.Algebra.Functions.Pow.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: MathTools.Algebra.Functions.Pow.Pow(string, string)
+  fullName.vb: MathTools.Algebra.Functions.Pow.New(String, String)
+  nameWithType: Pow.Pow(string, string)
+  nameWithType.vb: Pow.New(String, String)
 - uid: MathTools.Algebra.Functions.Pow.#ctor*
   name: Pow
   href: api/MathTools.Algebra.Functions.Pow.html#MathTools_Algebra_Functions_Pow__ctor_
@@ -3529,6 +4708,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Sin.New(Double)
   nameWithType: Sin.Sin(double)
   nameWithType.vb: Sin.New(Double)
+- uid: MathTools.Algebra.Functions.Sin.#ctor(System.String)
+  name: Sin(string)
+  href: api/MathTools.Algebra.Functions.Sin.html#MathTools_Algebra_Functions_Sin__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Sin.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Sin.Sin(string)
+  fullName.vb: MathTools.Algebra.Functions.Sin.New(String)
+  nameWithType: Sin.Sin(string)
+  nameWithType.vb: Sin.New(String)
 - uid: MathTools.Algebra.Functions.Sin.#ctor*
   name: Sin
   href: api/MathTools.Algebra.Functions.Sin.html#MathTools_Algebra_Functions_Sin__ctor_
@@ -3592,6 +4780,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Sinh.New(Double)
   nameWithType: Sinh.Sinh(double)
   nameWithType.vb: Sinh.New(Double)
+- uid: MathTools.Algebra.Functions.Sinh.#ctor(System.String)
+  name: Sinh(string)
+  href: api/MathTools.Algebra.Functions.Sinh.html#MathTools_Algebra_Functions_Sinh__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Sinh.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Sinh.Sinh(string)
+  fullName.vb: MathTools.Algebra.Functions.Sinh.New(String)
+  nameWithType: Sinh.Sinh(string)
+  nameWithType.vb: Sinh.New(String)
 - uid: MathTools.Algebra.Functions.Sinh.#ctor*
   name: Sinh
   href: api/MathTools.Algebra.Functions.Sinh.html#MathTools_Algebra_Functions_Sinh__ctor_
@@ -3655,6 +4852,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Sqrt.New(Double)
   nameWithType: Sqrt.Sqrt(double)
   nameWithType.vb: Sqrt.New(Double)
+- uid: MathTools.Algebra.Functions.Sqrt.#ctor(System.String)
+  name: Sqrt(string)
+  href: api/MathTools.Algebra.Functions.Sqrt.html#MathTools_Algebra_Functions_Sqrt__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Sqrt.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Sqrt.Sqrt(string)
+  fullName.vb: MathTools.Algebra.Functions.Sqrt.New(String)
+  nameWithType: Sqrt.Sqrt(string)
+  nameWithType.vb: Sqrt.New(String)
 - uid: MathTools.Algebra.Functions.Sqrt.#ctor*
   name: Sqrt
   href: api/MathTools.Algebra.Functions.Sqrt.html#MathTools_Algebra_Functions_Sqrt__ctor_
@@ -3772,6 +4978,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Tan.New(Double)
   nameWithType: Tan.Tan(double)
   nameWithType.vb: Tan.New(Double)
+- uid: MathTools.Algebra.Functions.Tan.#ctor(System.String)
+  name: Tan(string)
+  href: api/MathTools.Algebra.Functions.Tan.html#MathTools_Algebra_Functions_Tan__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Tan.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Tan.Tan(string)
+  fullName.vb: MathTools.Algebra.Functions.Tan.New(String)
+  nameWithType: Tan.Tan(string)
+  nameWithType.vb: Tan.New(String)
 - uid: MathTools.Algebra.Functions.Tan.#ctor*
   name: Tan
   href: api/MathTools.Algebra.Functions.Tan.html#MathTools_Algebra_Functions_Tan__ctor_
@@ -3835,6 +5050,15 @@ references:
   fullName.vb: MathTools.Algebra.Functions.Tanh.New(Double)
   nameWithType: Tanh.Tanh(double)
   nameWithType.vb: Tanh.New(Double)
+- uid: MathTools.Algebra.Functions.Tanh.#ctor(System.String)
+  name: Tanh(string)
+  href: api/MathTools.Algebra.Functions.Tanh.html#MathTools_Algebra_Functions_Tanh__ctor_System_String_
+  commentId: M:MathTools.Algebra.Functions.Tanh.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MathTools.Algebra.Functions.Tanh.Tanh(string)
+  fullName.vb: MathTools.Algebra.Functions.Tanh.New(String)
+  nameWithType: Tanh.Tanh(string)
+  nameWithType.vb: Tanh.New(String)
 - uid: MathTools.Algebra.Functions.Tanh.#ctor*
   name: Tanh
   href: api/MathTools.Algebra.Functions.Tanh.html#MathTools_Algebra_Functions_Tanh__ctor_

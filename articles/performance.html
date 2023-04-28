@@ -13,7 +13,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       
-      <meta name="docfx:docurl" content="https://github.com/kasancode/MathTools.Algebra/blob/release/v1.0/docfx/articles/performance.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/kasancode/MathTools.Algebra/blob/main/docfx/articles/performance.md/#L1">
 
       <script>
         MathJax = {
@@ -90,11 +90,82 @@ var pramsValue = formula.Eval(0.1, 0.2);
 var func = formula.ToFunc();
 var toFuncValue = func(0.1, 0.2);
 </code></pre>
-<p><img src="..%5Cimages%5Cperformance.png" alt="performance"></p>
+<p>Number of loops and execution time (msec) are :</p>
+<table>
+<thead>
+<tr>
+<th>Loop</th>
+<th>Dictionary</th>
+<th>Anonymous Class</th>
+<th>Params</th>
+<th>ToFunc</th>
+<th style="text-align: center;">C# code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>5</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>100</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>0</td>
+<td>1</td>
+<td>10</td>
+<td>0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>10000</td>
+<td>10</td>
+<td>18</td>
+<td>76</td>
+<td>2</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>100000</td>
+<td>85</td>
+<td>150</td>
+<td>451</td>
+<td>17</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td>1000000</td>
+<td>463</td>
+<td>665</td>
+<td>2830</td>
+<td>148</td>
+<td style="text-align: center;">63</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../images/performance.png" alt="performance"></p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/kasancode/MathTools.Algebra/blob/release/v1.0/docfx/articles/performance.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/kasancode/MathTools.Algebra/blob/main/docfx/articles/performance.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
