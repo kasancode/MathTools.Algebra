@@ -2,20 +2,8 @@
 
 namespace MathTools.Algebra.Functions
 {
-    public class If : Formula
+    public partial class If : Formula
     {
-        public If(Formula condition, Formula positiveFormula, Formula negativeFormula)
-        {
-            this.SubFormulae = new() { condition, positiveFormula, negativeFormula };
-        }
-        public If(Formula condition, double positiveValue, Formula negativeFormula) : this(condition, new Constant(positiveValue), negativeFormula) { }
-        public If(Formula condition, Formula positiveFormula, double negativeValue) : this(condition, positiveFormula, new Constant(negativeValue)) { }
-        public If(Formula condition, double positiveValue, double negativeValue) : this(condition, new Constant(positiveValue), new Constant(negativeValue)) { }
-        public If(double condition, Formula positiveFormula, Formula negativeFormula) : this(new Constant(condition), positiveFormula, negativeFormula) { }
-        public If(double condition, double positiveValue, Formula negativeFormula) : this(new Constant(condition), new Constant(positiveValue), negativeFormula) { }
-        public If(double condition, Formula positiveFormula, double negativeValue) : this(new Constant(condition), positiveFormula, new Constant(negativeValue)) { }
-        public If(double condition, double positiveValue, double negativeValue) : this(new Constant(condition), new Constant(positiveValue), new Constant(negativeValue)) { }
-
         public override double Eval(Dictionary<string, double> variables)
         {
             var condition = this.SubFormulae[0].Eval(variables);

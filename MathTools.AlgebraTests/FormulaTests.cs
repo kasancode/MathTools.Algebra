@@ -2,7 +2,7 @@
 using MathTools.Algebra.Functions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MathTools.AlgebraTests
+namespace MathTools.Algebra.Tests
 {
     [TestClass()]
     public class FormulaTests

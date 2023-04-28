@@ -2,16 +2,8 @@
 
 namespace MathTools.Algebra.Functions
 {
-    public class Mod : Formula
+    public partial class Mod : Formula
     {
-        public Mod(Formula f1, Formula f2)
-        {
-            this.SubFormulae = new() { f1, f2 };
-        }
-        public Mod(Formula f1, double v2) : this(f1, new Constant(v2)) { }
-        public Mod(double v1, Formula f2) : this(new Constant(v1), f2) { }
-        public Mod(double v1, double v2) : this(new Constant(v1), new Constant(v2)) { }
-
         public override double Eval(Dictionary<string, double> variables)
             => this.SubFormulae[0].Eval(variables) % this.SubFormulae[1].Eval(variables);
 

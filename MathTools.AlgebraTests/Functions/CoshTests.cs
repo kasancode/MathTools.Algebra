@@ -50,6 +50,9 @@ namespace MathTools.Algebra.Functions.Tests
 
             formula = Formula.Pow(x, 4) * Formula.Cosh(x);
             Assert.AreEqual(32000 * (Math.Cosh(20) - 5 * Math.Sinh(20)), formula.EvalDerivative("x", vars), error);
+
+            formula = Formula.Pow("x", 4) * Formula.Cosh("x");
+            Assert.AreEqual(32000 * (Math.Cosh(20) - 5 * Math.Sinh(20)), formula.EvalDerivative("x", vars), error);
         }
 
         [TestMethod()]

@@ -163,41 +163,41 @@ namespace MathTools.Algebra
                 : throw new FormulaException("Syntax error.");
 
         public static Formula Parse(ReadOnlySpan<char> s, IFormatProvider? provider)
-            => internalTryParse(s.Trim(), NumberStyles.Float | NumberStyles.AllowThousands, provider, new(), out var formula)
+            => internalTryParse(s.Trim(), NumberStyles.Float | NumberStyles.AllowThousands, provider, out var formula)
                 ? formula
                 : throw new FormulaException("Syntax error.");
 
         public static bool TryParse(ReadOnlySpan<char> s, IFormatProvider? provider, [MaybeNullWhen(false)] out Formula result)
-            => internalTryParse(s.Trim(), NumberStyles.Float | NumberStyles.AllowThousands, provider, new(), out result);
+            => internalTryParse(s.Trim(), NumberStyles.Float | NumberStyles.AllowThousands, provider, out result);
 
         public static Formula Parse(string s, IFormatProvider? provider)
-            => internalTryParse(s.Trim(), NumberStyles.Float | NumberStyles.AllowThousands, provider, new(), out var formula)
+            => internalTryParse(s.Trim(), NumberStyles.Float | NumberStyles.AllowThousands, provider, out var formula)
                 ? formula
                 : throw new FormulaException("Syntax error.");
 
         public static bool TryParse(string text, [MaybeNullWhen(false)] out Formula formula)
-            => internalTryParse(text.Trim(), NumberStyles.Float | NumberStyles.AllowThousands, null, new(), out formula);
+            => internalTryParse(text.Trim(), NumberStyles.Float | NumberStyles.AllowThousands, null, out formula);
 
         public static bool TryParse([NotNullWhen(true)] string? s, IFormatProvider? provider, [MaybeNullWhen(false)] out Formula result)
-            => internalTryParse(s?.Trim() ?? "", NumberStyles.Float | NumberStyles.AllowThousands, provider, new(), out result);
+            => internalTryParse(s?.Trim() ?? "", NumberStyles.Float | NumberStyles.AllowThousands, provider, out result);
 
         public static Formula Parse(ReadOnlySpan<char> s, NumberStyles style, IFormatProvider? provider)
-            => internalTryParse(s.Trim(), style, provider, new(), out var formula)
+            => internalTryParse(s.Trim(), style, provider, out var formula)
                 ? formula
                 : throw new FormulaException("Syntax error.");
 
         public static Formula Parse(string s, NumberStyles style, IFormatProvider? provider)
-            => internalTryParse(s.Trim(), style, provider, new(), out var formula)
+            => internalTryParse(s.Trim(), style, provider, out var formula)
                 ? formula
                 : throw new FormulaException("Syntax error.");
 
         public static bool TryParse(ReadOnlySpan<char> s, NumberStyles style, IFormatProvider? provider, [MaybeNullWhen(false)] out Formula result)
-            => internalTryParse(s.Trim(), style, provider, new(), out result);
+            => internalTryParse(s.Trim(), style, provider, out result);
 
         public static bool TryParse([NotNullWhen(true)] string? s, NumberStyles style, IFormatProvider? provider, [MaybeNullWhen(false)] out Formula result)
-            => internalTryParse(s?.Trim() ?? "", style, provider, new(), out result);
+            => internalTryParse(s?.Trim() ?? "", style, provider, out result);
 
-        internal static bool internalTryParse(ReadOnlySpan<char> s, NumberStyles style, IFormatProvider? provider, List<Variable> variables, [MaybeNullWhen(false)] out Formula formula)
+        internal static bool internalTryParse(ReadOnlySpan<char> s, NumberStyles style, IFormatProvider? provider, [MaybeNullWhen(false)] out Formula formula)
         {
             if (s.Length < 1)
             {
@@ -281,7 +281,7 @@ namespace MathTools.Algebra
                         return false;
                     }
 
-                    if (internalTryParse(text[1..^1], style, provider, variables, out var subFormula))
+                    if (internalTryParse(text[1..^1], style, provider, out var subFormula))
                     {
                         formula = new Parenthesis(subFormula);
                         return true;
@@ -310,7 +310,7 @@ namespace MathTools.Algebra
                         {
                             if (subText[i] == ',')
                             {
-                                if (internalTryParse(subText[last..i], style, provider, variables, out var sf))
+                                if (internalTryParse(subText[last..i], style, provider, out var sf))
                                 {
                                     subFormulae.Add(sf);
                                     last = i + 1;
@@ -323,7 +323,7 @@ namespace MathTools.Algebra
                             }
                         }
 
-                        if (internalTryParse(subText[last..], style, provider, variables, out var subFormula))
+                        if (internalTryParse(subText[last..], style, provider, out var subFormula))
                         {
                             subFormulae.Add(subFormula);
                         }
@@ -345,18 +345,7 @@ namespace MathTools.Algebra
                     // variable
                     if (!containsDelimiter(text))
                     {
-                        foreach (var v in variables)
-                        {
-                            if (v.Name == text)
-                            {
-                                formula = v;
-                                return true;
-                            }
-                        }
-
-                        var variable = new Variable(text.ToString());
-                        variables.Add(variable);
-                        formula = variable;
+                        formula = new Variable(text.ToString());
                         return true;
                     }
                 }
@@ -369,8 +358,8 @@ namespace MathTools.Algebra
             {
                 // operator
 
-                if (!internalTryParse(text[0..opPosition], style, provider, variables, out var left)
-                    || !internalTryParse(text[(opPosition + 1)..], style, provider, variables, out var right))
+                if (!internalTryParse(text[0..opPosition], style, provider, out var left)
+                    || !internalTryParse(text[(opPosition + 1)..], style, provider, out var right))
                 {
                     formula = Zero;
                     return false;

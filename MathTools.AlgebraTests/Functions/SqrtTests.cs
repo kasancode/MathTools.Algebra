@@ -35,10 +35,10 @@ namespace MathTools.Algebra.Functions.Tests
 
             var vars = new { x = 0.2 };
             var formula = Formula.Parse("sqrt(0.4)/3.8");
-            Assert.AreEqual(0, formula.EvalDerivative(null), error);
+            Assert.AreEqual(0, formula.EvalDerivative(""), error);
 
             formula = Formula.Parse("3.4/sqrt(0.8)");
-            Assert.AreEqual(0, formula.EvalDerivative(null), error);
+            Assert.AreEqual(0, formula.EvalDerivative(""), error);
 
             formula = Formula.Parse("x^4*sqrt(x)");
             Assert.AreEqual(0.0160997, formula.EvalDerivative("x", vars), error);

@@ -45,6 +45,11 @@
     ],
     "dest": "../docs",
     "globalMetadataFiles": [],
+    "globalMetadata": {
+      "_gitContribute": {
+        "branch": "main"
+      }
+    },
     "fileMetadataFiles": [],
     "template": [
       "default",

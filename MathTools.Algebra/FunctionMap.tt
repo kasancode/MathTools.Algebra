@@ -7,7 +7,8 @@
 <#
     var argTypes = new []{
         "Formula",
-        "double"
+        "double",
+        "string"
     };
 
     var funcs = new []{
@@ -51,10 +52,9 @@ namespace MathTools.Algebra
 {
     public partial class Formula
     {
-<#// generate static methods ---------------------------------------------------------------------------------#>
-<#foreach(var func in funcs){
-    var name = func.Item1;
-    var count = func.Item2;
+<#
+// generate static methods ---------------------------------------------------------------------------------
+foreach(var (name, count, _) in funcs){
     var counter = new int[count];
     var loopFlag = true;
 
@@ -74,9 +74,11 @@ namespace MathTools.Algebra
             }
         }
     }
-}#>
-<#// generate CreateFunction() method ---------------------------------------------------------------------------------#>
-
+}
+#>
+<#
+// generate CreateFunction() method ---------------------------------------------------------------------------------
+#>
         internal static Formula CreateFunction(ReadOnlySpan<char> funcName, List<Formula> subFuncs)
         {
             var lowerName = new Span<char>(funcName.ToArray());
@@ -98,7 +100,9 @@ foreach(var func in funcs){
             };
         }
 
-<#// generate BasicSimplify() method ---------------------------------------------------------------------------------#>
+<#
+// generate BasicSimplify() method ---------------------------------------------------------------------------------
+#>
         internal Formula BasicSimplify()
         {
             if (!this.HasVariable())
@@ -132,7 +136,9 @@ foreach(var func in funcs){
     }
 
     public static partial class FormulaCompiler{
-<#// generate FormulaCompiler() method ---------------------------------------------------------------------------------#>
+<#
+// generate FormulaCompiler() method ---------------------------------------------------------------------------------
+#>
 
         internal static void EmitFunctions(ILGenerator generator, Formula formula, List<string> variables)
         {
@@ -164,12 +170,9 @@ foreach(var (name, count, generate) in funcs){
 
     namespace Functions
     {
-<#// generate function classes ---------------------------------------------------------------------------------#>
-<#foreach(var func in funcs){
-    if(!func.Item3) continue;
-
-    var name = func.Item1;
-    var count = func.Item2;
+<#
+// generate function classes ---------------------------------------------------------------------------------
+foreach(var (name, count, generate) in funcs){
     var counter = new int[count];
     var loopFlag = true;
 #>
@@ -189,7 +192,7 @@ foreach(var (name, count, generate) in funcs){
         }else{
 #>
 
-            public <#=name#>(<#=string.Join(", ", counter.Select((c, i) => $"{argTypes[c]} v{i+1}"))#>) : this(<#=string.Join(", ", counter.Select((c, i)=> c==0 ? $"v{i+1}": $"new Constant(v{i+1})"))#>) { }
+            public <#=name#>(<#=string.Join(", ", counter.Select((c, i) => $"{argTypes[c]} v{i+1}"))#>) : this(<#=string.Join(", ", counter.Select((c, i)=> argTypes[c] switch {"Formula" => $"v{i+1}", "double" => $"new Constant(v{i+1})", "string" => $"new Variable(v{i+1})", _ => ""}))#>) { }
 <#
         }
         for(var i=0;i<counter.Length;i++){
@@ -204,6 +207,7 @@ foreach(var (name, count, generate) in funcs){
             }
         }
     }
+    if(generate){
 #>
 
             public override double Eval(Dictionary<string, double> variables)
@@ -216,12 +220,12 @@ foreach(var (name, count, generate) in funcs){
                     builder.Append("Math.<#=name#>(");
                     this.SubFormulae[0].BuildString(builder, format, formatProvider);
 <#
-    for(var i=1; i<count; i++){
+        for(var i=1; i<count; i++){
 #>
                     builder.Append(',');
                     this.SubFormulae[<#=i#>].BuildString(builder, format, formatProvider);
 <#
-    }
+        }
 #>
                     builder.Append(')');
                     break;
@@ -230,17 +234,20 @@ foreach(var (name, count, generate) in funcs){
                     builder.Append("<#=name#>(");
                     this.SubFormulae[0].BuildString(builder, format, formatProvider);
 <#
-    for(var i=1; i<count; i++){
+        for(var i=1; i<count; i++){
 #>
                     builder.Append(',');
                     this.SubFormulae[<#=i#>].BuildString(builder, format, formatProvider);
 <#
-    }
+        }
 #>
                     builder.Append(')');
                     break;
                 }
             }
+<#
+    }
+#>
         }
 <#
 }#>

@@ -12,75 +12,142 @@ namespace MathTools.Algebra
     {
         public static Formula Mod(Formula v1, Formula v2) => new Mod(v1, v2);
         public static Formula Mod(double v1, Formula v2) => new Mod(v1, v2);
+        public static Formula Mod(string v1, Formula v2) => new Mod(v1, v2);
         public static Formula Mod(Formula v1, double v2) => new Mod(v1, v2);
         public static Formula Mod(double v1, double v2) => new Mod(v1, v2);
+        public static Formula Mod(string v1, double v2) => new Mod(v1, v2);
+        public static Formula Mod(Formula v1, string v2) => new Mod(v1, v2);
+        public static Formula Mod(double v1, string v2) => new Mod(v1, v2);
+        public static Formula Mod(string v1, string v2) => new Mod(v1, v2);
         public static Formula Pow(Formula v1, Formula v2) => new Pow(v1, v2);
         public static Formula Pow(double v1, Formula v2) => new Pow(v1, v2);
+        public static Formula Pow(string v1, Formula v2) => new Pow(v1, v2);
         public static Formula Pow(Formula v1, double v2) => new Pow(v1, v2);
         public static Formula Pow(double v1, double v2) => new Pow(v1, v2);
+        public static Formula Pow(string v1, double v2) => new Pow(v1, v2);
+        public static Formula Pow(Formula v1, string v2) => new Pow(v1, v2);
+        public static Formula Pow(double v1, string v2) => new Pow(v1, v2);
+        public static Formula Pow(string v1, string v2) => new Pow(v1, v2);
         public static Formula Exp(Formula v1) => new Exp(v1);
         public static Formula Exp(double v1) => new Exp(v1);
+        public static Formula Exp(string v1) => new Exp(v1);
         public static Formula Sqrt(Formula v1) => new Sqrt(v1);
         public static Formula Sqrt(double v1) => new Sqrt(v1);
+        public static Formula Sqrt(string v1) => new Sqrt(v1);
         public static Formula Log(Formula v1) => new Log(v1);
         public static Formula Log(double v1) => new Log(v1);
+        public static Formula Log(string v1) => new Log(v1);
         public static Formula Log10(Formula v1) => new Log10(v1);
         public static Formula Log10(double v1) => new Log10(v1);
+        public static Formula Log10(string v1) => new Log10(v1);
         public static Formula Sin(Formula v1) => new Sin(v1);
         public static Formula Sin(double v1) => new Sin(v1);
+        public static Formula Sin(string v1) => new Sin(v1);
         public static Formula Cos(Formula v1) => new Cos(v1);
         public static Formula Cos(double v1) => new Cos(v1);
+        public static Formula Cos(string v1) => new Cos(v1);
         public static Formula Tan(Formula v1) => new Tan(v1);
         public static Formula Tan(double v1) => new Tan(v1);
+        public static Formula Tan(string v1) => new Tan(v1);
         public static Formula Sinh(Formula v1) => new Sinh(v1);
         public static Formula Sinh(double v1) => new Sinh(v1);
+        public static Formula Sinh(string v1) => new Sinh(v1);
         public static Formula Cosh(Formula v1) => new Cosh(v1);
         public static Formula Cosh(double v1) => new Cosh(v1);
+        public static Formula Cosh(string v1) => new Cosh(v1);
         public static Formula Tanh(Formula v1) => new Tanh(v1);
         public static Formula Tanh(double v1) => new Tanh(v1);
+        public static Formula Tanh(string v1) => new Tanh(v1);
         public static Formula Asin(Formula v1) => new Asin(v1);
         public static Formula Asin(double v1) => new Asin(v1);
+        public static Formula Asin(string v1) => new Asin(v1);
         public static Formula Acos(Formula v1) => new Acos(v1);
         public static Formula Acos(double v1) => new Acos(v1);
+        public static Formula Acos(string v1) => new Acos(v1);
         public static Formula Atan(Formula v1) => new Atan(v1);
         public static Formula Atan(double v1) => new Atan(v1);
+        public static Formula Atan(string v1) => new Atan(v1);
         public static Formula Asinh(Formula v1) => new Asinh(v1);
         public static Formula Asinh(double v1) => new Asinh(v1);
+        public static Formula Asinh(string v1) => new Asinh(v1);
         public static Formula Acosh(Formula v1) => new Acosh(v1);
         public static Formula Acosh(double v1) => new Acosh(v1);
+        public static Formula Acosh(string v1) => new Acosh(v1);
         public static Formula Atanh(Formula v1) => new Atanh(v1);
         public static Formula Atanh(double v1) => new Atanh(v1);
+        public static Formula Atanh(string v1) => new Atanh(v1);
         public static Formula Abs(Formula v1) => new Abs(v1);
         public static Formula Abs(double v1) => new Abs(v1);
+        public static Formula Abs(string v1) => new Abs(v1);
         public static Formula If(Formula v1, Formula v2, Formula v3) => new If(v1, v2, v3);
         public static Formula If(double v1, Formula v2, Formula v3) => new If(v1, v2, v3);
+        public static Formula If(string v1, Formula v2, Formula v3) => new If(v1, v2, v3);
         public static Formula If(Formula v1, double v2, Formula v3) => new If(v1, v2, v3);
         public static Formula If(double v1, double v2, Formula v3) => new If(v1, v2, v3);
+        public static Formula If(string v1, double v2, Formula v3) => new If(v1, v2, v3);
+        public static Formula If(Formula v1, string v2, Formula v3) => new If(v1, v2, v3);
+        public static Formula If(double v1, string v2, Formula v3) => new If(v1, v2, v3);
+        public static Formula If(string v1, string v2, Formula v3) => new If(v1, v2, v3);
         public static Formula If(Formula v1, Formula v2, double v3) => new If(v1, v2, v3);
         public static Formula If(double v1, Formula v2, double v3) => new If(v1, v2, v3);
+        public static Formula If(string v1, Formula v2, double v3) => new If(v1, v2, v3);
         public static Formula If(Formula v1, double v2, double v3) => new If(v1, v2, v3);
         public static Formula If(double v1, double v2, double v3) => new If(v1, v2, v3);
+        public static Formula If(string v1, double v2, double v3) => new If(v1, v2, v3);
+        public static Formula If(Formula v1, string v2, double v3) => new If(v1, v2, v3);
+        public static Formula If(double v1, string v2, double v3) => new If(v1, v2, v3);
+        public static Formula If(string v1, string v2, double v3) => new If(v1, v2, v3);
+        public static Formula If(Formula v1, Formula v2, string v3) => new If(v1, v2, v3);
+        public static Formula If(double v1, Formula v2, string v3) => new If(v1, v2, v3);
+        public static Formula If(string v1, Formula v2, string v3) => new If(v1, v2, v3);
+        public static Formula If(Formula v1, double v2, string v3) => new If(v1, v2, v3);
+        public static Formula If(double v1, double v2, string v3) => new If(v1, v2, v3);
+        public static Formula If(string v1, double v2, string v3) => new If(v1, v2, v3);
+        public static Formula If(Formula v1, string v2, string v3) => new If(v1, v2, v3);
+        public static Formula If(double v1, string v2, string v3) => new If(v1, v2, v3);
+        public static Formula If(string v1, string v2, string v3) => new If(v1, v2, v3);
         public static Formula Min(Formula v1, Formula v2) => new Min(v1, v2);
         public static Formula Min(double v1, Formula v2) => new Min(v1, v2);
+        public static Formula Min(string v1, Formula v2) => new Min(v1, v2);
         public static Formula Min(Formula v1, double v2) => new Min(v1, v2);
         public static Formula Min(double v1, double v2) => new Min(v1, v2);
+        public static Formula Min(string v1, double v2) => new Min(v1, v2);
+        public static Formula Min(Formula v1, string v2) => new Min(v1, v2);
+        public static Formula Min(double v1, string v2) => new Min(v1, v2);
+        public static Formula Min(string v1, string v2) => new Min(v1, v2);
         public static Formula Max(Formula v1, Formula v2) => new Max(v1, v2);
         public static Formula Max(double v1, Formula v2) => new Max(v1, v2);
+        public static Formula Max(string v1, Formula v2) => new Max(v1, v2);
         public static Formula Max(Formula v1, double v2) => new Max(v1, v2);
         public static Formula Max(double v1, double v2) => new Max(v1, v2);
+        public static Formula Max(string v1, double v2) => new Max(v1, v2);
+        public static Formula Max(Formula v1, string v2) => new Max(v1, v2);
+        public static Formula Max(double v1, string v2) => new Max(v1, v2);
+        public static Formula Max(string v1, string v2) => new Max(v1, v2);
         public static Formula Ceiling(Formula v1) => new Ceiling(v1);
         public static Formula Ceiling(double v1) => new Ceiling(v1);
+        public static Formula Ceiling(string v1) => new Ceiling(v1);
         public static Formula Floor(Formula v1) => new Floor(v1);
         public static Formula Floor(double v1) => new Floor(v1);
+        public static Formula Floor(string v1) => new Floor(v1);
         public static Formula MinMagnitude(Formula v1, Formula v2) => new MinMagnitude(v1, v2);
         public static Formula MinMagnitude(double v1, Formula v2) => new MinMagnitude(v1, v2);
+        public static Formula MinMagnitude(string v1, Formula v2) => new MinMagnitude(v1, v2);
         public static Formula MinMagnitude(Formula v1, double v2) => new MinMagnitude(v1, v2);
         public static Formula MinMagnitude(double v1, double v2) => new MinMagnitude(v1, v2);
+        public static Formula MinMagnitude(string v1, double v2) => new MinMagnitude(v1, v2);
+        public static Formula MinMagnitude(Formula v1, string v2) => new MinMagnitude(v1, v2);
+        public static Formula MinMagnitude(double v1, string v2) => new MinMagnitude(v1, v2);
+        public static Formula MinMagnitude(string v1, string v2) => new MinMagnitude(v1, v2);
         public static Formula MaxMagnitude(Formula v1, Formula v2) => new MaxMagnitude(v1, v2);
         public static Formula MaxMagnitude(double v1, Formula v2) => new MaxMagnitude(v1, v2);
+        public static Formula MaxMagnitude(string v1, Formula v2) => new MaxMagnitude(v1, v2);
         public static Formula MaxMagnitude(Formula v1, double v2) => new MaxMagnitude(v1, v2);
         public static Formula MaxMagnitude(double v1, double v2) => new MaxMagnitude(v1, v2);
-
+        public static Formula MaxMagnitude(string v1, double v2) => new MaxMagnitude(v1, v2);
+        public static Formula MaxMagnitude(Formula v1, string v2) => new MaxMagnitude(v1, v2);
+        public static Formula MaxMagnitude(double v1, string v2) => new MaxMagnitude(v1, v2);
+        public static Formula MaxMagnitude(string v1, string v2) => new MaxMagnitude(v1, v2);
         internal static Formula CreateFunction(ReadOnlySpan<char> funcName, List<Formula> subFuncs)
         {
             var lowerName = new Span<char>(funcName.ToArray());
@@ -303,6 +370,54 @@ namespace MathTools.Algebra
     namespace Functions
     {
 
+        public partial class Mod
+        {
+            public Mod(Formula v1, Formula v2)
+            {
+                this.SubFormulae = new List<Formula> { v1, v2 };
+            }
+
+            public Mod(double v1, Formula v2) : this(new Constant(v1), v2) { }
+
+            public Mod(string v1, Formula v2) : this(new Variable(v1), v2) { }
+
+            public Mod(Formula v1, double v2) : this(v1, new Constant(v2)) { }
+
+            public Mod(double v1, double v2) : this(new Constant(v1), new Constant(v2)) { }
+
+            public Mod(string v1, double v2) : this(new Variable(v1), new Constant(v2)) { }
+
+            public Mod(Formula v1, string v2) : this(v1, new Variable(v2)) { }
+
+            public Mod(double v1, string v2) : this(new Constant(v1), new Variable(v2)) { }
+
+            public Mod(string v1, string v2) : this(new Variable(v1), new Variable(v2)) { }
+        }
+
+        public partial class Pow
+        {
+            public Pow(Formula v1, Formula v2)
+            {
+                this.SubFormulae = new List<Formula> { v1, v2 };
+            }
+
+            public Pow(double v1, Formula v2) : this(new Constant(v1), v2) { }
+
+            public Pow(string v1, Formula v2) : this(new Variable(v1), v2) { }
+
+            public Pow(Formula v1, double v2) : this(v1, new Constant(v2)) { }
+
+            public Pow(double v1, double v2) : this(new Constant(v1), new Constant(v2)) { }
+
+            public Pow(string v1, double v2) : this(new Variable(v1), new Constant(v2)) { }
+
+            public Pow(Formula v1, string v2) : this(v1, new Variable(v2)) { }
+
+            public Pow(double v1, string v2) : this(new Constant(v1), new Variable(v2)) { }
+
+            public Pow(string v1, string v2) : this(new Variable(v1), new Variable(v2)) { }
+        }
+
         public partial class Exp
         {
             public Exp(Formula v1)
@@ -311,6 +426,8 @@ namespace MathTools.Algebra
             }
 
             public Exp(double v1) : this(new Constant(v1)) { }
+
+            public Exp(string v1) : this(new Variable(v1)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Exp(this.SubFormulae[0].Eval(variables));
@@ -342,6 +459,8 @@ namespace MathTools.Algebra
 
             public Sqrt(double v1) : this(new Constant(v1)) { }
 
+            public Sqrt(string v1) : this(new Variable(v1)) { }
+
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Sqrt(this.SubFormulae[0].Eval(variables));
 
@@ -371,6 +490,8 @@ namespace MathTools.Algebra
             }
 
             public Log(double v1) : this(new Constant(v1)) { }
+
+            public Log(string v1) : this(new Variable(v1)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Log(this.SubFormulae[0].Eval(variables));
@@ -402,6 +523,8 @@ namespace MathTools.Algebra
 
             public Log10(double v1) : this(new Constant(v1)) { }
 
+            public Log10(string v1) : this(new Variable(v1)) { }
+
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Log10(this.SubFormulae[0].Eval(variables));
 
@@ -431,6 +554,8 @@ namespace MathTools.Algebra
             }
 
             public Sin(double v1) : this(new Constant(v1)) { }
+
+            public Sin(string v1) : this(new Variable(v1)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Sin(this.SubFormulae[0].Eval(variables));
@@ -462,6 +587,8 @@ namespace MathTools.Algebra
 
             public Cos(double v1) : this(new Constant(v1)) { }
 
+            public Cos(string v1) : this(new Variable(v1)) { }
+
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Cos(this.SubFormulae[0].Eval(variables));
 
@@ -491,6 +618,8 @@ namespace MathTools.Algebra
             }
 
             public Tan(double v1) : this(new Constant(v1)) { }
+
+            public Tan(string v1) : this(new Variable(v1)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Tan(this.SubFormulae[0].Eval(variables));
@@ -522,6 +651,8 @@ namespace MathTools.Algebra
 
             public Sinh(double v1) : this(new Constant(v1)) { }
 
+            public Sinh(string v1) : this(new Variable(v1)) { }
+
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Sinh(this.SubFormulae[0].Eval(variables));
 
@@ -551,6 +682,8 @@ namespace MathTools.Algebra
             }
 
             public Cosh(double v1) : this(new Constant(v1)) { }
+
+            public Cosh(string v1) : this(new Variable(v1)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Cosh(this.SubFormulae[0].Eval(variables));
@@ -582,6 +715,8 @@ namespace MathTools.Algebra
 
             public Tanh(double v1) : this(new Constant(v1)) { }
 
+            public Tanh(string v1) : this(new Variable(v1)) { }
+
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Tanh(this.SubFormulae[0].Eval(variables));
 
@@ -611,6 +746,8 @@ namespace MathTools.Algebra
             }
 
             public Asin(double v1) : this(new Constant(v1)) { }
+
+            public Asin(string v1) : this(new Variable(v1)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Asin(this.SubFormulae[0].Eval(variables));
@@ -642,6 +779,8 @@ namespace MathTools.Algebra
 
             public Acos(double v1) : this(new Constant(v1)) { }
 
+            public Acos(string v1) : this(new Variable(v1)) { }
+
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Acos(this.SubFormulae[0].Eval(variables));
 
@@ -671,6 +810,8 @@ namespace MathTools.Algebra
             }
 
             public Atan(double v1) : this(new Constant(v1)) { }
+
+            public Atan(string v1) : this(new Variable(v1)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Atan(this.SubFormulae[0].Eval(variables));
@@ -702,6 +843,8 @@ namespace MathTools.Algebra
 
             public Asinh(double v1) : this(new Constant(v1)) { }
 
+            public Asinh(string v1) : this(new Variable(v1)) { }
+
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Asinh(this.SubFormulae[0].Eval(variables));
 
@@ -731,6 +874,8 @@ namespace MathTools.Algebra
             }
 
             public Acosh(double v1) : this(new Constant(v1)) { }
+
+            public Acosh(string v1) : this(new Variable(v1)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Acosh(this.SubFormulae[0].Eval(variables));
@@ -762,6 +907,8 @@ namespace MathTools.Algebra
 
             public Atanh(double v1) : this(new Constant(v1)) { }
 
+            public Atanh(string v1) : this(new Variable(v1)) { }
+
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Atanh(this.SubFormulae[0].Eval(variables));
 
@@ -792,6 +939,8 @@ namespace MathTools.Algebra
 
             public Abs(double v1) : this(new Constant(v1)) { }
 
+            public Abs(string v1) : this(new Variable(v1)) { }
+
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Abs(this.SubFormulae[0].Eval(variables));
 
@@ -813,6 +962,66 @@ namespace MathTools.Algebra
             }
         }
 
+        public partial class If
+        {
+            public If(Formula v1, Formula v2, Formula v3)
+            {
+                this.SubFormulae = new List<Formula> { v1, v2, v3 };
+            }
+
+            public If(double v1, Formula v2, Formula v3) : this(new Constant(v1), v2, v3) { }
+
+            public If(string v1, Formula v2, Formula v3) : this(new Variable(v1), v2, v3) { }
+
+            public If(Formula v1, double v2, Formula v3) : this(v1, new Constant(v2), v3) { }
+
+            public If(double v1, double v2, Formula v3) : this(new Constant(v1), new Constant(v2), v3) { }
+
+            public If(string v1, double v2, Formula v3) : this(new Variable(v1), new Constant(v2), v3) { }
+
+            public If(Formula v1, string v2, Formula v3) : this(v1, new Variable(v2), v3) { }
+
+            public If(double v1, string v2, Formula v3) : this(new Constant(v1), new Variable(v2), v3) { }
+
+            public If(string v1, string v2, Formula v3) : this(new Variable(v1), new Variable(v2), v3) { }
+
+            public If(Formula v1, Formula v2, double v3) : this(v1, v2, new Constant(v3)) { }
+
+            public If(double v1, Formula v2, double v3) : this(new Constant(v1), v2, new Constant(v3)) { }
+
+            public If(string v1, Formula v2, double v3) : this(new Variable(v1), v2, new Constant(v3)) { }
+
+            public If(Formula v1, double v2, double v3) : this(v1, new Constant(v2), new Constant(v3)) { }
+
+            public If(double v1, double v2, double v3) : this(new Constant(v1), new Constant(v2), new Constant(v3)) { }
+
+            public If(string v1, double v2, double v3) : this(new Variable(v1), new Constant(v2), new Constant(v3)) { }
+
+            public If(Formula v1, string v2, double v3) : this(v1, new Variable(v2), new Constant(v3)) { }
+
+            public If(double v1, string v2, double v3) : this(new Constant(v1), new Variable(v2), new Constant(v3)) { }
+
+            public If(string v1, string v2, double v3) : this(new Variable(v1), new Variable(v2), new Constant(v3)) { }
+
+            public If(Formula v1, Formula v2, string v3) : this(v1, v2, new Variable(v3)) { }
+
+            public If(double v1, Formula v2, string v3) : this(new Constant(v1), v2, new Variable(v3)) { }
+
+            public If(string v1, Formula v2, string v3) : this(new Variable(v1), v2, new Variable(v3)) { }
+
+            public If(Formula v1, double v2, string v3) : this(v1, new Constant(v2), new Variable(v3)) { }
+
+            public If(double v1, double v2, string v3) : this(new Constant(v1), new Constant(v2), new Variable(v3)) { }
+
+            public If(string v1, double v2, string v3) : this(new Variable(v1), new Constant(v2), new Variable(v3)) { }
+
+            public If(Formula v1, string v2, string v3) : this(v1, new Variable(v2), new Variable(v3)) { }
+
+            public If(double v1, string v2, string v3) : this(new Constant(v1), new Variable(v2), new Variable(v3)) { }
+
+            public If(string v1, string v2, string v3) : this(new Variable(v1), new Variable(v2), new Variable(v3)) { }
+        }
+
         public partial class Min
         {
             public Min(Formula v1, Formula v2)
@@ -822,9 +1031,19 @@ namespace MathTools.Algebra
 
             public Min(double v1, Formula v2) : this(new Constant(v1), v2) { }
 
+            public Min(string v1, Formula v2) : this(new Variable(v1), v2) { }
+
             public Min(Formula v1, double v2) : this(v1, new Constant(v2)) { }
 
             public Min(double v1, double v2) : this(new Constant(v1), new Constant(v2)) { }
+
+            public Min(string v1, double v2) : this(new Variable(v1), new Constant(v2)) { }
+
+            public Min(Formula v1, string v2) : this(v1, new Variable(v2)) { }
+
+            public Min(double v1, string v2) : this(new Constant(v1), new Variable(v2)) { }
+
+            public Min(string v1, string v2) : this(new Variable(v1), new Variable(v2)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Min(this.SubFormulae[0].Eval(variables), this.SubFormulae[1].Eval(variables));
@@ -860,9 +1079,19 @@ namespace MathTools.Algebra
 
             public Max(double v1, Formula v2) : this(new Constant(v1), v2) { }
 
+            public Max(string v1, Formula v2) : this(new Variable(v1), v2) { }
+
             public Max(Formula v1, double v2) : this(v1, new Constant(v2)) { }
 
             public Max(double v1, double v2) : this(new Constant(v1), new Constant(v2)) { }
+
+            public Max(string v1, double v2) : this(new Variable(v1), new Constant(v2)) { }
+
+            public Max(Formula v1, string v2) : this(v1, new Variable(v2)) { }
+
+            public Max(double v1, string v2) : this(new Constant(v1), new Variable(v2)) { }
+
+            public Max(string v1, string v2) : this(new Variable(v1), new Variable(v2)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Max(this.SubFormulae[0].Eval(variables), this.SubFormulae[1].Eval(variables));
@@ -898,6 +1127,8 @@ namespace MathTools.Algebra
 
             public Ceiling(double v1) : this(new Constant(v1)) { }
 
+            public Ceiling(string v1) : this(new Variable(v1)) { }
+
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Ceiling(this.SubFormulae[0].Eval(variables));
 
@@ -927,6 +1158,8 @@ namespace MathTools.Algebra
             }
 
             public Floor(double v1) : this(new Constant(v1)) { }
+
+            public Floor(string v1) : this(new Variable(v1)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.Floor(this.SubFormulae[0].Eval(variables));
@@ -958,9 +1191,19 @@ namespace MathTools.Algebra
 
             public MinMagnitude(double v1, Formula v2) : this(new Constant(v1), v2) { }
 
+            public MinMagnitude(string v1, Formula v2) : this(new Variable(v1), v2) { }
+
             public MinMagnitude(Formula v1, double v2) : this(v1, new Constant(v2)) { }
 
             public MinMagnitude(double v1, double v2) : this(new Constant(v1), new Constant(v2)) { }
+
+            public MinMagnitude(string v1, double v2) : this(new Variable(v1), new Constant(v2)) { }
+
+            public MinMagnitude(Formula v1, string v2) : this(v1, new Variable(v2)) { }
+
+            public MinMagnitude(double v1, string v2) : this(new Constant(v1), new Variable(v2)) { }
+
+            public MinMagnitude(string v1, string v2) : this(new Variable(v1), new Variable(v2)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.MinMagnitude(this.SubFormulae[0].Eval(variables), this.SubFormulae[1].Eval(variables));
@@ -996,9 +1239,19 @@ namespace MathTools.Algebra
 
             public MaxMagnitude(double v1, Formula v2) : this(new Constant(v1), v2) { }
 
+            public MaxMagnitude(string v1, Formula v2) : this(new Variable(v1), v2) { }
+
             public MaxMagnitude(Formula v1, double v2) : this(v1, new Constant(v2)) { }
 
             public MaxMagnitude(double v1, double v2) : this(new Constant(v1), new Constant(v2)) { }
+
+            public MaxMagnitude(string v1, double v2) : this(new Variable(v1), new Constant(v2)) { }
+
+            public MaxMagnitude(Formula v1, string v2) : this(v1, new Variable(v2)) { }
+
+            public MaxMagnitude(double v1, string v2) : this(new Constant(v1), new Variable(v2)) { }
+
+            public MaxMagnitude(string v1, string v2) : this(new Variable(v1), new Variable(v2)) { }
 
             public override double Eval(Dictionary<string, double> variables)
                 => Math.MaxMagnitude(this.SubFormulae[0].Eval(variables), this.SubFormulae[1].Eval(variables));
