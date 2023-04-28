@@ -37,6 +37,9 @@ namespace MathTools.Algebra
         public static Formula Log(Formula v1) => new Log(v1);
         public static Formula Log(double v1) => new Log(v1);
         public static Formula Log(string v1) => new Log(v1);
+        public static Formula Log2(Formula v1) => new Log2(v1);
+        public static Formula Log2(double v1) => new Log2(v1);
+        public static Formula Log2(string v1) => new Log2(v1);
         public static Formula Log10(Formula v1) => new Log10(v1);
         public static Formula Log10(double v1) => new Log10(v1);
         public static Formula Log10(string v1) => new Log10(v1);
@@ -67,6 +70,15 @@ namespace MathTools.Algebra
         public static Formula Atan(Formula v1) => new Atan(v1);
         public static Formula Atan(double v1) => new Atan(v1);
         public static Formula Atan(string v1) => new Atan(v1);
+        public static Formula Atan2(Formula v1, Formula v2) => new Atan2(v1, v2);
+        public static Formula Atan2(double v1, Formula v2) => new Atan2(v1, v2);
+        public static Formula Atan2(string v1, Formula v2) => new Atan2(v1, v2);
+        public static Formula Atan2(Formula v1, double v2) => new Atan2(v1, v2);
+        public static Formula Atan2(double v1, double v2) => new Atan2(v1, v2);
+        public static Formula Atan2(string v1, double v2) => new Atan2(v1, v2);
+        public static Formula Atan2(Formula v1, string v2) => new Atan2(v1, v2);
+        public static Formula Atan2(double v1, string v2) => new Atan2(v1, v2);
+        public static Formula Atan2(string v1, string v2) => new Atan2(v1, v2);
         public static Formula Asinh(Formula v1) => new Asinh(v1);
         public static Formula Asinh(double v1) => new Asinh(v1);
         public static Formula Asinh(string v1) => new Asinh(v1);
@@ -161,6 +173,7 @@ namespace MathTools.Algebra
                 "exp" => new Exp(subFuncs[0]),
                 "sqrt" => new Sqrt(subFuncs[0]),
                 "log" => new Log(subFuncs[0]),
+                "log2" => new Log2(subFuncs[0]),
                 "log10" => new Log10(subFuncs[0]),
                 "sin" => new Sin(subFuncs[0]),
                 "cos" => new Cos(subFuncs[0]),
@@ -171,6 +184,7 @@ namespace MathTools.Algebra
                 "asin" => new Asin(subFuncs[0]),
                 "acos" => new Acos(subFuncs[0]),
                 "atan" => new Atan(subFuncs[0]),
+                "atan2" => new Atan2(subFuncs[0], subFuncs[1]),
                 "asinh" => new Asinh(subFuncs[0]),
                 "acosh" => new Acosh(subFuncs[0]),
                 "atanh" => new Atanh(subFuncs[0]),
@@ -203,6 +217,7 @@ namespace MathTools.Algebra
                 Exp _ => new Exp(optSubs[0]),
                 Sqrt _ => new Sqrt(optSubs[0]),
                 Log _ => new Log(optSubs[0]),
+                Log2 _ => new Log2(optSubs[0]),
                 Log10 _ => new Log10(optSubs[0]),
                 Sin _ => new Sin(optSubs[0]),
                 Cos _ => new Cos(optSubs[0]),
@@ -213,6 +228,7 @@ namespace MathTools.Algebra
                 Asin _ => new Asin(optSubs[0]),
                 Acos _ => new Acos(optSubs[0]),
                 Atan _ => new Atan(optSubs[0]),
+                Atan2 _ => new Atan2(optSubs[0], optSubs[1]),
                 Asinh _ => new Asinh(optSubs[0]),
                 Acosh _ => new Acosh(optSubs[0]),
                 Atanh _ => new Atanh(optSubs[0]),
@@ -255,6 +271,11 @@ namespace MathTools.Algebra
                 case Log:
                     Emit(generator, formula.SubFormulae[0], variables);
                     generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Log", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Log()"));
+                    break;
+
+                case Log2:
+                    Emit(generator, formula.SubFormulae[0], variables);
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Log2", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Log2()"));
                     break;
 
                 case Log10:
@@ -305,6 +326,12 @@ namespace MathTools.Algebra
                 case Atan:
                     Emit(generator, formula.SubFormulae[0], variables);
                     generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Atan", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Atan()"));
+                    break;
+
+                case Atan2:
+                    Emit(generator, formula.SubFormulae[0], variables);
+                    Emit(generator, formula.SubFormulae[1], variables);
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Atan2", new Type[] { typeof(double), typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Atan2()"));
                     break;
 
                 case Asinh:
@@ -507,6 +534,38 @@ namespace MathTools.Algebra
 
                 default :
                     builder.Append("Log(");
+                    this.SubFormulae[0].BuildString(builder, format, formatProvider);
+                    builder.Append(')');
+                    break;
+                }
+            }
+        }
+
+        public partial class Log2
+        {
+            public Log2(Formula v1)
+            {
+                this.SubFormulae = new List<Formula> { v1 };
+            }
+
+            public Log2(double v1) : this(new Constant(v1)) { }
+
+            public Log2(string v1) : this(new Variable(v1)) { }
+
+            public override double Eval(Dictionary<string, double> variables)
+                => Math.Log2(this.SubFormulae[0].Eval(variables));
+
+            internal override void BuildString(StringBuilder builder, string? format, IFormatProvider? formatProvider)
+            {
+                switch(format){
+                case "C#" :
+                    builder.Append("Math.Log2(");
+                    this.SubFormulae[0].BuildString(builder, format, formatProvider);
+                    builder.Append(')');
+                    break;
+
+                default :
+                    builder.Append("Log2(");
                     this.SubFormulae[0].BuildString(builder, format, formatProvider);
                     builder.Append(')');
                     break;
@@ -828,6 +887,54 @@ namespace MathTools.Algebra
                 default :
                     builder.Append("Atan(");
                     this.SubFormulae[0].BuildString(builder, format, formatProvider);
+                    builder.Append(')');
+                    break;
+                }
+            }
+        }
+
+        public partial class Atan2
+        {
+            public Atan2(Formula v1, Formula v2)
+            {
+                this.SubFormulae = new List<Formula> { v1, v2 };
+            }
+
+            public Atan2(double v1, Formula v2) : this(new Constant(v1), v2) { }
+
+            public Atan2(string v1, Formula v2) : this(new Variable(v1), v2) { }
+
+            public Atan2(Formula v1, double v2) : this(v1, new Constant(v2)) { }
+
+            public Atan2(double v1, double v2) : this(new Constant(v1), new Constant(v2)) { }
+
+            public Atan2(string v1, double v2) : this(new Variable(v1), new Constant(v2)) { }
+
+            public Atan2(Formula v1, string v2) : this(v1, new Variable(v2)) { }
+
+            public Atan2(double v1, string v2) : this(new Constant(v1), new Variable(v2)) { }
+
+            public Atan2(string v1, string v2) : this(new Variable(v1), new Variable(v2)) { }
+
+            public override double Eval(Dictionary<string, double> variables)
+                => Math.Atan2(this.SubFormulae[0].Eval(variables), this.SubFormulae[1].Eval(variables));
+
+            internal override void BuildString(StringBuilder builder, string? format, IFormatProvider? formatProvider)
+            {
+                switch(format){
+                case "C#" :
+                    builder.Append("Math.Atan2(");
+                    this.SubFormulae[0].BuildString(builder, format, formatProvider);
+                    builder.Append(',');
+                    this.SubFormulae[1].BuildString(builder, format, formatProvider);
+                    builder.Append(')');
+                    break;
+
+                default :
+                    builder.Append("Atan2(");
+                    this.SubFormulae[0].BuildString(builder, format, formatProvider);
+                    builder.Append(',');
+                    this.SubFormulae[1].BuildString(builder, format, formatProvider);
                     builder.Append(')');
                     break;
                 }
