@@ -755,24 +755,35 @@ namespace MathTools.Algebra
 
         static bool INumberBase<Formula>.TryConvertToTruncating<TOther>(Formula value, [MaybeNullWhen(false)] out TOther result) => TryConvertTo(value, out result);
 
-        /// <inheritdoc cref="IAdditionOperators{TSelf, TOther, TResult}.op_Addition(TSelf, TOther)" />
         public static Formula operator +(Formula left, Formula right) => new Sum(new List<Formula> { left, right }, new List<bool> { true, true });
-        /// <inheritdoc cref="IAdditionOperators{TSelf, TOther, TResult}.op_Addition(TSelf, TOther)" />
         public static Formula operator +(double left, Formula right) => new Sum(new List<Formula> { new Constant(left), right }, new List<bool> { true, true });
-        /// <inheritdoc cref="IAdditionOperators{TSelf, TOther, TResult}.op_Addition(TSelf, TOther)" />
         public static Formula operator +(Formula left, double right) => new Sum(new List<Formula> { left, new Constant(right) }, new List<bool> { true, true });
+        public static Formula operator +(string left, Formula right) => new Sum(new List<Formula> { new Variable(left), right }, new List<bool> { true, true });
+        public static Formula operator +(Formula left, string right) => new Sum(new List<Formula> { left, new Variable(right) }, new List<bool> { true, true });
 
         public static Formula operator -(Formula left, Formula right) => new Sum(new List<Formula> { left, right }, new List<bool> { true, false });
         public static Formula operator -(double left, Formula right) => new Sum(new List<Formula> { new Constant(left), right }, new List<bool> { true, false });
         public static Formula operator -(Formula left, double right) => new Sum(new List<Formula> { left, new Constant(right) }, new List<bool> { true, false });
+        public static Formula operator -(string left, Formula right) => new Sum(new List<Formula> { new Variable(left), right }, new List<bool> { true, false });
+        public static Formula operator -(Formula left, string right) => new Sum(new List<Formula> { left, new Variable(right) }, new List<bool> { true, false });
 
         public static Formula operator *(Formula left, Formula right) => new Product(new List<Formula> { left, right }, new List<bool> { true, true });
         public static Formula operator *(double left, Formula right) => new Product(new List<Formula> { new Constant(left), right }, new List<bool> { true, true });
         public static Formula operator *(Formula left, double right) => new Product(new List<Formula> { left, new Constant(right) }, new List<bool> { true, true });
+        public static Formula operator *(string left, Formula right) => new Product(new List<Formula> { new Variable(left), right }, new List<bool> { true, true });
+        public static Formula operator *(Formula left, string right) => new Product(new List<Formula> { left, new Variable(right) }, new List<bool> { true, true });
 
         public static Formula operator /(Formula left, Formula right) => new Product(new List<Formula> { left, right }, new List<bool> { true, false });
         public static Formula operator /(double left, Formula right) => new Product(new List<Formula> { new Constant(left), right }, new List<bool> { true, false });
         public static Formula operator /(Formula left, double right) => new Product(new List<Formula> { left, new Constant(right) }, new List<bool> { true, false });
+        public static Formula operator /(string left, Formula right) => new Product(new List<Formula> { new Variable(left), right }, new List<bool> { true, false });
+        public static Formula operator /(Formula left, string right) => new Product(new List<Formula> { left, new Variable(right) }, new List<bool> { true, false });
+
+        public static Formula operator %(Formula left, Formula right) => Mod(left, right);
+        public static Formula operator %(Formula left, double right) => Mod(left, right);
+        public static Formula operator %(double left, Formula right) => Mod(left, right);
+        public static Formula operator %(Formula left, string right) => Mod(left, right);
+        public static Formula operator %(string left, Formula right) => Mod(left, right);
 
         public static bool operator >(Formula left, Formula right)
         {
@@ -806,12 +817,6 @@ namespace MathTools.Algebra
                 ? throw new UnresolvedResultException()
                 : opt.Eval() <= 0.0;
         }
-
-        public static Formula operator %(Formula left, Formula right) => Mod(left, right);
-
-        public static Formula operator %(Formula left, double right) => Mod(left, right);
-
-        public static Formula operator %(double left, Formula right) => Mod(left, right);
 
         /// <inheritdoc cref="IDecrementOperators{TSelf}.op_Decrement(TSelf)" />
         static Formula IDecrementOperators<Formula>.operator --(Formula value) => value - 1.0;
