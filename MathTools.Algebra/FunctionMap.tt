@@ -158,7 +158,7 @@ foreach(var (name, count, generate) in funcs){
 <#
     }
 #>
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("<#=name#>", new Type[] { <#=string.Join(", ", Enumerable.Range(0,count).Select(_ => "typeof(double)"))#> }) ?? throw new Exception("Compilation Error. Could not get Math.<#=name#>()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("<#=name#>", new Type[] { <#=string.Join(", ", Enumerable.Range(0,count).Select(_ => "typeof(double)"))#> }) ?? throw new FormulaException("Compilation Error. Could not get Math.<#=name#>()"));
                     break;
 
 <#

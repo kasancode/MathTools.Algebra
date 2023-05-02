@@ -260,132 +260,132 @@ namespace MathTools.Algebra
                
                 case Exp:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Exp", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Exp()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Exp", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Exp()"));
                     break;
 
                 case Sqrt:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Sqrt", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Sqrt()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Sqrt", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Sqrt()"));
                     break;
 
                 case Log:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Log", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Log()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Log", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Log()"));
                     break;
 
                 case Log2:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Log2", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Log2()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Log2", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Log2()"));
                     break;
 
                 case Log10:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Log10", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Log10()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Log10", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Log10()"));
                     break;
 
                 case Sin:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Sin", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Sin()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Sin", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Sin()"));
                     break;
 
                 case Cos:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Cos", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Cos()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Cos", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Cos()"));
                     break;
 
                 case Tan:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Tan", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Tan()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Tan", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Tan()"));
                     break;
 
                 case Sinh:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Sinh", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Sinh()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Sinh", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Sinh()"));
                     break;
 
                 case Cosh:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Cosh", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Cosh()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Cosh", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Cosh()"));
                     break;
 
                 case Tanh:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Tanh", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Tanh()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Tanh", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Tanh()"));
                     break;
 
                 case Asin:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Asin", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Asin()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Asin", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Asin()"));
                     break;
 
                 case Acos:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Acos", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Acos()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Acos", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Acos()"));
                     break;
 
                 case Atan:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Atan", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Atan()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Atan", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Atan()"));
                     break;
 
                 case Atan2:
                     Emit(generator, formula.SubFormulae[0], variables);
                     Emit(generator, formula.SubFormulae[1], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Atan2", new Type[] { typeof(double), typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Atan2()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Atan2", new Type[] { typeof(double), typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Atan2()"));
                     break;
 
                 case Asinh:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Asinh", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Asinh()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Asinh", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Asinh()"));
                     break;
 
                 case Acosh:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Acosh", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Acosh()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Acosh", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Acosh()"));
                     break;
 
                 case Atanh:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Atanh", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Atanh()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Atanh", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Atanh()"));
                     break;
 
                 case Abs:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Abs", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Abs()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Abs", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Abs()"));
                     break;
 
                 case Min:
                     Emit(generator, formula.SubFormulae[0], variables);
                     Emit(generator, formula.SubFormulae[1], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Min", new Type[] { typeof(double), typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Min()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Min", new Type[] { typeof(double), typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Min()"));
                     break;
 
                 case Max:
                     Emit(generator, formula.SubFormulae[0], variables);
                     Emit(generator, formula.SubFormulae[1], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Max", new Type[] { typeof(double), typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Max()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Max", new Type[] { typeof(double), typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Max()"));
                     break;
 
                 case Ceiling:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Ceiling", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Ceiling()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Ceiling", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Ceiling()"));
                     break;
 
                 case Floor:
                     Emit(generator, formula.SubFormulae[0], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Floor", new Type[] { typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.Floor()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("Floor", new Type[] { typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.Floor()"));
                     break;
 
                 case MinMagnitude:
                     Emit(generator, formula.SubFormulae[0], variables);
                     Emit(generator, formula.SubFormulae[1], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("MinMagnitude", new Type[] { typeof(double), typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.MinMagnitude()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("MinMagnitude", new Type[] { typeof(double), typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.MinMagnitude()"));
                     break;
 
                 case MaxMagnitude:
                     Emit(generator, formula.SubFormulae[0], variables);
                     Emit(generator, formula.SubFormulae[1], variables);
-                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("MaxMagnitude", new Type[] { typeof(double), typeof(double) }) ?? throw new Exception("Compilation Error. Could not get Math.MaxMagnitude()"));
+                    generator.Emit(OpCodes.Call, typeof(Math).GetMethod("MaxMagnitude", new Type[] { typeof(double), typeof(double) }) ?? throw new FormulaException("Compilation Error. Could not get Math.MaxMagnitude()"));
                     break;
 
                 default:
