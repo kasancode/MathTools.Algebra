@@ -17,18 +17,26 @@ namespace MathTools.Algebra
         IMultiplyOperators<Formula, double, Formula>,
         IDivisionOperators<Formula, double, Formula>
     {
+        /// <summary>Represents the number one (1).</summary>
         public static Formula Zero => new Constant(0.0);
-
-        static Formula INumberBase<Formula>.Zero => Zero;
 
         public static Formula NaN => new Constant(double.NaN);
 
+        /// <summary>Represents the ratio of the circumference of a circle to its diameter, specified by the constant, PI.</summary>
+        /// <remarks>Pi is approximately 3.1415926535897932385.</remarks>
         public static Formula Pi => new Constant(double.Pi);
+
+        /// <summary>Represents the natural logarithmic base, specified by the constant, e.</summary>
+        /// <remarks>Euler's number is approximately 2.7182818284590452354.</remarks>
+        public static Formula E => new Constant(Math.E);
 
         public static Formula Epsilon => new Constant(double.Epsilon);
 
+        /// <summary>Represents the number of radians in one turn, specified by the constant, Tau.</summary>
+        /// <remarks>Tau is approximately 6.2831853071795864769.</remarks>
         public static Formula Tau => new Constant(double.Tau);
 
+        /// <summary>Represents the number one (1).</summary>
         public static Formula One => new Constant(1.0);
 
         internal List<Formula> SubFormulae { get; init; } = new();
@@ -43,6 +51,10 @@ namespace MathTools.Algebra
 
         static Formula IMultiplicativeIdentity<Formula, Formula>.MultiplicativeIdentity => One;
 
+        /// <summary>
+        /// Get variables list in the Formula object.
+        /// </summary>
+        /// <returns>List of variables.</returns>
         public virtual List<string> GetVariables()
         {
             List<string> allVarList = new();
@@ -75,6 +87,10 @@ namespace MathTools.Algebra
 
         internal virtual Formula SpecificSimplify() => this;
 
+        /// <summary>
+        /// Simplify the Formula object.
+        /// </summary>
+        /// <returns>Simplified Formula object.</returns>
         public virtual Formula Simplify()
         {
             var formula = this.BasicSimplify();
@@ -92,10 +108,39 @@ namespace MathTools.Algebra
             return formula;
         }
 
+        /// <summary>
+        /// Derives the formula object.
+        /// </summary>
+        /// <param name="variable">Name of variable for differentiation.</param>
+        /// <returns>Derived formula object.</returns>
         public abstract Formula Derive(string variable);
 
+        /// <summary>
+        /// Evaluates the fomrula object.
+        /// </summary>
+        /// <example>
+        /// <code>
+        /// var formula = Formula.Parse("x^4*exp(4)");
+        /// var value = formula.Eval();
+        /// </code>
+        /// </example>
+        /// <returns>Evaluated value.</returns>
+        /// <exception cref="FormulaException"></exception>
         public virtual double Eval() => this.Eval(new Dictionary<string, double>());
 
+        /// <summary>
+        /// Evaluates the fomrula object.
+        /// </summary>
+        /// <param name="variables">Variable values. Variable ordere is depend on GetVariable() returns value.</param>
+        /// <example>
+        /// <code>
+        /// var formula = Formula.Parse("x^4*exp(x)");
+        /// var value = formula.Eval(2.0);
+        /// </code>
+        /// </example>
+        /// <returns>Evaluated value.</returns>
+        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="FormulaException"></exception>
         public virtual double Eval(params double[] variables) {
             var varList = this.GetVariables();
             if (varList.Count != variables.Length)
@@ -106,8 +151,32 @@ namespace MathTools.Algebra
             return this.Eval(varDict);
         }
 
+        /// <summary>
+        /// Evaluates the fomrula object.
+        /// </summary>
+        /// <param name="variables">Variable values. Dictionary of variable names and values.</param>
+        /// <example>
+        /// <code>
+        /// var formula = Formula.Parse("x^4*exp(x)");
+        /// var value = formula.Eval(new Dictionary&lt;string, double&gt;{{"x", 2.0}});
+        /// </code>
+        /// </example>
+        /// <returns>Evaluated value.</returns>
+        /// <exception cref="FormulaException"></exception>
         public abstract double Eval(Dictionary<string, double> variables);
 
+        /// <summary>
+        /// Evaluates the fomrula object.
+        /// </summary>
+        /// <param name="variables">Variable values. The class has properties with variable names and values.</param>
+        /// <example>
+        /// <code>
+        /// var formula = Formula.Parse("x^4*exp(x)");
+        /// var value = formula.Eval(new (){x = 2.0});
+        /// </code>
+        /// </example>
+        /// <returns>Evaluated value.</returns>
+        /// <exception cref="FormulaException"></exception>
         public virtual double Eval(object variables)
         {
             var type = variables.GetType();
@@ -118,12 +187,24 @@ namespace MathTools.Algebra
             return this.Eval(variableDict);
         }
 
+        /// <summary>
+        /// Evaluates the derivative of fomrula object.
+        /// </summary>
+        /// <param name="variable">Name of variable for differentiation.</param>
+        /// <returns>Evaluated value.</returns>
+        /// <exception cref="FormulaException"></exception>
         public virtual double EvalDerivative(string variable)
         {
-            var diffFormula = this.Derive(variable);
-            return diffFormula.Eval();
+            return this.Derive(variable).Simplify().Eval();
         }
 
+        /// <summary>
+        /// Evaluates the derivative of fomrula object.
+        /// </summary>
+        /// <param name="variable">Name of variable for differentiation.</param>
+        /// <param name="variables">Variable values. Dictionary of variable names and values.</param>
+        /// <returns>Evaluated value.</returns>
+        /// <exception cref="FormulaException"></exception>
         public virtual double EvalDerivative(string variable, Dictionary<string, double> variables)
         {
             return this
@@ -132,6 +213,13 @@ namespace MathTools.Algebra
                 .Eval(variables);
         }
 
+        /// <summary>
+        /// Evaluates the derivative of fomrula object.
+        /// </summary>
+        /// <param name="variable">Name of variable for differentiation.</param>
+        /// <param name="variables">Variable values. The class has properties with variable names and values.</param>
+        /// <returns>Evaluated value.</returns>
+        /// <exception cref="FormulaException"></exception>
         public virtual double EvalDerivative(string variable, object variables)
         {
             var type = variables.GetType();
@@ -142,6 +230,10 @@ namespace MathTools.Algebra
             return this.EvalDerivative(variable, variableDict);
         }
 
+        /// <summary>
+        /// Checks if the formula object has variables.
+        /// </summary>
+        /// <returns>If the Formula object has variables, it returns true. Otherwise, it returns false.</returns>
         public virtual bool HasVariable() => this.SubFormulae.Any(f => f.HasVariable());
 
         internal static bool containsDelimiter(ReadOnlySpan<char> str)
@@ -157,6 +249,12 @@ namespace MathTools.Algebra
 
         internal static char[] delimiters = new[] { '(', ')', '+', '-', '*', '/', '^', ',', '=', '>', '<' };
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        /// <exception cref="FormulaException"></exception>
         public static Formula Parse(string text)
             => TryParse(text, out var formula)
                 ? formula
@@ -831,7 +929,7 @@ namespace MathTools.Algebra
 
         public static bool operator !=(Formula? left, Formula? right) => !(left == right);
 
-        /// <inheritdoc cref="IDecrementOperators{TSelf}.op_Increment(TSelf)" />
+        /// <inheritdoc cref="IIncrementOperators{TSelf}.op_Increment(TSelf)" />
         static Formula IIncrementOperators<Formula>.operator ++(Formula value) => value + 1.0;
 
         /// <inheritdoc cref="IUnaryNegationOperators{TSelf, TResult}.op_UnaryNegation(TSelf)" />

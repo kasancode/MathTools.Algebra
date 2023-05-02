@@ -9,6 +9,7 @@
     <Company>Kasan</Company>
     <Authors>Kasan</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

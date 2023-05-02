@@ -10,6 +10,7 @@
         }
       ],
       "dest": "api",
+	  "shouldSkipMarkup": false,
       "includePrivateMembers": false,
       "disableGitFeatures": false,
       "disableDefaultFilter": false,

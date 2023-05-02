@@ -2,7 +2,6 @@
 {
     public partial class Log10 : Formula
     {
-
         public override Formula Derive(string variable)
             => this.SubFormulae[0].Derive(variable) / (Math.Log(10.0) * this.SubFormulae[0]);
 

@@ -1,5 +1,5 @@
 # MathTools.Algebra
-[![.NET](https://github.com/kasancode/MathTools.Algebra/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kasancode/MathTools.Algebra/actions/workflows/dotnet.yml)
+[![.NET](https://github.com/kasancode/MathTools.Algebra/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kasancode/MathTools.Algebra/actions/workflows/dotnet.yml) [![NuGet](https://img.shields.io/nuget/v/MathTools.Algebra.svg)](https://www.nuget.org/packages/MathTools.Algebra/)
 
 [Documents](https://kasancode.github.io/MathTools.Algebra/)
 

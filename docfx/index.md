@@ -1,5 +1,5 @@
 # MathTools.Algebra
-## Example
+## Examples
 
 ```c#
 var formula = Formula.Parse("x^4*exp(x)");
