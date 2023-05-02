@@ -115,6 +115,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Atan2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Atan2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MathTools.Algebra.Functions.Atanh.yml",
       "output": {
         ".html": {
@@ -199,6 +209,16 @@
       "output": {
         ".html": {
           "relative_path": "api/MathTools.Algebra.Functions.Log10.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MathTools.Algebra.Functions.Log2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MathTools.Algebra.Functions.Log2.html"
         }
       },
       "version": ""
@@ -379,16 +399,6 @@
       "output": {
         ".html": {
           "relative_path": "api/MathTools.Algebra.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/index.html"
         }
       },
       "version": ""

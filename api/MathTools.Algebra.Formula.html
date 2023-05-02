@@ -145,6 +145,7 @@
       <div><a class="xref" href="MathTools.Algebra.Functions.Asin.html">Asin</a></div>
       <div><a class="xref" href="MathTools.Algebra.Functions.Asinh.html">Asinh</a></div>
       <div><a class="xref" href="MathTools.Algebra.Functions.Atan.html">Atan</a></div>
+      <div><a class="xref" href="MathTools.Algebra.Functions.Atan2.html">Atan2</a></div>
       <div><a class="xref" href="MathTools.Algebra.Functions.Atanh.html">Atanh</a></div>
       <div><a class="xref" href="MathTools.Algebra.Functions.Ceiling.html">Ceiling</a></div>
       <div><a class="xref" href="MathTools.Algebra.Functions.Cos.html">Cos</a></div>
@@ -154,6 +155,7 @@
       <div><a class="xref" href="MathTools.Algebra.Functions.If.html">If</a></div>
       <div><a class="xref" href="MathTools.Algebra.Functions.Log.html">Log</a></div>
       <div><a class="xref" href="MathTools.Algebra.Functions.Log10.html">Log10</a></div>
+      <div><a class="xref" href="MathTools.Algebra.Functions.Log2.html">Log2</a></div>
       <div><a class="xref" href="MathTools.Algebra.Functions.Max.html">Max</a></div>
       <div><a class="xref" href="MathTools.Algebra.Functions.MaxMagnitude.html">MaxMagnitude</a></div>
       <div><a class="xref" href="MathTools.Algebra.Functions.Min.html">Min</a></div>
@@ -235,6 +237,41 @@
 </h2>
 
 
+  <a id="MathTools_Algebra_Formula_E_" data-uid="MathTools.Algebra.Formula.E*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_E" data-uid="MathTools.Algebra.Formula.E">
+  E
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents the natural logarithmic base, specified by the constant, e.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula E { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MathTools_Algebra_Formula_E_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Euler's number is approximately 2.7182818284590452354.</p>
+</div>
+
+
+
+
   <a id="MathTools_Algebra_Formula_Epsilon_" data-uid="MathTools.Algebra.Formula.Epsilon*"></a>
 
   <h3 id="MathTools_Algebra_Formula_Epsilon" data-uid="MathTools.Algebra.Formula.Epsilon">
@@ -304,7 +341,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Represents the ratio of the circumference of a circle to its diameter, specified by the constant, PI.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -324,6 +362,9 @@
 
 
 
+  <h4 class="section" id="MathTools_Algebra_Formula_Pi_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Pi is approximately 3.1415926535897932385.</p>
+</div>
 
 
 
@@ -335,7 +376,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Represents the number of radians in one turn, specified by the constant, Tau.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -355,37 +397,9 @@
 
 
 
-
-
-
-
-  <a id="MathTools_Algebra_Formula_Zero_" data-uid="MathTools.Algebra.Formula.Zero*"></a>
-
-  <h3 id="MathTools_Algebra_Formula_Zero" data-uid="MathTools.Algebra.Formula.Zero">
-  Zero
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Formula Zero { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
+  <h4 class="section" id="MathTools_Algebra_Formula_Tau_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Tau is approximately 6.2831853071795864769.</p>
+</div>
 
 
 
@@ -1006,6 +1020,348 @@
 
 
 
+  <a id="MathTools_Algebra_Formula_Atan2_" data-uid="MathTools.Algebra.Formula.Atan2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Atan2_MathTools_Algebra_Formula_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.Atan2(MathTools.Algebra.Formula,MathTools.Algebra.Formula)">
+  Atan2(Formula, Formula)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Atan2(Formula v1, Formula v2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+    <dt><code>v2</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Atan2_" data-uid="MathTools.Algebra.Formula.Atan2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Atan2_MathTools_Algebra_Formula_System_Double_" data-uid="MathTools.Algebra.Formula.Atan2(MathTools.Algebra.Formula,System.Double)">
+  Atan2(Formula, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Atan2(Formula v1, double v2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+    <dt><code>v2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Atan2_" data-uid="MathTools.Algebra.Formula.Atan2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Atan2_MathTools_Algebra_Formula_System_String_" data-uid="MathTools.Algebra.Formula.Atan2(MathTools.Algebra.Formula,System.String)">
+  Atan2(Formula, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Atan2(Formula v1, string v2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+    <dt><code>v2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Atan2_" data-uid="MathTools.Algebra.Formula.Atan2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Atan2_System_Double_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.Atan2(System.Double,MathTools.Algebra.Formula)">
+  Atan2(double, Formula)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Atan2(double v1, Formula v2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>v2</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Atan2_" data-uid="MathTools.Algebra.Formula.Atan2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Atan2_System_Double_System_Double_" data-uid="MathTools.Algebra.Formula.Atan2(System.Double,System.Double)">
+  Atan2(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Atan2(double v1, double v2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>v2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Atan2_" data-uid="MathTools.Algebra.Formula.Atan2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Atan2_System_Double_System_String_" data-uid="MathTools.Algebra.Formula.Atan2(System.Double,System.String)">
+  Atan2(double, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Atan2(double v1, string v2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>v2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Atan2_" data-uid="MathTools.Algebra.Formula.Atan2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Atan2_System_String_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.Atan2(System.String,MathTools.Algebra.Formula)">
+  Atan2(string, Formula)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Atan2(string v1, Formula v2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>v2</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Atan2_" data-uid="MathTools.Algebra.Formula.Atan2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Atan2_System_String_System_Double_" data-uid="MathTools.Algebra.Formula.Atan2(System.String,System.Double)">
+  Atan2(string, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Atan2(string v1, double v2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>v2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Atan2_" data-uid="MathTools.Algebra.Formula.Atan2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Atan2_System_String_System_String_" data-uid="MathTools.Algebra.Formula.Atan2(System.String,System.String)">
+  Atan2(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Atan2(string v1, string v2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>v2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="MathTools_Algebra_Formula_Atanh_" data-uid="MathTools.Algebra.Formula.Atanh*"></a>
 
   <h3 id="MathTools_Algebra_Formula_Atanh_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.Atanh(MathTools.Algebra.Formula)">
@@ -1517,7 +1873,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Derives the formula object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1527,13 +1884,15 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>variable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Name of variable for differentiation.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
-    <dd></dd>
+    <dd><p>Derived formula object.</p>
+</dd>
   </dl>
 
 
@@ -1625,7 +1984,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Evaluates the fomrula object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1636,7 +1996,8 @@
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Evaluated value.</p>
+</dd>
   </dl>
 
 
@@ -1644,8 +2005,17 @@
 
 
 
+  <h4 class="section" id="MathTools_Algebra_Formula_Eval_examples">Examples</h4>
+  <pre><code class="lang-csharp">var formula = Formula.Parse("x^4*exp(4)");
+var value = formula.Eval();</code></pre>
 
 
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.FormulaException.html">FormulaException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -1656,7 +2026,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Evaluates the fomrula object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1666,13 +2037,15 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>variables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Variable values. Dictionary of variable names and values.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Evaluated value.</p>
+</dd>
   </dl>
 
 
@@ -1680,8 +2053,17 @@
 
 
 
+  <h4 class="section" id="MathTools_Algebra_Formula_Eval_System_Collections_Generic_Dictionary_System_String_System_Double___examples">Examples</h4>
+  <pre><code class="lang-csharp">var formula = Formula.Parse("x^4*exp(x)");
+var value = formula.Eval(new Dictionary&lt;string, double&gt;{{"x", 2.0}});</code></pre>
 
 
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.FormulaException.html">FormulaException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -1692,7 +2074,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Evaluates the fomrula object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1702,13 +2085,15 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>variables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
-    <dd></dd>
+    <dd><p>Variable values. Variable ordere is depend on GetVariable() returns value.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Evaluated value.</p>
+</dd>
   </dl>
 
 
@@ -1716,8 +2101,19 @@
 
 
 
+  <h4 class="section" id="MathTools_Algebra_Formula_Eval_System_Double____examples">Examples</h4>
+  <pre><code class="lang-csharp">var formula = Formula.Parse("x^4*exp(x)");
+var value = formula.Eval(2.0);</code></pre>
 
 
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="MathTools.Algebra.FormulaException.html">FormulaException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -1728,7 +2124,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Evaluates the fomrula object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1738,13 +2135,15 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>variables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd><p>Variable values. The class has properties with variable names and values.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Evaluated value.</p>
+</dd>
   </dl>
 
 
@@ -1752,8 +2151,17 @@
 
 
 
+  <h4 class="section" id="MathTools_Algebra_Formula_Eval_System_Object__examples">Examples</h4>
+  <pre><code class="lang-csharp">var formula = Formula.Parse("x^4*exp(x)");
+var value = formula.Eval(new (){x = 2.0});</code></pre>
 
 
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.FormulaException.html">FormulaException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -1764,7 +2172,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Evaluates the derivative of fomrula object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1774,13 +2183,15 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>variable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Name of variable for differentiation.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Evaluated value.</p>
+</dd>
   </dl>
 
 
@@ -1790,6 +2201,11 @@
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.FormulaException.html">FormulaException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -1800,7 +2216,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Evaluates the derivative of fomrula object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1810,15 +2227,18 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>variable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Name of variable for differentiation.</p>
+</dd>
     <dt><code>variables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Variable values. Dictionary of variable names and values.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Evaluated value.</p>
+</dd>
   </dl>
 
 
@@ -1828,6 +2248,11 @@
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.FormulaException.html">FormulaException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -1838,7 +2263,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Evaluates the derivative of fomrula object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -1848,15 +2274,18 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>variable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Name of variable for differentiation.</p>
+</dd>
     <dt><code>variables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd><p>Variable values. The class has properties with variable names and values.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
+    <dd><p>Evaluated value.</p>
+</dd>
   </dl>
 
 
@@ -1866,6 +2295,11 @@
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.FormulaException.html">FormulaException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -2123,7 +2557,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get variables list in the Formula object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -2134,7 +2569,8 @@
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>List of variables.</p>
+</dd>
   </dl>
 
 
@@ -2154,7 +2590,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks if the formula object has variables.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -2165,7 +2602,8 @@
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>If the Formula object has variables, it returns true. Otherwise, it returns false.</p>
+</dd>
   </dl>
 
 
@@ -3450,6 +3888,114 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Formula Log10(string v1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Log2_" data-uid="MathTools.Algebra.Formula.Log2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Log2_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.Log2(MathTools.Algebra.Formula)">
+  Log2(Formula)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Log2(Formula v1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Log2_" data-uid="MathTools.Algebra.Formula.Log2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Log2_System_Double_" data-uid="MathTools.Algebra.Formula.Log2(System.Double)">
+  Log2(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Log2(double v1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Log2_" data-uid="MathTools.Algebra.Formula.Log2*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Log2_System_String_" data-uid="MathTools.Algebra.Formula.Log2(System.String)">
+  Log2(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula Log2(string v1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -5065,6 +5611,11 @@
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.FormulaException.html">FormulaException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -5417,7 +5968,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Simplify the Formula object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -5428,7 +5980,8 @@
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
-    <dd></dd>
+    <dd><p>Simplified Formula object.</p>
+</dd>
   </dl>
 
 
@@ -6136,6 +6689,44 @@
 
   <a id="MathTools_Algebra_Formula_op_Addition_" data-uid="MathTools.Algebra.Formula.op_Addition*"></a>
 
+  <h3 id="MathTools_Algebra_Formula_op_Addition_MathTools_Algebra_Formula_System_String_" data-uid="MathTools.Algebra.Formula.op_Addition(MathTools.Algebra.Formula,System.String)">
+  operator +(Formula, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula operator +(Formula left, string right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_op_Addition_" data-uid="MathTools.Algebra.Formula.op_Addition*"></a>
+
   <h3 id="MathTools_Algebra_Formula_op_Addition_System_Double_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.op_Addition(System.Double,MathTools.Algebra.Formula)">
   operator +(double, Formula)
   
@@ -6172,6 +6763,82 @@
 
 
 
+  <a id="MathTools_Algebra_Formula_op_Addition_" data-uid="MathTools.Algebra.Formula.op_Addition*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_op_Addition_System_String_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.op_Addition(System.String,MathTools.Algebra.Formula)">
+  operator +(string, Formula)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula operator +(string left, Formula right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_op_Division_" data-uid="MathTools.Algebra.Formula.op_Division*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_op_Division_MathTools_Algebra_Formula_System_String_" data-uid="MathTools.Algebra.Formula.op_Division(MathTools.Algebra.Formula,System.String)">
+  operator /(Formula, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula operator /(Formula left, string right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="MathTools_Algebra_Formula_op_Division_" data-uid="MathTools.Algebra.Formula.op_Division*"></a>
 
   <h3 id="MathTools_Algebra_Formula_op_Division_System_Double_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.op_Division(System.Double,MathTools.Algebra.Formula)">
@@ -6189,6 +6856,44 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_op_Division_" data-uid="MathTools.Algebra.Formula.op_Division*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_op_Division_System_String_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.op_Division(System.String,MathTools.Algebra.Formula)">
+  operator /(string, Formula)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula operator /(string left, Formula right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>right</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
     <dd></dd>
@@ -6250,6 +6955,44 @@
 
   <a id="MathTools_Algebra_Formula_op_Modulus_" data-uid="MathTools.Algebra.Formula.op_Modulus*"></a>
 
+  <h3 id="MathTools_Algebra_Formula_op_Modulus_MathTools_Algebra_Formula_System_String_" data-uid="MathTools.Algebra.Formula.op_Modulus(MathTools.Algebra.Formula,System.String)">
+  operator %(Formula, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula operator %(Formula left, string right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_op_Modulus_" data-uid="MathTools.Algebra.Formula.op_Modulus*"></a>
+
   <h3 id="MathTools_Algebra_Formula_op_Modulus_System_Double_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.op_Modulus(System.Double,MathTools.Algebra.Formula)">
   operator %(double, Formula)
   
@@ -6267,6 +7010,82 @@
     <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
     <dd></dd>
     <dt><code>right</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_op_Modulus_" data-uid="MathTools.Algebra.Formula.op_Modulus*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_op_Modulus_System_String_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.op_Modulus(System.String,MathTools.Algebra.Formula)">
+  operator %(string, Formula)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula operator %(string left, Formula right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_op_Multiply_" data-uid="MathTools.Algebra.Formula.op_Multiply*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_op_Multiply_MathTools_Algebra_Formula_System_String_" data-uid="MathTools.Algebra.Formula.op_Multiply(MathTools.Algebra.Formula,System.String)">
+  operator *(Formula, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula operator *(Formula left, string right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -6324,6 +7143,82 @@
 
 
 
+  <a id="MathTools_Algebra_Formula_op_Multiply_" data-uid="MathTools.Algebra.Formula.op_Multiply*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_op_Multiply_System_String_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.op_Multiply(System.String,MathTools.Algebra.Formula)">
+  operator *(string, Formula)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula operator *(string left, Formula right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_op_Subtraction_" data-uid="MathTools.Algebra.Formula.op_Subtraction*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_op_Subtraction_MathTools_Algebra_Formula_System_String_" data-uid="MathTools.Algebra.Formula.op_Subtraction(MathTools.Algebra.Formula,System.String)">
+  operator -(Formula, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula operator -(Formula left, string right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="MathTools_Algebra_Formula_op_Subtraction_" data-uid="MathTools.Algebra.Formula.op_Subtraction*"></a>
 
   <h3 id="MathTools_Algebra_Formula_op_Subtraction_System_Double_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.op_Subtraction(System.Double,MathTools.Algebra.Formula)">
@@ -6341,6 +7236,44 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_op_Subtraction_" data-uid="MathTools.Algebra.Formula.op_Subtraction*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_op_Subtraction_System_String_MathTools_Algebra_Formula_" data-uid="MathTools.Algebra.Formula.op_Subtraction(System.String,MathTools.Algebra.Formula)">
+  operator -(string, Formula)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Formula operator -(string left, Formula right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>right</code> <a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
     <dd></dd>
@@ -7131,7 +8064,8 @@
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Represents the number one (1).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -7462,6 +8396,38 @@
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MathTools_Algebra_Formula_Zero_" data-uid="MathTools.Algebra.Formula.Zero*"></a>
+
+  <h3 id="MathTools_Algebra_Formula_Zero" data-uid="MathTools.Algebra.Formula.Zero">
+  Zero
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents the number one (1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Formula Zero { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MathTools.Algebra.Formula.html">Formula</a></dt>
     <dd></dd>
   </dl>
 
